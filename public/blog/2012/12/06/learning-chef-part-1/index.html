@@ -183,7 +183,66 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
 
 
+<h2>Initialize Vagrant</h2>
 
+<p><a href="http://vagrantup.com">Vagrant</a> is a tool that makes it super easy to launch and manage virtual machines on your local workstation.  We&#8217;re going to create a Vagrant-managed virtual machine to act as our Node.  Vagrant manages each virtual machine as a &#8220;box.&#8221;  Opscode makes a number of Vagrant boxes available through it&#8217;s <a href="https://github.com/opscode/bento">bento project on github.com</a>.</p>
+
+<ol>
+<li>Initialize Vagrant by running <code>vagrant init</code></li>
+<li>Modify the <code>Vagrantfile</code> so that it contains (at least) the following:</li>
+</ol>
+
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, run <code>vagrant up</code> to launch the Vagrant box.</p>
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/o9HtZ1nDoTI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>First Converge</h2>
+
+<p>The first time <code>vagrant up</code> is run for this box, it must download the file from Opscode&#8217;s Amazon S3 file store.  This can take some time so, while it&#8217;s running, you may want to expand your Vagrant file a bit more.  We&#8217;ll configure Vagrant to use the <code>chef_client</code> provisioner.  You&#8217;ll find more <a href="http://vagrantup.com/v1/docs/provisioners/chef_server.html">information about the chef_client provisioner on the Vagrant website</a>.</p>
+
+<p> Here are the relevant settings in our Vagrantfile by the end of the video:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
 </div>
 
 

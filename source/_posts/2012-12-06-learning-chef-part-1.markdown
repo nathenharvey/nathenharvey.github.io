@@ -83,3 +83,46 @@ We'll then move this files into a `.chef` directory in our chef-repo.
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
 
+## Initialize Vagrant
+
+[Vagrant](http://vagrantup.com) is a tool that makes it super easy to launch and manage virtual machines on your local workstation.  We're going to create a Vagrant-managed virtual machine to act as our Node.  Vagrant manages each virtual machine as a "box."  Opscode makes a number of Vagrant boxes available through it's [bento project on github.com](https://github.com/opscode/bento).
+
+1. Initialize Vagrant by running `vagrant init`
+1. Modify the `Vagrantfile` so that it contains (at least) the following:
+
+``` ruby Vagrantfile
+Vagrant::Config.run do |config|
+  config.vm.box = "opscode-ubuntu-12.04"
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
+end
+```
+
+Finally, run `vagrant up` to launch the Vagrant box.
+
+Be sure to check [the Vagrant website](http://vagrantup.com) for more information about Vagrant.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/o9HtZ1nDoTI" frameborder="0" allowfullscreen></iframe>
+
+## First Converge
+
+The first time `vagrant up` is run for this box, it must download the file from Opscode's Amazon S3 file store.  This can take some time so, while it's running, you may want to expand your Vagrant file a bit more.  We'll configure Vagrant to use the `chef_client` provisioner.  You'll find more [information about the chef_client provisioner on the Vagrant website](http://vagrantup.com/v1/docs/provisioners/chef_server.html).
+
+ Here are the relevant settings in our Vagrantfile by the end of the video:
+
+``` ruby Vagrantfile
+Vagrant::Config.run do |config|
+  config.vm.box = "opscode-ubuntu-12.04"
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
+
+  config.vm.provision :chef_client do |chef|
+    chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
+    chef.validation_key_path = "./.chef/fidor-validator.pem"
+    chef.validation_client_name = "fidor-validator"
+    chef.node_name = "patrick_vm"
+  end
+end
+```
+Be sure to check [the Vagrant website](http://vagrantup.com) for more information about Vagrant.
+
+
+
