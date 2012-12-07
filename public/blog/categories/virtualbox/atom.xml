@@ -4,7 +4,7 @@
   <title><![CDATA[Category: virtualbox | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:12:17-05:00</updated>
+  <updated>2012-12-07T14:16:45-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -166,7 +166,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
 
 <h2>What's Next</h2>
 
-<p>Stay tuned for our next session where we'll grab some cookbooks from the <a href="http://community.opscode.com">Opscode Community Site</a> and use those to start managing our node.</p>
+<p>In <a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Learning Chef - Part 2</a> we will grab some cookbooks from the <a href="http://community.opscode.com">Opscode Community Site</a> and use those to start managing our node.</p>
 
 <p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
 ]]></content>

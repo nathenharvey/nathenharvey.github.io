@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Learning Chef Part 2"
+title: "Learning Chef - Part 2"
 date: 2012-12-07 13:18
 comments: true
 categories: 

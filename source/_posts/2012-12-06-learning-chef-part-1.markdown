@@ -141,7 +141,7 @@ Congratulations!!  You've now got a working Chef development environment includi
 
 ## What's Next
 
-Stay tuned for our next session where we'll grab some cookbooks from the [Opscode Community Site](http://community.opscode.com) and use those to start managing our node.
+In [Learning Chef - Part 2](http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/) we will grab some cookbooks from the [Opscode Community Site](http://community.opscode.com) and use those to start managing our node.
 
 In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to [@nathenharvey](https://twitter.com/nathenharvey) or [@mulpat](http://twitter.com/mulpat) on twitter.
 
