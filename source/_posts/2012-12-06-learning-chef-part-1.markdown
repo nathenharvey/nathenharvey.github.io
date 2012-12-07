@@ -70,3 +70,16 @@ Next we create the Chef repository on the local workstation:
 1. Commit the initial changes and push to your repository.
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
+
+## Configure Knife
+
+The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:
+
+* `knife.rb` - This configuration file can be downloaded from the [Organizations page](https://manage.opscode.com/organizations).
+* `ORGANIZATION-validator.pem` -  This private key can be downloaded from the [Organizations page](https://manage.opscode.com/organizations).
+* `USER.pem` - This private key an be downloaded from the [Change Password section of the Account Management page](https://www.opscode.com/account/password).
+
+We'll then move this files into a `.chef` directory in our chef-repo.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
+

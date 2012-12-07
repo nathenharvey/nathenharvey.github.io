@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vagrant | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/vagrant/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T21:46:30-05:00</updated>
+  <updated>2012-12-06T21:54:31-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -20,7 +20,9 @@
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
-<p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
+<p>{% blockquote %}
+looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.
+{% endblockquote %}</p>
 
 <p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
 
@@ -77,6 +79,24 @@
 
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Configure Knife</h2>
+
+<p>The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:</p>
+
+<ul>
+<li><code>knife.rb</code> - This configuration file can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>ORGANIZATION-validator.pem</code> -  This private key can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>USER.pem</code> - This private key an be downloaded from the <a href="https://www.opscode.com/account/password">Change Password section of the Account Management page</a>.</li>
+</ul>
+
+
+<p>We'll then move this files into a <code>.chef</code> directory in our chef-repo.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
+
+
 
 ]]></content>
   </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T21:46:30-05:00</updated>
+  <updated>2012-12-06T21:54:26-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -78,6 +78,24 @@
 
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Configure Knife</h2>
+
+<p>The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:</p>
+
+<ul>
+<li><code>knife.rb</code> - This configuration file can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>ORGANIZATION-validator.pem</code> -  This private key can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>USER.pem</code> - This private key an be downloaded from the <a href="https://www.opscode.com/account/password">Change Password section of the Account Management page</a>.</li>
+</ul>
+
+
+<p>We&#8217;ll then move this files into a <code>.chef</code> directory in our chef-repo.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
+
+
 
 ]]></content>
   </entry>
