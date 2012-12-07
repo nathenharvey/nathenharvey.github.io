@@ -4,7 +4,7 @@
   <title><![CDATA[Category: virtualbox | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T21:21:37-05:00</updated>
+  <updated>2012-12-06T21:27:44-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -49,6 +49,15 @@
 <p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Invite Another User to Your Chef Organization</h2>
+
+<p>If you're not the only one managing your infrastructure, you'll want to invite you co-workers to join your Chef Organization.  Watch this video to see how to invite another user to join your Chef Organization.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
+
+
 
 ]]></content>
   </entry>

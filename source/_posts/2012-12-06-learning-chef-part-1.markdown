@@ -47,3 +47,11 @@ For our project the Chef Workstation will be Patrick's laptop, the Chef Server w
 In this video Patrick will [sign-up for a Hosted Chef account](http://www.opscode.com/hosted-chef/). We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will [login to Hosted Chef](https://manage.opscode.com) at [https://manage.opscode.com](https://manage.opscode.com).
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
+
+## Invite Another User to Your Chef Organization
+
+If you're not the only one managing your infrastructure, you'll want to invite you co-workers to join your Chef Organization.  Watch this video to see how to invite another user to join your Chef Organization.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
+
+
