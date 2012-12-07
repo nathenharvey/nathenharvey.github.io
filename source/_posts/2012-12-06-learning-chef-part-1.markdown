@@ -34,6 +34,8 @@ In this video we introduce ourselves and the project.
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
 
+<!-- more -->
+
 ## Overview of Chef
 
 In this video we visit the newly launched [Chef Documentation Site](http://docs.opscode.com) and look over the [Overview of Chef](http://docs.opscode.com/chef_overview.html) diagram.
@@ -124,5 +126,23 @@ end
 ```
 Be sure to check [the Vagrant website](http://vagrantup.com) for more information about Vagrant.
 
+
+## Checkpoint
+
+Congratulations!!  You've now got a working Chef development environment including:
+
+1. A free account on Opscode's Hosted Chef.
+1. A workstation configured to connect to your Hosted Chef account
+1. A git repository for tracking all of your infrastructure code changes
+1. A Vagrant-managed virtual machine running on your local workstation
+1. The virtual machine is a node managed by Chef
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/qgPvedOKD1I" frameborder="0" allowfullscreen></iframe>
+
+## What's Next
+
+Stay tuned for our next session where we'll grab some cookbooks from the [Opscode Community Site](http://community.opscode.com) and use those to start managing our node.
+
+In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to [@nathenharvey](https://twitter.com/nathenharvey) or [@mulpat](http://twitter.com/mulpat) on twitter.
 
 
