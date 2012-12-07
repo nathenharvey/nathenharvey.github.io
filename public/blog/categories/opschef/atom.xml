@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opschef | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opschef/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T21:27:44-05:00</updated>
+  <updated>2012-12-06T21:46:30-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -58,6 +58,25 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
 
 
+<h2>Initialize a git Repository</h2>
+
+<p>When managing your infrastructure as code, you'll want to store that code in some source code repository.  For this tutorial, we're going to use <a href="http://git-scm.com/">git</a>, a distributed version control system.  The git repository will be publicly hosted on <a href="https://github.com/mulderp/learning-chef">github</a>.</p>
+
+<p>Your workstation will need to have Chef installed.  We verify that Patrick has already installed Chef but if you haven't installed Chef on your workstation yet, you can grab it from <a href="http://www.opscode.com/chef/install/">http://www.opscode.com/chef/install/</a>.</p>
+
+<p>Next we create the Chef repository on the local workstation:</p>
+
+<ol>
+<li><code>git clone git@github.com:opscode/chef-repo.git</code> This will clone the file and directory structure needed to get started with Chef.  Of course, you could also just download a zip or tar.gz of the files from <a href="https://github.com/opscode/chef-repo/downloads">https://github.com/opscode/chef-repo/downloads</a>.</li>
+<li><code>cd chef-repo</code> Change in to the directory that was just created.</li>
+<li><code>rm -rf .git</code> Remove the git directory from the cloned repository, we're going to create our own git repo.</li>
+<li><code>git init</code> - Initialize a new git repository for our infrastructure code.</li>
+<li>Create a new repository on <a href="http://github.com">github.com</a> if you'd like to store your repository there.</li>
+<li>Commit the initial changes and push to your repository.</li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>

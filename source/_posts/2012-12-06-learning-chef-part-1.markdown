@@ -54,4 +54,19 @@ If you're not the only one managing your infrastructure, you'll want to invite y
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
 
+## Initialize a git Repository
 
+When managing your infrastructure as code, you'll want to store that code in some source code repository.  For this tutorial, we're going to use [git](http://git-scm.com/), a distributed version control system.  The git repository will be publicly hosted on [github](https://github.com/mulderp/learning-chef).
+
+Your workstation will need to have Chef installed.  We verify that Patrick has already installed Chef but if you haven't installed Chef on your workstation yet, you can grab it from [http://www.opscode.com/chef/install/](http://www.opscode.com/chef/install/).
+
+Next we create the Chef repository on the local workstation:
+
+1.  `git clone git@github.com:opscode/chef-repo.git` This will clone the file and directory structure needed to get started with Chef.  Of course, you could also just download a zip or tar.gz of the files from [https://github.com/opscode/chef-repo/downloads](https://github.com/opscode/chef-repo/downloads).
+1. `cd chef-repo` Change in to the directory that was just created.
+1. `rm -rf .git` Remove the git directory from the cloned repository, we're going to create our own git repo.
+1. `git init` - Initialize a new git repository for our infrastructure code.
+1. Create a new repository on [github.com](http://github.com) if you'd like to store your repository there.
+1. Commit the initial changes and push to your repository.
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
