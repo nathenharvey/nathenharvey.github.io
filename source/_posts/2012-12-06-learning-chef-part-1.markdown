@@ -26,17 +26,19 @@ I thought this would be an excellent opportunity to feed my recent addiction to 
 
 Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.
 
+You can [watch all of the videos in the YouTube playlist](http://www.youtube.com/watch?v=l7-nAHdplD4&list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP) or keep reading and watch each video in turn.
+
 ## Introduction
 
 In this video we introduce ourselves and the project.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
 
 ## Overview of Chef
 
 In this video we visit the newly launched [Chef Documentation Site](http://docs.opscode.com) and look over the [Overview of Chef](http://docs.opscode.com/chef_overview.html) diagram.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8" frameborder="0" allowfullscreen></iframe>
 
 For our project the Chef Workstation will be Patrick's laptop, the Chef Server will be [Opscode Hosted Chef](http://www.opscode.com/hosted-chef/), and the first node we create will be a virtual machine that is managed by [Vagrant](http://vagrantup.com).
 
@@ -44,4 +46,4 @@ For our project the Chef Workstation will be Patrick's laptop, the Chef Server w
 
 In this video Patrick will [sign-up for a Hosted Chef account](http://www.opscode.com/hosted-chef/). We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will [login to Hosted Chef](https://manage.opscode.com) at [https://manage.opscode.com](https://manage.opscode.com).
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>

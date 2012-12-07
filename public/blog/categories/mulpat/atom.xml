@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mulpat | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/mulpat/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T21:15:25-05:00</updated>
+  <updated>2012-12-06T21:21:37-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -26,18 +26,20 @@
 
 <p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
 
+<p>You can <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">watch all of the videos in the YouTube playlist</a> or keep reading and watch each video in turn.</p>
+
 <h2>Introduction</h2>
 
 <p>In this video we introduce ourselves and the project.</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
 
 
 <h2>Overview of Chef</h2>
 
 <p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8" frameborder="0" allowfullscreen></iframe>
 
 
 <p>For our project the Chef Workstation will be Patrick's laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
@@ -46,7 +48,7 @@
 
 <p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
