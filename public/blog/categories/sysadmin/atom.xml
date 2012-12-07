@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sysadmin | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/sysadmin/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T17:45:20-05:00</updated>
+  <updated>2012-12-06T21:15:25-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
+    <updated>2012-12-06T17:07:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
+    <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
+
+<p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
+
+<p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
+
+<p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
+
+<h2>Introduction</h2>
+
+<p>In this video we introduce ourselves and the project.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Overview of Chef</h2>
+
+<p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+
+<p>For our project the Chef Workstation will be Patrick's laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
+
+<h2>Register for Hosted Chef</h2>
+
+<p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5 Things You Always Wanted to Know About Chef]]></title>
@@ -232,53 +270,6 @@ include_recipe "greenscreen"
 ```</p>
 
 <p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Green Screen]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/01/02/green-screen/"/>
-    <updated>2012-01-02T14:17:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/01/02/green-screen</id>
-    <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
-
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/greenscreen.jpg" width="300" height="225" title="Green Screen Monitor" alt="Green Screen Monitor">
-We use Green Screen at <a href="http://www.customink.com">CustomInk</a> to look after our continuous integration servers, currently 3 Hudson servers and one Jenkins cluster. We have a monitor mounted in the engineering office that makes it easy for everyone to quickly assess the build status.</p>
-
-<p>Green Screen is a simple Sinatra application that is <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">easy to configure and deploy</a>.  It works well with any continuous integration server that conforms to the <a href="http://confluence.public.thoughtworks.org/display/CI/Multiple+Project+Summary+Reporting+Standard">multiple project summary reporting standard</a>.</p>
-
-<p>You can see a sample Green Screen app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a>.  Be forewarned, this sample Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
-
-<!--more-->
-
-
-<h2>History</h2>
-
-<p>Green Screen was originally implemented by <a href="https://github.com/martinjandrews">Marty Andrews</a> and <a href="http://blog.martyandrews.net/2009/08/greenscreen-build-monitor-bvc.html">announced on his blog in 2009</a>. In the original version, a build that was in progress would blink on the screen.
-<a href="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4565_building.jpg"><img class="center" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4565_building.jpg" width="208" height="145" title="martinjandrews Green Screen" alt="martinjandrews Green Screen"></a></p>
-
-<p><a href="https://github.com/rsutphin">Rhett Sutphin</a> improved the layout of green screen and introduced a new color, yellow, for builds that are in progress.
-<a href="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg"><img class="center" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg" width="207" height="145" title="rsutphin Green Screen" alt="rsutphin Green Screen"></a></p>
-
-<p>After using these versions for a while at CustomInk, we decided that the most important thing to know was which builds were failing. Once you get past a handful of builds, it's no longer very interesting to see every build. We forked Rhett's version and created a <a href="https://github.com/customink/greenscreen">new layout for Green Screen</a>.</p>
-
-<p>If everything is passing, the screen is basically one giant checkmark.</p>
-
-<p><a href="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg"><img class="center" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg" width="210" height="119" title="customink Green Screen" alt="customink Green Screen"></a></p>
-
-<p>If there are any failing builds, they're shown in the main area while all others are displayed on the right.</p>
-
-<p><a href="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg"><img class="center" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg" width="210" height="121" title="customink failed build" alt="customink failed build"></a></p>
-
-<p>Finally, a build that previously failed will be shown in yellow while it's rebuilding.</p>
-
-<p><a href="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg"><img class="center" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg" width="210" height="121" title="customink building" alt="customink building">
-</a>
-We've also added support for controlling which builds are displayed from each CI server. So that you can explicitly include or exclude builds or just go with the default behavior of showing all builds on the server.</p>
-
-<h2>Deploying</h2>
-
-<p>I'll cover a couple of deployment options for Green Screen in my <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">next post</a>.</p>
 ]]></content>
   </entry>
   

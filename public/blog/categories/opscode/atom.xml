@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opscode | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opscode/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T17:45:20-05:00</updated>
+  <updated>2012-12-06T21:15:25-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
+    <updated>2012-12-06T17:07:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
+    <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
+
+<p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
+
+<p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
+
+<p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
+
+<h2>Introduction</h2>
+
+<p>In this video we introduce ourselves and the project.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Overview of Chef</h2>
+
+<p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+
+<p>For our project the Chef Workstation will be Patrick's laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
+
+<h2>Register for Hosted Chef</h2>
+
+<p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
@@ -541,45 +579,6 @@ include_recipe "greenscreen"
 ```</p>
 
 <p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Vagrant and VBoxManage import]]></title>
-    <link href="http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import/"/>
-    <updated>2010-12-27T19:25:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import</id>
-    <content type="html"><![CDATA[<p>I've recently started using <a href="http://vagrantup.com/">Vagrant</a> for building local VMs with VirtualBox. It's a great way to test out my <a href="http://www.opscode.com/chef">Chef</a> cookbooks.</p>
-
-<p>I recently ran into an error after a system crash. When I tried to run:</p>
-
-<p><code>bash
-vagrant up
-</code></p>
-
-<p>the following error was reported:</p>
-
-<p><code>bash
-The VM import failed! Try running `VBoxManage import` on the box file manually
-for more verbose error output.
-</code></p>
-
-<p>To successfully run VBoxManage import, you first need to locate the .ovf file used by Vagrant when building your VM. Typically, you'll find your box definitions in the <code>~/.vagrant/boxes</code> directory. So, I tried to run the command specified from there:</p>
-
-<p>``` bash
-cd ~/.vagrant/boxes/base</p>
-
-<p>VBoxManage import box.ovf</p>
-
-<p>ERROR: Cannot register the hard disk
-'~/.vagrant/boxes/base/vagrant-centos64-disk.vmdk' with UUID
-{5d2426bf-f04e-40a0-bf36-a27c8d45f920} because a hard disk
-'~/.vagrant/boxes/base/vagrant-centos64-disk.vmdk' with UUID
-{5d2426bf-f04e-40a0-bf36-a27c8d45f920} already exists in the media registry
-('~/Library/VirtualBox/VirtualBox.xml')
-```</p>
-
-<p>To get around this, I simply removed <code>~/Library/VirtualBox/VirtualBox.xml</code>. I was then able to vagrant up and continue on with my Chef cookbook.</p>
 ]]></content>
   </entry>
   

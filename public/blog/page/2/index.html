@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="I was selected to share some of my experience with MongoDB at MongoSV. MongoSV is an annual one-day conference in Silicon Valley dedicated to the &hellip;">
+  <meta name="description" content="During this year&#8217;s MongoSV, 10gen presented awards to peer-nominated community members for their contributions to the MongoDB project. There &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,58 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/29/mongodb-community-awards/">MongoDB Community Awards</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-29T23:54:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+
+<p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
+
+<ol>
+<li><strong>Innovative Application Award</strong> - recognizes a company or individual who has built an innovative application using MongoDB.</li>
+<li><strong>Core Contributor Award</strong> - recognizes a community member for significant contribution to the codebase of the MongoDB core server, language drivers, or tools.</li>
+<li><strong>Community Champion Award</strong> - recognizes an individual for their efforts evangelizing and growing the MongoDB community.</li>
+</ol>
+
+
+<p>This is the first year that 10gen has organized these awards. I think they&#8217;re a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/12/29/mongodb-community-awards/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -642,57 +694,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/">Testing Mod_rewrite and Apache Redirects</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-16T09:00:00-04:00" pubdate data-updated="true">Jul 16<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>At <a href="http://www.customink.com">CustomInk</a>, we recently migrated from mongrel to Passenger for our Ruby on Rails website. This migration included a full rewrite of our apache configuration files.</p>
-
-<p>With over 500 redirect and rewrite rules in place I needed a way to ensure my copy-n-paste skills were up to snuff and that we didn&#8217;t loose any redirects along the way.</p>
-
-<p>In my search for help, I found a <a href="http://www.viget.com/extend/test-drive-mod-rewrite-rules-with-testunit/">blog post by Patrick Reagan from Viget labs</a> that described a method for writing tests that will verify all the rewrite rules and redirects. Patrick&#8217;s ideas were packaged up into a gem and available on <a href="http://github.com/eightbitraptor/http_redirect_test">github</a>.</p>
-
-<p>I can now write up tests like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">should_redirect</span> <span class="s2">&quot;/cink/ideas/ideas.jsp&quot;</span><span class="p">,</span> <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="s2">&quot;/inspiration/&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So now I can to some TDC (test-driven configuration) whenever I get a request for a new redirect.</p>
-
-<p>What other methods have you used to test your rewrite rules?</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -710,6 +711,10 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/06/learning-chef-part-1/">Learning Chef - Part 1</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a>
       </li>
     
@@ -723,10 +728,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     
       <li class="post">
         <a href="/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/">The Joy of Cooking - Whip Up a Rails Environment with Chef</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/">Taming the Kraken - How Operations enables developer productivity</a>
       </li>
     
   </ul>
