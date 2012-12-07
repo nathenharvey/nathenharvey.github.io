@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opscode | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opscode/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T22:33:57-05:00</updated>
+  <updated>2012-12-07T14:12:17-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,110 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef Part 2]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
+    <updated>2012-12-07T13:18:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
+    <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<h2>Review of Part 1</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Read the blog post for Part 1</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=35" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Discuss Chef Solo vs. Chef Server</h2>
+
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don't get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=344" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Download a number of cookbooks from the community site</h2>
+
+<p>Now that we've got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We'll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+
+<p>Here are the commands we ran to download each cookbook:</p>
+
+<ol>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>knife cookbook site download build-essentials</code></li>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+</ol>
+
+
+<p>After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:</p>
+
+<p><code>tar xzvf COOKBOOK_NAME.tar.gz -C cookbooks</code></p>
+
+<p>Finally, upload each cookbook to the Hosted Chef server:</p>
+
+<p><code>knife cookbook upload COOKBOOK_NAME</code></p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=482" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Update the run list for our node</h2>
+
+<p>There are a number of ways to update a node's run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+
+<p>In our session, we used <a href="http://www.youtube.com/watch?v=K_S-yxKfYek&amp;t=18m47s">the management interface</a> and <code>knife node edit</code> there's an even easier way with knife though:</p>
+
+<p><code>knife node run_list add NODE_NAME RUN_LIST_ITEM</code> which we would have done as <code>knife node run_list add patrick_vm "recipe[passenger_apache2]"</code></p>
+
+<p>Once our run list has been updated, we run <code>vagrant provision</code> to execute chef-client on our VM.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=1885" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Add port forwarding to the Vagrant instance</h2>
+
+<p>Finally, we updated our Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here's the full Vagrantfile:</p>
+
+<p>``` ruby Vagrantfile
+Vagrant::Config.run do |config|
+  config.vm.box = "opscode-ubuntu-12.04"
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
+  config.vm.forward_port 80, 8080</p>
+
+<p>  config.vm.provision :chef_client do |chef|</p>
+
+<pre><code>chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
+chef.validation_key_path = "./.chef/fidor-validator.pem"
+chef.validation_client_name = "fidor-validator"
+chef.node_name = "patrick_vm"
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=3078" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What's Next</h2>
+
+<p>Stay tuned for our next session where we'll start exploring <a href="http://docs.opscode.com/resource.html">resources</a> and writing our own <a href="http://docs.opscode.com/essentials_cookbooks.html">cookbooks</a>.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
@@ -598,108 +702,6 @@ end</p>
 <p><blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote></p>
 
 <p>We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
-    <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
-    <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
-
-<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
-
-<h2>Deploying to Heroku</h2>
-
-<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You'll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don't yet have an account.</p>
-
-<p>Once you've got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
-
-<ol>
-<li><code>git clone git@github.com:customink/greenscreen.git</code></li>
-<li><code>cd greenscreen</code></li>
-<li><code>gem install heroku</code></li>
-<li><code>heroku create</code></li>
-<li><code>git push heroku master</code></li>
-<li><code>heroku open</code></li>
-</ol>
-
-
-<p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
-
-<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
-
-<p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
-
-<!--more-->
-
-
-<h2>Deploying with Chef</h2>
-
-<p>If your build servers are not publicly accessible, Heroku won't be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
-
-<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
-
-<p><code>ruby
-include_recipe "greenscreen"
-</code></p>
-
-<p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
-
-<p>The cookbook allows you to specify credentials and jobs to include or ignore with each server and allows you to set-up multiple Green Screens on the same node. At CustomInk, we use different Green Screen applications for different teams.</p>
-
-<p>Here's an excerpt from one of our Chef environment files:</p>
-
-<p>``` ruby
-"greenscreens" => [
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen",
-:port =&gt; "4567",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build01.customink.office:8080/cc.xml"
-  },
-  {
-    :url =&gt; "http://build02.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password"
-  },
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :ignore_jobs =&gt; ["www_redirects"]
-  }
-]
-</code></pre>
-
-<p>  },
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen.webops",
-:port =&gt; "4568",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :jobs =&gt; ["www_redirects"]
-  },
-  {
-    :url =&gt; "http://build04.customink.office/cc.xml",
-    :username =&gt; "jenkins",
-    :password =&gt; "jenkis_password"
-  }
-]
-</code></pre>
-
-<p>  }
-]
-```</p>
-
-<p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
 ]]></content>
   </entry>
   

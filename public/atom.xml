@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T22:33:57-05:00</updated>
+  <updated>2012-12-07T14:12:17-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,121 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef Part 2]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
+    <updated>2012-12-07T13:18:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
+    <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<h2>Review of Part 1</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Read the blog post for Part 1</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=35" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Discuss Chef Solo vs. Chef Server</h2>
+
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don&#8217;t get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=344" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Download a number of cookbooks from the community site</h2>
+
+<p>Now that we&#8217;ve got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We&#8217;ll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+
+<p>Here are the commands we ran to download each cookbook:</p>
+
+<ol>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>knife cookbook site download build-essentials</code></li>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+</ol>
+
+
+<p>After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:</p>
+
+<p><code>tar xzvf COOKBOOK_NAME.tar.gz -C cookbooks</code></p>
+
+<p>Finally, upload each cookbook to the Hosted Chef server:</p>
+
+<p><code>knife cookbook upload COOKBOOK_NAME</code></p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=482" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Update the run list for our node</h2>
+
+<p>There are a number of ways to update a node&#8217;s run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+
+<p>In our session, we used <a href="http://www.youtube.com/watch?v=K_S-yxKfYek&amp;t=18m47s">the management interface</a> and <code>knife node edit</code> there&#8217;s an even easier way with knife though:</p>
+
+<p><code>knife node run_list add NODE_NAME RUN_LIST_ITEM</code> which we would have done as <code>knife node run_list add patrick_vm "recipe[passenger_apache2]"</code></p>
+
+<p>Once our run list has been updated, we run <code>vagrant provision</code> to execute chef-client on our VM.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=1885" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Add port forwarding to the Vagrant instance</h2>
+
+<p>Finally, we updated our Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here&#8217;s the full Vagrantfile:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">forward_port</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">8080</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=3078" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>Stay tuned for our next session where we&#8217;ll start exploring <a href="http://docs.opscode.com/resource.html">resources</a> and writing our own <a href="http://docs.opscode.com/essentials_cookbooks.html">cookbooks</a>.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
@@ -1646,48 +1761,6 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
 
 
 <p>To get around this, I simply removed <code>~/Library/VirtualBox/VirtualBox.xml</code>. I was then able to vagrant up and continue on with my Chef cookbook.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Citizen Cope Concert]]></title>
-    <link href="http://www.nathenharvey.com/blog/2010/12/02/citizen-cope-concert/"/>
-    <updated>2010-12-02T21:11:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2010/12/02/citizen-cope-concert</id>
-    <content type="html"><![CDATA[<p>Citizen Cope came to the Rams Head On Stage in Annapolis for 3 sold out solo shows.  I was at the first one and was able to make some fairly good recordings.</p>
-
-<p>The playlist below includes the entire Cope set.  Have a listen and let me know what you think.</p>
-
-<p>This concert is now also available on <a href="http://www.archive.org/details/CitizenCope-LiveAtRamsHeadOnStage-26Nov2010">Live Music Archive</a>.</p>
-
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/p/BFA9AD670D22F8CF?hl=en_US&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/p/BFA9AD670D22F8CF?hl=en_US&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
-
-
-<ol>
-<li><a href="http://www.youtube.com/watch?v=CkCmd9Q8UMg">Every Waking Moment</a></li>
-<li><a href="http://www.youtube.com/watch?v=ka9vdrXATt4">Salvation</a></li>
-<li><a href="http://www.youtube.com/watch?v=-acD44WayGE">More Than It Seems</a></li>
-<li><a href="http://www.youtube.com/watch?v=R2SVcBRIuoo">Bullet And A Target</a></li>
-<li><a href="http://www.youtube.com/watch?v=cMvpUNQ9sHo">Out on the Weekend (Neil Young cover)</a></li>
-<li><a href="http://www.youtube.com/watch?v=JAWyAUbjuGA">Holdin&#8217; On</a></li>
-<li><a href="http://www.youtube.com/watch?v=U-cQNWG6KRY">All Dressed Up</a></li>
-<li><a href="http://www.youtube.com/watch?v=nmHubW0xt3M">Lifeline</a></li>
-<li><a href="http://www.youtube.com/watch?v=MoLXeIvsFag">Healing Hands</a></li>
-<li><a href="http://www.youtube.com/watch?v=bQw97HbKiZA">Keep Askin&#8217;</a></li>
-<li><a href="http://www.youtube.com/watch?v=IdcHdaCnHLg">Pablo Picasso</a></li>
-<li><a href="http://www.youtube.com/watch?v=ASrQHQ367hg">D&#8217;Artagnan&#8217;s Theme</a></li>
-<li><a href="http://www.youtube.com/watch?v=GFaVnSLKGBY">200,000 (in counterfeit 50 dollar bills)</a></li>
-<li><a href="http://www.youtube.com/watch?v=7d2_C-0DVuo">If There&#8217;s Love</a></li>
-<li><a href="http://www.youtube.com/watch?v=_HBFALRUiq8">Comin&#8217; Back</a></li>
-<li><a href="http://www.youtube.com/watch?v=zcC3D7MZOUc">One Lovely Day</a></li>
-<li><a href="http://www.youtube.com/watch?v=CeUeag43IR8">Son&#8217;s Gonna Rise</a></li>
-<li><a href="http://www.youtube.com/watch?v=mWfW0Kgoqmc">Sideways</a></li>
-<li><a href="http://www.youtube.com/watch?v=Y3cqhOqq7hw">Hurricane Waters</a></li>
-<li><a href="http://www.youtube.com/watch?v=xetaamjGX24">Hands of the Saints</a></li>
-<li><a href="http://www.youtube.com/watch?v=RtyNYbuyE_w">My Way Home</a></li>
-<li><a href="http://www.youtube.com/watch?v=5_8GmyA4V6U">Left For Dead</a></li>
-</ol>
-
 ]]></content>
   </entry>
   

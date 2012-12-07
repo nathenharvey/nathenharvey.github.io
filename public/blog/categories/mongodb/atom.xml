@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mongodb | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/mongodb/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-06T22:33:57-05:00</updated>
+  <updated>2012-12-07T14:12:17-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,110 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef Part 2]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
+    <updated>2012-12-07T13:18:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
+    <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<h2>Review of Part 1</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Read the blog post for Part 1</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=35" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Discuss Chef Solo vs. Chef Server</h2>
+
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don't get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=344" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Download a number of cookbooks from the community site</h2>
+
+<p>Now that we've got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We'll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+
+<p>Here are the commands we ran to download each cookbook:</p>
+
+<ol>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>knife cookbook site download build-essentials</code></li>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+</ol>
+
+
+<p>After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:</p>
+
+<p><code>tar xzvf COOKBOOK_NAME.tar.gz -C cookbooks</code></p>
+
+<p>Finally, upload each cookbook to the Hosted Chef server:</p>
+
+<p><code>knife cookbook upload COOKBOOK_NAME</code></p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=482" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Update the run list for our node</h2>
+
+<p>There are a number of ways to update a node's run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+
+<p>In our session, we used <a href="http://www.youtube.com/watch?v=K_S-yxKfYek&amp;t=18m47s">the management interface</a> and <code>knife node edit</code> there's an even easier way with knife though:</p>
+
+<p><code>knife node run_list add NODE_NAME RUN_LIST_ITEM</code> which we would have done as <code>knife node run_list add patrick_vm "recipe[passenger_apache2]"</code></p>
+
+<p>Once our run list has been updated, we run <code>vagrant provision</code> to execute chef-client on our VM.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=1885" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Add port forwarding to the Vagrant instance</h2>
+
+<p>Finally, we updated our Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here's the full Vagrantfile:</p>
+
+<p>``` ruby Vagrantfile
+Vagrant::Config.run do |config|
+  config.vm.box = "opscode-ubuntu-12.04"
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
+  config.vm.forward_port 80, 8080</p>
+
+<p>  config.vm.provision :chef_client do |chef|</p>
+
+<pre><code>chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
+chef.validation_key_path = "./.chef/fidor-validator.pem"
+chef.validation_client_name = "fidor-validator"
+chef.node_name = "patrick_vm"
+</code></pre>
+
+<p>  end
+end
+```</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=3078" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What's Next</h2>
+
+<p>Stay tuned for our next session where we'll start exploring <a href="http://docs.opscode.com/resource.html">resources</a> and writing our own <a href="http://docs.opscode.com/essentials_cookbooks.html">cookbooks</a>.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
@@ -271,70 +375,6 @@ I also agree with some of 10gen's concern that search is like a pandora's box. O
 <p>What suggestions do you have? Please leave a comment or get in touch with me.</p>
 
 <p>Also, checkout my <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">previous post</a> where I gave some <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tips for Hosting a Tech User Group]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
-    <updated>2011-12-13T19:24:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
-    <content type="html"><![CDATA[<p>In January of 2011, I started hosting a <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">monthly MongoDB meetup</a>. My employer, <a href="http://www.customink.com/">CustomInk</a>, was looking for ways to become better known in the local DC technology market. We were also just getting started with our initial production deployment of MonogoDB. Having engineers from the area come to our office, get to know CustomInk, and share their experiences with using MongoDB was a great opportunity!</p>
-
-<p>Before I get much further, I'd like to give a hat tip to those user groups and podcasts that I learned from and stole ideas from. Namely, <a href="http://www.meetup.com/dcruby/">DC RUG</a>, <a href="http://www.meetup.com/bmore-on-rails/">B'more on Rails group</a>, and the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>.</p>
-
-<p>Having a good space for hosting these types of meetings is important. CustomInk has two different spaces that we can utilize. The Parlour is a very cozy sitting room that includes a fireplace. It's suitable for a groups of up to 30 people. The Cafe is quite a bit larger, we can host up to 80 people there. We also have a very nice outdoor patio which could hold 80 people but planning weather-dependent meetings doesn't feel like the right way to go. The patio is connected to both the Parlour and the Cafe so networking at the beginning of the meeting sometimes happens there.</p>
-
-<p>Our success hosting the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">MongoDB User Group</a> has led to us hosting a number of other meetups. We are the regular host for the <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a> meetup and have hosted events for <a href="http://www.meetup.com/ncagtug/events/17035395/">Android application development</a>, <a href="http://www.meetup.com/R-users-DC/events/37862562/">R user group</a>, <a href="http://www.meetup.com/NoVa-Javascript-Ext-JS-Users-Group/events/36841452/">JavaScript user group</a>, and a <a href="http://www.meetup.com/TwitterTeaTimeDC/events/38265862/">Twitter API meetup</a>.</p>
-
-<p>The MongoDB group now includes over 250 members and the DevOps DC group is over 100. Based on our experience, I believe there are a number of things that you can do to grow and run a successful meetup group.</p>
-
-<!--more-->
-
-
-<h3>Consistent date, time, location</h3>
-
-<p>Having a consistent date, time, and location may be one of the most important things you can do. This allows members to plan their schedule and their commute. Finding the location of any meetup can be an anxiety-filled experience for some people. Is this the right building? Which floor is this meeting on? There's comfort in knowing that next month's meeting will happen in the same space as this month's. You may feel it would be better to alternate locations. We've certainly had some requests for this in the groups we regularly host. Based on feedback from other groups and some of our own experience, this is a bad idea. We've seen or heard of too many members missing meetings because they went to the "other" location. For the MongoDB group, we meet on the third Wednesday of the month at 6:30. Pick a day and time that works best for you and stick with it.</p>
-
-<p>A location that is easily accessible via public transportation is certainly desirable but may not always be feasible.</p>
-
-<h3>Encourage member participation</h3>
-
-<p>Once you've got everyone at your meetup it's important that you make this a warm, welcoming place where members feel comfortable and are encouraged to participate. We ask attendees to introduce themselves, share a pick, and contribute during open discussions.</p>
-
-<h3>Register a twitter account</h3>
-
-<p>A twitter handle that matches your group is a great way to help promote your meetings and encourage attendance. I use <a href="http://twitter.com/mongodc">@MongoDC</a> and will frequently tweet about topics that our members are interested in. Of course, the primary use of the account is to announce upcoming meetings and speakers. However, I also use it for sharing MongoDB related news such as <a href="https://twitter.com/#!/MongoDC/status/113307839249907713">product releases</a> and <a href="https://twitter.com/#!/MongoDC/status/135041129455427584">upcoming conferences</a>. Additionally, we ask our members to share their twitter handle when they arrive. This allows me to put together a <a href="https://twitter.com/#!/MongoDC/mongodc-16-nov-2011/members">Twitter list</a> of the people who attended (an idea I stole from the <a href="http://www.meetup.com/bmore-on-rails/">B'more on Rails group</a>).</p>
-
-<h3>Feed the group</h3>
-
-<p>You're probably scheduling your meetings right around the same time that most people would otherwise be eating dinner. CustomInk provides pizza, sodas, and beer for each meetup. Personally, I'm a bit of a beer lover so try to provide a unique offering at each meeting. This a good sponsorship opportunity for companies interested in reaching your group, too.</p>
-
-<h3>Give away FREE stuff</h3>
-
-<p>What's a user group meeting without some sort of free swag? <a href="http://www.10gen.com/">10gen</a>, the company behind MongoDB, is great about making sure I always have something to give away at the meetings. Quick reference cards, stickers, and coffee mugs are usually in ample supply. Occasionally, we'll have a books, conference tickets or discounts, or other special swag that we can giveaway, too.</p>
-
-<h3>Wifi</h3>
-
-<p>Provide free wifi to your attendees. It's frustrating to go to a technical meeting without wifi.</p>
-
-<h3>Leverage Meetup.com</h3>
-
-<p><a href="http://www.meetup.com/">Meetup.com</a> has a lot of great tools to help you organize meetings, communicate with individual members or with the entire group, and more. Be sure to checkout the "Organizer Tips" available under the "Group Tools" menu. Create a presence on Facebook, LinkedIn, Twitter, or anywhere else your members or potential members are going to be but always link back to the group's page on meetup.com. Use the meetup site to post any presentations from your meetings. I also find it's very helpful to <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/pages/November_Meetup_Recap/">summarize your meetings on the site</a>. This gives attendees easy access to everything that happened and gives new members an idea about the content and quality of the meetings.</p>
-
-<p>It might also be interesting to have a page on the Meetup site where your members can highlight their own open source contributions. Perhaps they've contributed to a MongoDB driver?</p>
-
-<p>There are other sites that offer similar functionality to Meetup.com but I firmly believe Meetup.com is the best. It's where many people go to look for interesting groups and the tools they provide are great.</p>
-
-<h3>Other ideas</h3>
-
-<p>Lately, I've been kicking around the idea of having a group library. Members and publisher could contribute books that the group might be interested in. Each book could be "borrowed" for up to a month. Have you had any experience with a user group that's done this?</p>
-
-<p>For some more great suggestions, including suggestions on how to get great presenters, check out <a href="https://twitter.com/cwestin63">Chris Westin's</a> blog post - <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>.</p>
-
-<p>What suggestions do you have? Please leave a comment or get in touch with me.</p>
-
-<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">next post</a>, I'll provide <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
 ]]></content>
   </entry>
   
