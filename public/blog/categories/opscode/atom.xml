@@ -20,9 +20,7 @@
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
-<p>{% blockquote %}
-looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.
-{% endblockquote %}</p>
+<p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
 
 <p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
 
@@ -347,14 +345,7 @@ gem 'chef', '~> 10.12.0'
 
 <p><a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> is a lint tool for your Chef cookbooks.</p>
 
-<p>{% blockquote http://acrmp.github.com/foodcritic/ %}</p>
-
-<p>Foodcritic has two goals:</p>
-
-<ul>
-<li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li>
-<li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.
-{% endblockquote %}</p></li>
+<p><blockquote><p></p></p><p><p>Foodcritic has two goals:</p></p><p><ul><br/><li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li><br/><li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.</p></blockquote></p></li>
 </ul>
 
 
@@ -370,9 +361,7 @@ gem 'chef', '~> 10.12.0'
 
 <p>Travis CI is:</p>
 
-<p>{% blockquote http://about.travis-ci.org/docs/ %}
-A hosted continuous integration service for the open source community.
-{% endblockquote %}</p>
+<p><blockquote><p>A hosted continuous integration service for the open source community.</p></blockquote></p>
 
 <p>Using Travis CI in conjunction with Foodcritic, we'd have a basic automated test foundation to build on.</p>
 
@@ -533,9 +522,7 @@ end</p>
 
 <p>Is this a huge accomplishment? No.  But it is a great first step.</p>
 
-<p>{% blockquote @btmerr https://twitter.com/#!/btmerr/status/157941260680835072 %}
-.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.
-{% endblockquote %}</p>
+<p><blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote></p>
 
 <p>We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!</p>
 ]]></content>
