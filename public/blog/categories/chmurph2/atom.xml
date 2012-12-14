@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chmurph2 | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/chmurph2/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Collaborating with Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef/"/>
-    <updated>2012-01-13T16:25:00-05:00</updated>
+    <updated>2012-01-13T16:25:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef</id>
     <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
 

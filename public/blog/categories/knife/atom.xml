@@ -4,7 +4,7 @@
   <title><![CDATA[Category: knife | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/knife/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -14,9 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-08:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
+
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-05:00</updated>
+    <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
@@ -120,7 +140,7 @@ end
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
+    <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
@@ -279,7 +299,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
-    <updated>2012-07-06T21:26:00-04:00</updated>
+    <updated>2012-07-06T21:26:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 

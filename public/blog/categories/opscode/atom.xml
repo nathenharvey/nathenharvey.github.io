@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opscode | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opscode/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -14,9 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-08:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
+
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-05:00</updated>
+    <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
@@ -120,7 +140,7 @@ end
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
+    <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
@@ -279,7 +299,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
-    <updated>2012-07-06T21:26:00-04:00</updated>
+    <updated>2012-07-06T21:26:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 
@@ -488,7 +508,7 @@ gem 'chef', '~> 10.12.0'
   <entry>
     <title type="html"><![CDATA[MVT:  Foodcritic and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
-    <updated>2012-05-29T22:30:00-04:00</updated>
+    <updated>2012-05-29T22:30:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
     <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It's becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I'll look at a "minimum viable testing" (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
 
@@ -657,51 +677,6 @@ end</p>
 <h3>Next Post</h3>
 
 <p>Be sure to read the next post on this topic:  <a href="http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Collaborating with Chef]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef/"/>
-    <updated>2012-01-13T16:25:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef</id>
-    <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
-
-<p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren't important but let's look at how we worked together to implement the changes.</p>
-
-<h2>Before Chef</h2>
-
-<p>In the past, here's how the changes likely would have been implemented.</p>
-
-<ol>
-<li>Developer realizes a change is required.</li>
-<li>Developer asks the ops team to make the change</li>
-<li>Ops makes the update using the appropriate tools</li>
-</ol>
-
-
-<p>OR</p>
-
-<ol>
-<li>Developer realizes a change is required.</li>
-<li>Developer considers asking the ops team to make the change but thinks better of it</li>
-<li>Developer makes the change manually, Ops doesn't know, Ops can no longer provision a new server properly.</li>
-</ol>
-
-
-<h2>With Chef</h2>
-
-<p>We've been using Chef for some time and have just started asking our developers to help maintain their own apps. This week, two applications needed to know about some additional external services. This required a simple update to a YAML file in each application. In both cases, I asked the developers to clone our chef repo, make the changes they needed, and submit a pull request.</p>
-
-<p>In one instance, the simple services.yml turned into a pull request with updates to a number of nagios nrpe checks that we're running. Something that the developer didn't ask for originally but took the initiative to add while in the code.</p>
-
-<p>Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> and <a href="http://twitter.com/jmorton">@jmorton</a> for taking their first steps into Chef.</p>
-
-<p>Is this a huge accomplishment? No.  But it is a great first step.</p>
-
-<p><blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote></p>
-
-<p>We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!</p>
 ]]></content>
   </entry>
   

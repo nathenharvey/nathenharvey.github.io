@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vagrant | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/vagrant/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -14,9 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-08:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
+
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-05:00</updated>
+    <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
@@ -120,7 +140,7 @@ end
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
+    <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
@@ -279,7 +299,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
-    <updated>2012-01-02T16:59:00-05:00</updated>
+    <updated>2012-01-02T16:59:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
@@ -381,7 +401,7 @@ include_recipe "greenscreen"
   <entry>
     <title type="html"><![CDATA[Vagrant and VBoxManage import]]></title>
     <link href="http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import/"/>
-    <updated>2010-12-27T19:25:00-05:00</updated>
+    <updated>2010-12-27T19:25:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import</id>
     <content type="html"><![CDATA[<p>I've recently started using <a href="http://vagrantup.com/">Vagrant</a> for building local VMs with VirtualBox. It's a great way to test out my <a href="http://www.opscode.com/chef">Chef</a> cookbooks.</p>
 

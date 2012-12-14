@@ -4,7 +4,7 @@
   <title><![CDATA[Category: RubyNation2012 | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/rubynation2012/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[The Joy of Cooking - Whip Up a Rails Environment with Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/"/>
-    <updated>2012-05-25T14:59:00-04:00</updated>
+    <updated>2012-05-25T14:59:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef</id>
     <content type="html"><![CDATA[<p>You've heard of Chef, Puppet, and other frameworks that can help you build out your infrastructure. You've been meaning to play around with one or more of them for some time now. Now's your chance; Start cooking up on your own servers!</p>
 

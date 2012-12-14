@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sysadmin | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/sysadmin/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -14,9 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-08:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
+
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-05:00</updated>
+    <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
@@ -120,7 +140,7 @@ end
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
+    <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
@@ -279,7 +299,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[5 Things You Always Wanted to Know About Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/"/>
-    <updated>2012-05-26T21:51:00-04:00</updated>
+    <updated>2012-05-26T21:51:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef</id>
     <content type="html"><![CDATA[<p>When I first started working with Chef, there were a couple of areas that I knew were going to be really awesome and helpful but I wasn't sure how to get started with them.  In this presentation, I'll provide a quick introduction to five things you've always wanted to know about Chef but were afraid to ask.</p>
 
@@ -334,7 +354,7 @@ end
   <entry>
     <title type="html"><![CDATA[The Joy of Cooking - Whip Up a Rails Environment with Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/"/>
-    <updated>2012-05-25T14:59:00-04:00</updated>
+    <updated>2012-05-25T14:59:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef</id>
     <content type="html"><![CDATA[<p>You've heard of Chef, Puppet, and other frameworks that can help you build out your infrastructure. You've been meaning to play around with one or more of them for some time now. Now's your chance; Start cooking up on your own servers!</p>
 
@@ -366,33 +386,6 @@ end
 <hr />
 
 <p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/">CustomInk Technology blog</a>.</sub></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Taming the Kraken - How Operations enables developer productivity]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/"/>
-    <updated>2012-05-25T14:31:00-04:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity</id>
-    <content type="html"><![CDATA[<p>At <a href="http://railsconf2012.com/">RailsConf 2012</a>, I gave a presentation on how the <a href="http://www.customink.com">CustomInk</a> web operations team enables developer productivity.</p>
-
-<p>There's always a bit of tension when getting features from idea to production. In this talk, I describe some of the changes CustomInk has made to reduce this friction and keep the new features coming. Gone are the days of bi-monthly deploys, office pools dedicated to guessing when this deploy will be rolled back, and the ceremony surrounding the deploy-rollback-fix-deploy cycle. Today, ideas flow from product managers to developers to production with ease thanks to a number of changes that we've made to our teams, processes and tools.</p>
-
-<p>Presenting at RailsConf was a really enjoyable experience and the presentation was well received.  There were lots of questions from the audience after the presentation.  Unfortunately, the Q &amp; A section was not captured in the video.  I'd really appreciate any questions or feedback you have, just drop a comment below.</p>
-
-<h3>Video</h3>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/5vzNzQzmAk0" frameborder="0" allowfullscreen></iframe>
-
-
-<h3>Slides</h3>
-
-<script async class="speakerdeck-embed" data-id="4f96da12947c45001f018683" data-ratio="1.2945638432364097" src="http://www.nathenharvey.com//speakerdeck.com/assets/embed.js"></script>
-
-
-<hr />
-
-<p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/">CustomInk Technology blog</a>.</sub></p>
 ]]></content>
   </entry>
   

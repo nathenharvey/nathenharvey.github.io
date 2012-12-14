@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chef | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/chef/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-07T14:16:45-05:00</updated>
+  <updated>2012-12-14T12:46:18-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -14,9 +14,29 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-08:00</updated>
+    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
+
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-05:00</updated>
+    <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
@@ -120,7 +140,7 @@ end
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
+    <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
@@ -279,7 +299,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
-    <updated>2012-07-06T21:26:00-04:00</updated>
+    <updated>2012-07-06T21:26:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 
@@ -488,7 +508,7 @@ gem 'chef', '~> 10.12.0'
   <entry>
     <title type="html"><![CDATA[MVT:  Foodcritic and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
-    <updated>2012-05-29T22:30:00-04:00</updated>
+    <updated>2012-05-29T22:30:00-07:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
     <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It's becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I'll look at a "minimum viable testing" (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
 
@@ -657,61 +677,6 @@ end</p>
 <h3>Next Post</h3>
 
 <p>Be sure to read the next post on this topic:  <a href="http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[5 Things You Always Wanted to Know About Chef]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/"/>
-    <updated>2012-05-26T21:51:00-04:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef</id>
-    <content type="html"><![CDATA[<p>When I first started working with Chef, there were a couple of areas that I knew were going to be really awesome and helpful but I wasn't sure how to get started with them.  In this presentation, I'll provide a quick introduction to five things you've always wanted to know about Chef but were afraid to ask.</p>
-
-<p>I gave this presentation at <a href="http://chefconf.opscode.com">#ChefConf 2012</a>.</p>
-
-<p>Level-up your Chef skills by learning about these areas of Chef:</p>
-
-<ul>
-<li><strong>Attribute Precedence</strong> - Role, environment, cookbook, data bag? Which attribute value will be used in my chef run?</li>
-<li><strong>Encrypted Databags</strong> - Chef 0.10 brought us encrypted databags. We'll look at how to create and use databags and how to keep them up-to-date in your repository.</li>
-<li><strong>LWRP</strong> - What is a LWRP? How and why do you create one? We'll look at a couple of sample LWRPs and learn how to build a simple one.</li>
-<li><strong>Error Handlers</strong> - Demystify exception and report handlers by writing a simple one and seeing examples of how they work in the wild.</li>
-<li><strong>Capistrano and Chef</strong> - Take a quick look at why and how to integrate Chef search into your Capistrano configuration to make deploying your Rails apps even easier.</li>
-</ul>
-
-
-<p>One thing I didn't mention in the presentation was how to use the data from the encrypted data bag.  I've updated the slides to include this info but it doesn't appear in the video.  In any case, here's a quick demo of how you might use it:</p>
-
-<p>``` ruby
-creds = Chef::EncryptedDataBagItem.load("db", "creds")
-env_db_creds = db_creds[node["rails_env"]]</p>
-
-<p>template "#{app_dir}/shared/config/database.yml" do
-  source "database.yml.erb"
-  variables(</p>
-
-<pre><code>:rails_env =&gt; node["rails_env"],
-:username =&gt; env_db_creds["username"],
-:password =&gt; env_db_creds["password"]
-</code></pre>
-
-<p>  )
-end
-```</p>
-
-<h3>Video</h3>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/uREL4FFPddo" frameborder="0" allowfullscreen></iframe>
-
-
-<h3>Slides</h3>
-
-<script async class="speakerdeck-embed" data-id="4fb532f2850667001f0008f8" data-ratio="1.2945638432364097" src="http://www.nathenharvey.com//speakerdeck.com/assets/embed.js"></script>
-
-
-<hr />
-
-<p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/">CustomInk Technology blog</a>.</p>
 ]]></content>
   </entry>
   
