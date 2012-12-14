@@ -18,6 +18,12 @@ categories:
  - passenger
 ---
 
+## Learning Chef Series
+
+* [Part 1](http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/) - Introduce the project, configure workstation, and register a node with hosted Chef
+* [Part 2](http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/) - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node
+* [Part 3](http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/) - Start writing a cookbook to deploy our application
+
 Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.
 
 ## Review of Part 1
@@ -92,7 +98,7 @@ end
 
 ## What's Next
 
-Stay tuned for our next session where we'll start exploring [resources](http://docs.opscode.com/resource.html) and writing our own [cookbooks](http://docs.opscode.com/essentials_cookbooks.html).
+In [Learning Chef - Part 3](http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/) we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.
 
 In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to [@nathenharvey](https://twitter.com/nathenharvey) or [@mulpat](http://twitter.com/mulpat) on twitter.
 

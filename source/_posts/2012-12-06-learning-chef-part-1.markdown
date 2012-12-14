@@ -16,6 +16,13 @@ categories:
  - virtualbox
 ---
 
+## Learning Chef Series
+
+* [Part 1](http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/) - Introduce the project, configure workstation, and register a node with hosted Chef
+* [Part 2](http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/) - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node
+* [Part 3](http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/) - Start writing a cookbook to deploy our application
+
+
 In November of 2012, [Patrick Mulder](https://twitter.com/mulpat) posted a [request on the Chef mailing list](http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html).  He was 
 
 {% blockquote %}

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: devops | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/devops/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-14T12:46:18-08:00</updated>
+  <updated>2012-12-14T12:56:10-08:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -18,7 +18,16 @@
     <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
     <updated>2012-12-14T12:14:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
-    <content type="html"><![CDATA[<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+</ul>
+
+
+<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
 <p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
 
@@ -29,7 +38,11 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
 
 
+<h2>What's Next</h2>
 
+<p>In Learning Chef - Part 4 we will finish the deployment of the sample application and then start exploring roles.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
 ]]></content>
   </entry>
   
@@ -38,7 +51,16 @@
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
     <updated>2012-12-07T13:18:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
-    <content type="html"><![CDATA[<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+</ul>
+
+
+<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
 
 <h2>Review of Part 1</h2>
 
@@ -131,7 +153,7 @@ end
 
 <h2>What's Next</h2>
 
-<p>Stay tuned for our next session where we'll start exploring <a href="http://docs.opscode.com/resource.html">resources</a> and writing our own <a href="http://docs.opscode.com/essentials_cookbooks.html">cookbooks</a>.</p>
+<p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
 
 <p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
 ]]></content>
@@ -142,7 +164,16 @@ end
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
     <updated>2012-12-06T17:07:00-08:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
-    <content type="html"><![CDATA[<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+</ul>
+
+
+<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
 <p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
 
