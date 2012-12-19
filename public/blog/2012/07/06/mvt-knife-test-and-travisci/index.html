@@ -209,7 +209,7 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
-</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
 </span><span class='line'><span class="k">end</span>
@@ -241,13 +241,13 @@
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">language</span><span class="p">:</span> <span class="n">ruby</span>
-</span><span class='line'><span class="n">gemfile</span><span class="p">:</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">language</span><span class="p">:</span> <span class="n">ruby</span>
+</span><span class='line'><span class="ss">gemfile</span><span class="p">:</span>
 </span><span class='line'>   <span class="o">-</span> <span class="nb">test</span><span class="o">/</span><span class="n">support</span><span class="o">/</span><span class="no">Gemfile</span>
-</span><span class='line'><span class="n">rvm</span><span class="p">:</span>
+</span><span class='line'><span class="ss">rvm</span><span class="p">:</span>
 </span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">2</span>
 </span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
-</span><span class='line'><span class="n">script</span><span class="p">:</span>
+</span><span class='line'><span class="ss">script</span><span class="p">:</span>
 </span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">knife</span>
 </span></code></pre></td></tr></table></div></figure>
 
@@ -305,13 +305,13 @@
 <span class='line-number'>7</span>
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">language</span><span class="p">:</span> <span class="n">ruby</span>
-</span><span class='line'><span class="n">gemfile</span><span class="p">:</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">language</span><span class="p">:</span> <span class="n">ruby</span>
+</span><span class='line'><span class="ss">gemfile</span><span class="p">:</span>
 </span><span class='line'>   <span class="o">-</span> <span class="nb">test</span><span class="o">/</span><span class="n">support</span><span class="o">/</span><span class="no">Gemfile</span>
-</span><span class='line'><span class="n">rvm</span><span class="p">:</span>
+</span><span class='line'><span class="ss">rvm</span><span class="p">:</span>
 </span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">2</span>
 </span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
-</span><span class='line'><span class="n">script</span><span class="p">:</span>
+</span><span class='line'><span class="ss">script</span><span class="p">:</span>
 </span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">knife</span>
 </span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">foodcritic</span>
 </span></code></pre></td></tr></table></div></figure>
@@ -359,9 +359,9 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs foodcritic linter&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:foodcritic</span> <span class="k">do</span>
-</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="k">if</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="ss">Gem</span><span class="p">:</span><span class="ss">:Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="ss">Gem</span><span class="p">:</span><span class="ss">:Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">sh</span> <span class="s2">&quot;foodcritic -f any </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span class='line'>  <span class="k">else</span>
 </span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;WARN: foodcritic run is skipped as Ruby </span><span class="si">#{</span><span class="no">RUBY_VERSION</span><span class="si">}</span><span class="s2"> is &lt; 1.9.2.&quot;</span>
@@ -370,7 +370,7 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
-</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
 </span><span class='line'><span class="k">end</span>
@@ -481,6 +481,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a>
       </li>
     
@@ -494,10 +498,6 @@
     
       <li class="post">
         <a href="/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT:  Foodcritic and Travis CI</a>
       </li>
     
   </ul>

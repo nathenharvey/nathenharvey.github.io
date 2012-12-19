@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Learning Chef - Part 3"
-date: 2012-12-14 12:14
+title: "Learning Chef - Part 4"
+date: 2012-12-19 13:53
 comments: true
 categories: 
  - chef
@@ -24,11 +24,9 @@ categories:
 * [Part 3](http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/) - Start writing a cookbook to deploy our application
 * [Part 4](http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/) - Finish the application deploy, introduce roles
 
-Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.
+Part 4 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.
 
-In Part 3, we added a bunch of cookbooks from the community site including [git](http://ckbk.it/git), [application](http://ckbk.it/application), and [application_ruby](http://ckbk.it/application_ruby).  After adding these cookbooks, we created a cookbook of our own to deploy a [sample Rails application](https://github.com/mulderp/chef-demo).
-
-The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.
+In Part 4, we completed the application deploy and then looked at [roles](http://docs.opscode.com/essentials_roles.html).
 
 I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.
 
@@ -37,12 +35,11 @@ Also, you can grab the code from the following repositories on github:
 * [Chef Repository](http://github.com/mulderp/learning-chef)
 * [Rails Application](http://github.com/mulderp/chef-demo)
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fb4DJJmhUt8" frameborder="0" allowfullscreen></iframe>
 
 ## What's Next
 
-In [Learning Chef - Part 4](http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/) we finish the deployment of the sample application and then explore roles.
+In Learning Chef - Part 5 we will move the MongoDB to it's own VM.
 
 In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to [@nathenharvey](https://twitter.com/nathenharvey) or [@mulpat](http://twitter.com/mulpat) on twitter.
-
 

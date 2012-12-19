@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="Green Screen is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to &hellip;">
+  <meta name="description" content="In my previous post, I introduced Green Screen, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,71 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/01/02/deploying-green-screen/">Deploying Green Screen</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-02T16:59:00-05:00" pubdate data-updated="true">Jan 2<span>nd</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
+
+<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project&#8217;s <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you&#8217;ll need for doing so. In this post, I&#8217;ll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
+
+<h2>Deploying to Heroku</h2>
+
+<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You&#8217;ll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don&#8217;t yet have an account.</p>
+
+<p>Once you&#8217;ve got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
+
+<ol>
+<li><code>git clone git@github.com:customink/greenscreen.git</code></li>
+<li><code>cd greenscreen</code></li>
+<li><code>gem install heroku</code></li>
+<li><code>heroku create</code></li>
+<li><code>git push heroku master</code></li>
+<li><code>heroku open</code></li>
+</ol>
+
+
+<p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
+
+<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
+
+<p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/01/02/deploying-green-screen/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -591,56 +656,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Why We Chose Chef Over Puppet at CustomInk</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-21T03:29:00-05:00" pubdate data-updated="true">Nov 21<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
-
-<p>Before we get into any of the specifics, I want to make it clear that the &#8220;right&#8221; answer to this question is a simple, but emphatic &#8220;yes!&#8221; Yes, you should be using a tool that allows you to manage your infrastructure as code. That tool should NOT be a server.txt file that you keep on the machine that documents the installation, set-up, and configuration changes you&#8217;ve made. Moving that text to somewhere other than the local server is a step in the right direction but isn&#8217;t really the answer. Moving the server.txt file to your corporate wiki is going to suck just as bad.</p>
-
-<p>I think Mark Imbriaco summed it up quite nicely in 140 characters or less:</p>
-
-<blockquote><p>Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou</p><footer><strong>@markimbriaco</strong> <cite><a href='https://twitter.com/markimbriaco/statuses/89180299824599041'>twitter.com/markimbriaco/&hellip;</a></cite></footer></blockquote>
-
-
-<p>As you consider which tool is right for you, you&#8217;ll need to consider a number of questions. I think of these as the WIIFs, or &#8220;what&#8217;s in it for&#8230;&#8221; questions:</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -658,6 +673,10 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a>
       </li>
     
@@ -671,10 +690,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     
       <li class="post">
         <a href="/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT:  Foodcritic and Travis CI</a>
       </li>
     
   </ul>
