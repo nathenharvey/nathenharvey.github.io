@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby on rails | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-14T12:56:10-08:00</updated>
+  <updated>2012-12-19T11:42:24-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Why we chose Chef over Puppet at CustomInk]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
-    <updated>2011-11-21T03:29:00-08:00</updated>
+    <updated>2011-11-21T03:29:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
     <content type="html"><![CDATA[<p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
 
@@ -102,7 +102,7 @@
   <entry>
     <title type="html"><![CDATA[Testing mod_rewrite and apache redirects]]></title>
     <link href="http://www.nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/"/>
-    <updated>2010-07-16T09:00:00-07:00</updated>
+    <updated>2010-07-16T09:00:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects</id>
     <content type="html"><![CDATA[<p>At <a href="http://www.customink.com">CustomInk</a>, we recently migrated from mongrel to Passenger for our Ruby on Rails website. This migration included a full rewrite of our apache configuration files.</p>
 
@@ -125,7 +125,7 @@ should_redirect "/cink/ideas/ideas.jsp", :to =&gt; "/inspiration/"
   <entry>
     <title type="html"><![CDATA[Passenger and PHP]]></title>
     <link href="http://www.nathenharvey.com/blog/2010/06/11/passenger-and-php/"/>
-    <updated>2010-06-11T09:25:00-07:00</updated>
+    <updated>2010-06-11T09:25:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2010/06/11/passenger-and-php</id>
     <content type="html"><![CDATA[<p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn't working anymore.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: travisci | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/travisci/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-14T12:56:10-08:00</updated>
+  <updated>2012-12-19T11:42:24-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
-    <updated>2012-07-06T21:26:00-07:00</updated>
+    <updated>2012-07-06T21:26:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 
@@ -225,7 +225,7 @@ gem 'chef', '~> 10.12.0'
   <entry>
     <title type="html"><![CDATA[MVT:  Foodcritic and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
-    <updated>2012-05-29T22:30:00-07:00</updated>
+    <updated>2012-05-29T22:30:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
     <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It's becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I'll look at a "minimum viable testing" (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: virtualbox | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-14T12:56:10-08:00</updated>
+  <updated>2012-12-19T11:42:24-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-08:00</updated>
+    <updated>2012-12-06T17:07:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
@@ -184,7 +184,7 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
-    <updated>2012-01-02T16:59:00-08:00</updated>
+    <updated>2012-01-02T16:59:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
@@ -286,7 +286,7 @@ include_recipe "greenscreen"
   <entry>
     <title type="html"><![CDATA[Vagrant and VBoxManage import]]></title>
     <link href="http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import/"/>
-    <updated>2010-12-27T19:25:00-08:00</updated>
+    <updated>2010-12-27T19:25:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2010/12/27/vagrant-and-vboxmanage-import</id>
     <content type="html"><![CDATA[<p>I've recently started using <a href="http://vagrantup.com/">Vagrant</a> for building local VMs with VirtualBox. It's a great way to test out my <a href="http://www.opscode.com/chef">Chef</a> cookbooks.</p>
 

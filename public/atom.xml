@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-14T12:56:10-08:00</updated>
+  <updated>2012-12-19T11:42:24-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -16,7 +16,7 @@
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
-    <updated>2012-12-14T12:14:00-08:00</updated>
+    <updated>2012-12-14T12:14:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
@@ -49,7 +49,7 @@
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
-    <updated>2012-12-07T13:18:00-08:00</updated>
+    <updated>2012-12-07T13:18:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
@@ -69,14 +69,14 @@
 </ul>
 
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=35" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/E4ibkS1LbPk?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
 
 
 <h2>Discuss Chef Solo vs. Chef Server</h2>
 
 <p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don&#8217;t get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=344" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
 
 
 
@@ -110,7 +110,9 @@
 
 <p><code>knife cookbook upload COOKBOOK_NAME</code></p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=482" frameborder="0" allowfullscreen></iframe>
+<p>This video shows the process for grabbing the <code>omnibus_updater</code> cookbook off of the <a href="http://community.opscode.com">community site</a>.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
 
 
 <h2>Update the run list for our node</h2>
@@ -173,7 +175,7 @@
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-08:00</updated>
+    <updated>2012-12-06T17:07:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
@@ -355,7 +357,7 @@
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
-    <updated>2012-07-06T21:26:00-07:00</updated>
+    <updated>2012-07-06T21:26:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we&#8217;ll iterate on the &#8220;Minimum Viable Test&#8221; idea by adding in support for knife&#8217;s cookbook testing.</p>
 
@@ -666,7 +668,7 @@
   <entry>
     <title type="html"><![CDATA[MVT:  Foodcritic and Travis CI]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
-    <updated>2012-05-29T22:30:00-07:00</updated>
+    <updated>2012-05-29T22:30:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
     <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It&#8217;s becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I&#8217;ll look at a &#8220;minimum viable testing&#8221; (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
 
@@ -872,7 +874,7 @@
   <entry>
     <title type="html"><![CDATA[5 Things You Always Wanted to Know About Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/"/>
-    <updated>2012-05-26T21:51:00-07:00</updated>
+    <updated>2012-05-26T21:51:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef</id>
     <content type="html"><![CDATA[<p>When I first started working with Chef, there were a couple of areas that I knew were going to be really awesome and helpful but I wasn&#8217;t sure how to get started with them.  In this presentation, I&#8217;ll provide a quick introduction to five things you&#8217;ve always wanted to know about Chef but were afraid to ask.</p>
 
@@ -935,7 +937,7 @@
   <entry>
     <title type="html"><![CDATA[The Joy of Cooking - Whip Up a Rails Environment with Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/"/>
-    <updated>2012-05-25T14:59:00-07:00</updated>
+    <updated>2012-05-25T14:59:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef</id>
     <content type="html"><![CDATA[<p>You&#8217;ve heard of Chef, Puppet, and other frameworks that can help you build out your infrastructure. You&#8217;ve been meaning to play around with one or more of them for some time now. Now&#8217;s your chance; Start cooking up on your own servers!</p>
 
@@ -973,7 +975,7 @@
   <entry>
     <title type="html"><![CDATA[Taming the Kraken - How Operations enables developer productivity]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/"/>
-    <updated>2012-05-25T14:31:00-07:00</updated>
+    <updated>2012-05-25T14:31:00-04:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity</id>
     <content type="html"><![CDATA[<p>At <a href="http://railsconf2012.com/">RailsConf 2012</a>, I gave a presentation on how the <a href="http://www.customink.com">CustomInk</a> web operations team enables developer productivity.</p>
 
@@ -1000,7 +1002,7 @@
   <entry>
     <title type="html"><![CDATA[Collaborating with Chef]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef/"/>
-    <updated>2012-01-13T16:25:00-08:00</updated>
+    <updated>2012-01-13T16:25:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/13/collaborating-with-chef</id>
     <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
 
@@ -1046,7 +1048,7 @@
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
-    <updated>2012-01-02T16:59:00-08:00</updated>
+    <updated>2012-01-02T16:59:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
@@ -1182,7 +1184,7 @@
   <entry>
     <title type="html"><![CDATA[Green Screen]]></title>
     <link href="http://www.nathenharvey.com/blog/2012/01/02/green-screen/"/>
-    <updated>2012-01-02T14:17:00-08:00</updated>
+    <updated>2012-01-02T14:17:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2012/01/02/green-screen</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
@@ -1229,7 +1231,7 @@ We&#8217;ve also added support for controlling which builds are displayed from e
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/30/octopress/"/>
-    <updated>2011-12-30T00:42:00-08:00</updated>
+    <updated>2011-12-30T00:42:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/30/octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png" width="300" height="225" title="Octopress" alt="Octopress">
 I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I&#8217;ve found that the Octopress works best for my personal blog.</p>
@@ -1249,7 +1251,7 @@ I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogg
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/29/mongodb-community-awards/"/>
-    <updated>2011-12-29T23:54:00-08:00</updated>
+    <updated>2011-12-29T23:54:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/29/mongodb-community-awards</id>
     <content type="html"><![CDATA[<p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
 
@@ -1292,7 +1294,7 @@ I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogg
   <entry>
     <title type="html"><![CDATA[MongoSV]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/29/mongosv/"/>
-    <updated>2011-12-29T15:45:00-08:00</updated>
+    <updated>2011-12-29T15:45:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/29/mongosv</id>
     <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
 
@@ -1371,7 +1373,7 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   <entry>
     <title type="html"><![CDATA[MongoDB Masters]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/29/mongodb-masters/"/>
-    <updated>2011-12-29T13:46:00-08:00</updated>
+    <updated>2011-12-29T13:46:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/29/mongodb-masters</id>
     <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
 
@@ -1450,7 +1452,7 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   <entry>
     <title type="html"><![CDATA[Agenda Tips for a Tech User Group]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/"/>
-    <updated>2011-12-13T19:53:00-08:00</updated>
+    <updated>2011-12-13T19:53:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">previous post</a>, I gave some <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a>. In this post, I&#8217;ll focus on the actual meeting format we typically use for our <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a>. You may find that this format works well for any technical user group.</p>
 
@@ -1512,7 +1514,7 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   <entry>
     <title type="html"><![CDATA[Tips for Hosting a Tech User Group]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
-    <updated>2011-12-13T19:24:00-08:00</updated>
+    <updated>2011-12-13T19:24:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
     <content type="html"><![CDATA[<p>In January of 2011, I started hosting a <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">monthly MongoDB meetup</a>. My employer, <a href="http://www.customink.com/">CustomInk</a>, was looking for ways to become better known in the local DC technology market. We were also just getting started with our initial production deployment of MonogoDB. Having engineers from the area come to our office, get to know CustomInk, and share their experiences with using MongoDB was a great opportunity!</p>
 
@@ -1576,7 +1578,7 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   <entry>
     <title type="html"><![CDATA[Brine your turkey!]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/11/21/brine-your-turkey/"/>
-    <updated>2011-11-21T04:48:00-08:00</updated>
+    <updated>2011-11-21T04:48:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/11/21/brine-your-turkey</id>
     <content type="html"><![CDATA[<p>It&#8217;s Thanksgiving week. That means it&#8217;s time to start prepping your turkey.</p>
 
@@ -1649,7 +1651,7 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   <entry>
     <title type="html"><![CDATA[I'm Speaking at MongoSV]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/11/21/im-speaking-at-mongosv/"/>
-    <updated>2011-11-21T03:57:00-08:00</updated>
+    <updated>2011-11-21T03:57:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/11/21/im-speaking-at-mongosv</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png" width="320" height="156" title="MongoSV" alt="MongoSV"></p>
 
@@ -1679,7 +1681,7 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   <entry>
     <title type="html"><![CDATA[Why we chose Chef over Puppet at CustomInk]]></title>
     <link href="http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
-    <updated>2011-11-21T03:29:00-08:00</updated>
+    <updated>2011-11-21T03:29:00-05:00</updated>
     <id>http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
     <content type="html"><![CDATA[<p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
 
