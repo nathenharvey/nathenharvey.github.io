@@ -69,7 +69,12 @@ This video shows the process for grabbing the `omnibus_updater` cookbook off of 
 
 There are a number of ways to update a node's run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.
 
-In our session, we used [the management interface](http://www.youtube.com/watch?v=K_S-yxKfYek&t=18m47s) and `knife node edit` there's an even easier way with knife though:
+In our session, we first used the Opscode Chef management interface.
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Q0BgCLSqJJU" frameborder="0" allowfullscreen></iframe>
+
+
+`knife node edit` there's an even easier way with knife though:
 
 `knife node run_list add NODE_NAME RUN_LIST_ITEM` which we would have done as `knife node run_list add patrick_vm "recipe[passenger_apache2]"`
 
