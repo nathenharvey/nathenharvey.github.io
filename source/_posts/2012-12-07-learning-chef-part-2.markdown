@@ -30,12 +30,12 @@ Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was strea
 
 * [Read the blog post for Part 1](http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/)
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/E4ibkS1LbPk?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/E4ibkS1LbPk" frameborder="0" allowfullscreen></iframe>
 
 ## Discuss Chef Solo vs. Chef Server
 Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don't get when using Chef Solo.  Check the [Chef Solo page on the wiki](http://wiki.opscode.com/display/chef/Chef+Solo) for more information.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24" frameborder="0" allowfullscreen></iframe>
 
 <!-- more --> 
 
@@ -61,7 +61,8 @@ Finally, upload each cookbook to the Hosted Chef server:
 `knife cookbook upload COOKBOOK_NAME`
 
 This video shows the process for grabbing the `omnibus_updater` cookbook off of the [community site](http://community.opscode.com).
-<iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs?list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
 
 ## Update the run list for our node
 
