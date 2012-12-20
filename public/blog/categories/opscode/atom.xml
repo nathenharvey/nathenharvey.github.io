@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opscode | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opscode/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-19T18:18:19-05:00</updated>
+  <updated>2012-12-20T09:20:44-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -143,6 +143,7 @@
 <p>Here are the commands we ran to download each cookbook:</p>
 
 <ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download apache2</code></li>
 <li><code>knife cookbook site download apt</code></li>
 <li><code>knife cookbook site download build-essentials</code></li>
@@ -162,7 +163,29 @@
 
 <p>This video shows the process for grabbing the <code>omnibus_updater</code> cookbook off of the <a href="http://community.opscode.com">community site</a>.</p>
 
+<ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>tar xzvf omnibus_updater-0.0.5.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload omnibus_updater</code></li>
+</ol>
+
+
 <iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This video shows the process for grabbing the <code>mongodb</code> cookbook, and it's dependency, the <code>apt</code> cookbook, off of the community site.</p>
+
+<ol>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>tar xzvf mongodb-0.11.0.tar.gz -C cookbooks</code></li>
+<li><code>tar xzvf apt-1.5.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload apt</code></li>
+<li><code>knife cookbook upload mongodb</code></li>
+</ol>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/wyLtF261a6A" frameborder="0" allowfullscreen></iframe>
 
 
 <h2>Update the run list for our node</h2>

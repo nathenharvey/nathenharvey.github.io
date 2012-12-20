@@ -46,6 +46,7 @@ Now that we've got our Vagrant instance connected to Chef Server we can start ma
 
 Here are the commands we ran to download each cookbook:
 
+1. `knife cookbook site download omnibus_updater`
 1. `knife cookbook site download apache2`
 1. `knife cookbook site download apt`
 1. `knife cookbook site download build-essentials`
@@ -63,7 +64,22 @@ Finally, upload each cookbook to the Hosted Chef server:
 
 This video shows the process for grabbing the `omnibus_updater` cookbook off of the [community site](http://community.opscode.com).
 
+1. `knife cookbook site download omnibus_updater`
+1. `tar xzvf omnibus_updater-0.0.5.tar.gz -C cookbooks`
+1. `knife cookbook upload omnibus_updater`
+
 <iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
+
+This video shows the process for grabbing the `mongodb` cookbook, and it's dependency, the `apt` cookbook, off of the community site.
+
+1. `knife cookbook site download mongodb`
+1. `knife cookbook site download apt`
+1. `tar xzvf mongodb-0.11.0.tar.gz -C cookbooks`
+1. `tar xzvf apt-1.5.0.tar.gz -C cookbooks`
+1. `knife cookbook upload apt`
+1. `knife cookbook upload mongodb`
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/wyLtF261a6A" frameborder="0" allowfullscreen></iframe>
 
 ## Update the run list for our node
 
