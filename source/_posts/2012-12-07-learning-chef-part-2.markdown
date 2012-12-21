@@ -89,19 +89,43 @@ In our session, we first used the Opscode Chef management interface.
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/Q0BgCLSqJJU" frameborder="0" allowfullscreen></iframe>
 
+You can also update your node's run list using knife.  In this video, we'll use knife to add mongodb to the node's run list.
 
-`knife node edit` there's an even easier way with knife though:
+1. `export EDITOR=vim` - knife uses the `EDITOR` environment variable to determine which application to launch when you edit the node.
+1. Add `"recipe[mongodb]"` to the `run_list`
+1. Run `chef-client` on the node using the `vagrant provision` command.
 
-`knife node run_list add NODE_NAME RUN_LIST_ITEM` which we would have done as `knife node run_list add patrick_vm "recipe[passenger_apache2]"`
+<iframe width="420" height="315" src="http://www.youtube.com/embed/5xU3A-SvdJc" frameborder="0" allowfullscreen></iframe>
 
-Once our run list has been updated, we run `vagrant provision` to execute chef-client on our VM.
+We'll follow the same steps to add `passenger_apache2` to our run list.
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=1885" frameborder="0" allowfullscreen></iframe>
+1. `knife cookbook site download passenger_apache2`
+1. `tar xzvf passenger_apache2-1.0.0.tar.gz -C cookbooks`
+1. `knife cookbook site download apache2`
+1. `tar xzvf apache2-1.3.2.tar.gz -C cookbooks`
+1. `knife cookbook upload apache2`
+1. `knife cookbook site download build-essential`
+1. `tar xzvf build-essential-1.2.0.tar.gz -C cookbooks`
+1. `knife cookbook upload build-essential`
+1. `knife cookbook upload passenger_apache2`
 
+We will then add `passenger_apache2` to the run list using `knife node edit patrick_vm`.  When we run `vagrant provision`, we'll hit an error that requires us to add `apt` to the run list prior to `passenger_apache2`.  
+
+By the end of this video, the run list should look like:
+
+```
+"run_list" : [
+    "recipe[apt]",
+    "recipe[omnibus_updater]",
+    "recipe[mongodb]",
+    "recipe[passenger_apache2]"
+]
+```
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0-Bid-eiJHY" frameborder="0" allowfullscreen></iframe>
 
 ## Add port forwarding to the Vagrant instance
 
-Finally, we updated our Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding `config.vm.forward_port 80, 8080` to our Vagrantfile.  Here's the full Vagrantfile:
+Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding `config.vm.forward_port 80, 8080` to our Vagrantfile.  Here's the full Vagrantfile:
 
 ``` ruby Vagrantfile
 Vagrant::Config.run do |config|
@@ -117,8 +141,22 @@ Vagrant::Config.run do |config|
   end
 end
 ```
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ag0w_IqkgBI" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/K_S-yxKfYek?start=3078" frameborder="0" allowfullscreen></iframe>
+## Summarizing Part 2
+
+We now have the following in place:
+
+* A node managed by Chef - our Vagrant VM
+* The latest version of Chef (10.16.2) is running on the node
+* Six cookbooks added to our local workstation
+* Six cookbooks added to our Hosted Chef organization
+* The run list for our node was updated
+* The node has a working MongoDB database running
+* The node has Apache and Passenger running
+* Port Forwarding is configured on the Vagrant VM
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/7Cxfv40w7wQ" frameborder="0" allowfullscreen></iframe>
 
 ## What's Next
 
