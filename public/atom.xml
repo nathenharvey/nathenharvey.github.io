@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2012-12-21T01:48:16-05:00</updated>
+  <updated>2013-01-07T23:26:01-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Engine Yard DevOps Innovator]]></title>
+    <link href="http://www.nathenharvey.com/blog/2013/01/07/ey-devops-innovator/"/>
+    <updated>2013-01-07T07:00:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2013/01/07/ey-devops-innovator</id>
+    <content type="html"><![CDATA[<p>Last week Engine Yard announced the winners of their inaugural <a href="https://blog.engineyard.com/2013/engine-yard-innovators-awards/">Engine Yard Innovators Awards</a>.</p>
+
+<p>I was both honored and surprised when I learned that I had been chosen as the Engine Yard Innovator in the DevOps category.</p>
+
+<blockquote><p>Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his &#8220;Rails With Chef&#8221; proficiency. He works to help others understand the importance of backend compatibility.</p></blockquote>
+
+
+<p>I was asked to write a <a href="https://blog.engineyard.com/2013/devops-innovation/">post about some of the work I&#8217;ve done</a>. This seemed like a good time to reflect on some of the work I&#8217;ve been doing for the past few years.</p>
+
+<p>In late 2009, I joined <a href="http://www.customink.com">CustomInk</a> to head up the Web Operations team.  While there, I was able to help drive the adoption of many DevOps practices including automation, continuous delivery, collaboration across teams, expanded responsibility, and participation in open source communities.</p>
+
+<!-- more -->
+
+
+<p>At CustomInk, we transformed our infrastructure from one that was primarily hand-crafted, static, and managed by a few people to one that is flexible, automatically provisioned, and managed by many.  We changed the way we deployed software going from two deploys a month to multiple deploys each day. Developers were no longer stuck waiting for the Operations team to deploy code; the Operations team no longer played the role of &#8220;merge monkey.&#8221; We redefined what it meant for a developer to be &#8220;done&#8221; with a bit of functionality:  no longer was a commit to the master branch sufficient, the functionality wasn&#8217;t &#8220;done&#8221; until it was in production.</p>
+
+<p>What were the results of these changes?  We increased the number of deploys while dramatically reducing the number of rollbacks.  We reduced the amount of time it took features to go from planning to production with a goal of minimizing the amount of work in progress at any given time.  Developers and Operations collaborated on more projects each helping the other improve their skills, techniques, and processes.  Our addiction to automation allowed us to deliver more value to our customers faster than ever before.</p>
+
+<p>Many things enabled us to make such dramatic changes in our organization.  One of the most important catalysts for these changes was the things we were learning from others in the technical community.  We took ideas from other companies like <a href="http://codeascraft.etsy.com/">Etsy</a> and modified them to fit our needs.  We learned about new tools and techniques from blog posts, podcasts, and conferences.  We took time to learn and expirement with new tools, technologies, and techniques.  We felt it was important to give back to the community.</p>
+
+<p>I helped launch <a href="http://technology.customink.com/">EngineerInk</a>, the CustomInk Technology Blog and <a href="https://twitter.com/custominktech">@custominktech</a>, the twitter account for sharing CustomInk&#8217;s technology news.  Additionally, I co-founded the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOpsDC</a>.  Both of these groups meet regularly to exchange ideas, share knowledge, and network.  We are also known to enjoy a craft beer or two at each meeting.</p>
+
+<p>I&#8217;ve been lucky enough to share some of our successes at various conferences including <a href="http://www.confreaks.com/videos/882-railsconf2012-taming-the-kraken-how-operations-enables-developer-productivity">RailsConf</a>.</p>
+
+<p>The transformation, sharing, and success we enjoyed at CustomInk would not have been possible were it not for the attitude, dedication, and drive of the people involved.  When it comes to technology though, the one tool that most directly enabled these changes is Chef, the configuration management framework from Opscode.  I&#8217;ve written about our <a href="http://technology.customink.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">decision to use Chef</a> and quite a few <a href="http://technology.customink.com/blog/our-team/nathen-harvey.html">other articles</a> about Chef on EngineerInk.  Sure, Chef is a great and very powerful tool but there&#8217;s really a lot more to Chef than a bunch of Ruby code.</p>
+
+<p>When I first started working with Chef, it reminded me of Rails when I first stated using it back in 2007.  Here was a framework built around a strong, vibrant, and welcoming community.  There were lots of building blocks (cookbooks, knife plugins, etc.) being developed and shared.  Chef, like Ruby, felt dedicated to developer happiness.  The best days at the office were those where I spent the majority of my time automating with Chef.  In early 2012, I joined <a href="http://twitter.com/bryanwb">Bryan Berry</a> on his <a href="http://foodfightshow.org">Food Fight Show</a> podcast to share news of newly published <a href="http://community.opscode.com/cookbooks">Chef Cookbooks</a> - the &#8220;What&#8217;s Cookin&#8217;&#8221; report. I&#8217;ve since joined the show as a co-host and have been fortunate enough to interview some of the thought leaders in the DevOps movement.  I&#8217;ve also had the opportunity to speak about Chef at a number of conferences including <a href="http://technology.customink.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/">RubyNation</a>, <a href="http://www.10gen.com/presentations?application=All&amp;programming_lang=All&amp;speaker=1120&amp;event=&amp;language=All">MongoDB Conferences</a>, and <a href="http://www.youtube.com/watch?v=uREL4FFPddo">#ChefConf</a>.</p>
+
+<p>In August, 2012, I left CustomInk to work as a Technical Community Manager at Opscode.  This allows me to devote even more time evangelizing Chef and <a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">helping people learn Chef</a>.</p>
+
+<p>DevOps is not about tool choices and Chef isn&#8217;t required to adopt DevOps practices in your organization.  However, DevOps does require passionate individuals who are excited to tackle tough challenges and enjoy working with technology, their colleagues, and the larger technical and business communities.  For me, Chef is a tool and a community that make me happy, keep me passionate about the work I&#8217;m doing, and encourage me to share with others.</p>
+
+<p>I would like to thank the entire team at Engine Yard for their continued support of the Ruby, PHP, Open Source, and DevOps communities.  I truly am humbled to be selected as the DevOps Innovator.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
@@ -1780,36 +1821,6 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
 <p>Cook the turkey as you normally would. I like to start it breast side down for the first 30 minutes at a higher temperature (475&ordm; - 500&ordm;) then flip it over and reduce the heat to 350&ordm; for the remainder. If possible, use a <a href="http://www.williams-sonoma.com/products/digital-voice-alert-thermometer/?pkey=x%7C4%7C1%7C%7C4%7Cmeat%20thermometer%7C%7C0&amp;cm_src=OLDLINK">leave-in thermometer</a> so that you don&#8217;t have to continually open the oven to check the temperature of the turkey.</p>
 
 <p>Once the turkey is done cooking, be sure to let it rest at least 20 minutes before carving.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I'm Speaking at MongoSV]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/11/21/im-speaking-at-mongosv/"/>
-    <updated>2011-11-21T03:57:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/11/21/im-speaking-at-mongosv</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png" width="320" height="156" title="MongoSV" alt="MongoSV"></p>
-
-<p><a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a> is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p>
-
-<p>I&#8217;m one of the MongoDB users who will be speaking at the conference. The title of my talk is &#8221;<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>&#8221;</p>
-
-<p>In this talk I&#8217;ll detail some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we&#8217;re using it in production today, lessons learned, and some of our future plans. The talk will also describe some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. During this talk I&#8217;ll also describe <a href="http://www.customink.com">CustomInk</a>&#8217;s involvement in the MongoDB community.</p>
-
-<p>Since January, CustomInk has been hosting the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group">Washington DC MongoDB Users Group</a>. I&#8217;ll share some of my experience with, tips for, and lessons learned growing a monthly user group.</p>
-
-<p>The talk will be a refreshed and expanded version of the presentation I gave at <a href="http://www.10gen.com/events/mongodc-2011">MongoDC</a> back in June. You can find <a href="http://speakerrate.com/events/985-mongodc">slides and reviews from MongoDC on SpeakerRate</a>.</p>
-
-<p><a href="http://www.10gen.com/">10gen</a> does a great job with these conferences. They&#8217;re always packed full of great information and you&#8217;ll get to meets lots of people from the community. MongoSV is the largest of these one-day conferences that 10gen organizes. This year, the conference also includes the <a href="https://docs.google.com/spreadsheet/viewform?formkey=dGNvYzNpY3BTMHFrZWRVLVpuTktoSmc6MQ">MongoDB Community Awards</a> where you can nominate someone in three different categories:</p>
-
-<ul>
-<li>Innovative Application</li>
-<li>Community Champion</li>
-<li>Contributor</li>
-</ul>
-
-
-<p>If you&#8217;re in Santa Clara on December 9th, or need a reason to be, be sure to stop by MongoSV. I have a discount code I can share with you to lower the cost of admission significantly, just let me know if you&#8217;re interested.</p>
 ]]></content>
   </entry>
   

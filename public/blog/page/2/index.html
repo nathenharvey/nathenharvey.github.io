@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="In my previous post, I introduced Green Screen, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work &hellip;">
+  <meta name="description" content="This week at CustomInk, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,6 +79,79 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/01/13/collaborating-with-chef/">Collaborating With Chef</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-13T16:25:00-05:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
+
+<p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren&#8217;t important but let&#8217;s look at how we worked together to implement the changes.</p>
+
+<h2>Before Chef</h2>
+
+<p>In the past, here&#8217;s how the changes likely would have been implemented.</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer asks the ops team to make the change</li>
+<li>Ops makes the update using the appropriate tools</li>
+</ol>
+
+
+<p>OR</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer considers asking the ops team to make the change but thinks better of it</li>
+<li>Developer makes the change manually, Ops doesn&#8217;t know, Ops can no longer provision a new server properly.</li>
+</ol>
+
+
+<h2>With Chef</h2>
+
+<p>We&#8217;ve been using Chef for some time and have just started asking our developers to help maintain their own apps. This week, two applications needed to know about some additional external services. This required a simple update to a YAML file in each application. In both cases, I asked the developers to clone our chef repo, make the changes they needed, and submit a pull request.</p>
+
+<p>In one instance, the simple services.yml turned into a pull request with updates to a number of nagios nrpe checks that we&#8217;re running. Something that the developer didn&#8217;t ask for originally but took the initiative to add while in the code.</p>
+
+<p>Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> and <a href="http://twitter.com/jmorton">@jmorton</a> for taking their first steps into Chef.</p>
+
+<p>Is this a huge accomplishment? No.  But it is a great first step.</p>
+
+<blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote>
+
+
+<p>We&#8217;ve always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian&#8217;s saying, I&#8217;m not sure everyone doing everything makes sense. We&#8217;re one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that&#8217;s a WIN!</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -599,63 +672,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/11/21/im-speaking-at-mongosv/">I&#8217;m Speaking at MongoSV</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-11-21T03:57:00-05:00" pubdate data-updated="true">Nov 21<span>st</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png" width="320" height="156" title="MongoSV" alt="MongoSV"></p>
-
-<p><a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a> is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p>
-
-<p>I&#8217;m one of the MongoDB users who will be speaking at the conference. The title of my talk is &#8221;<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>&#8221;</p>
-
-<p>In this talk I&#8217;ll detail some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we&#8217;re using it in production today, lessons learned, and some of our future plans. The talk will also describe some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. During this talk I&#8217;ll also describe <a href="http://www.customink.com">CustomInk</a>&#8217;s involvement in the MongoDB community.</p>
-
-<p>Since January, CustomInk has been hosting the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group">Washington DC MongoDB Users Group</a>. I&#8217;ll share some of my experience with, tips for, and lessons learned growing a monthly user group.</p>
-
-<p>The talk will be a refreshed and expanded version of the presentation I gave at <a href="http://www.10gen.com/events/mongodc-2011">MongoDC</a> back in June. You can find <a href="http://speakerrate.com/events/985-mongodc">slides and reviews from MongoDC on SpeakerRate</a>.</p>
-
-<p><a href="http://www.10gen.com/">10gen</a> does a great job with these conferences. They&#8217;re always packed full of great information and you&#8217;ll get to meets lots of people from the community. MongoSV is the largest of these one-day conferences that 10gen organizes. This year, the conference also includes the <a href="https://docs.google.com/spreadsheet/viewform?formkey=dGNvYzNpY3BTMHFrZWRVLVpuTktoSmc6MQ">MongoDB Community Awards</a> where you can nominate someone in three different categories:</p>
-
-<ul>
-<li>Innovative Application</li>
-<li>Community Champion</li>
-<li>Contributor</li>
-</ul>
-
-
-<p>If you&#8217;re in Santa Clara on December 9th, or need a reason to be, be sure to stop by MongoSV. I have a discount code I can share with you to lower the cost of admission significantly, just let me know if you&#8217;re interested.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -673,6 +689,10 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a>
       </li>
     
@@ -686,10 +706,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     
       <li class="post">
         <a href="/blog/2012/12/06/learning-chef-part-1/">Learning Chef - Part 1</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a>
       </li>
     
   </ul>
@@ -751,7 +767,7 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2012 - Nathen Harvey -
+  Copyright &copy; 2013 - Nathen Harvey -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
