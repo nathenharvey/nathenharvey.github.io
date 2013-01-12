@@ -49,7 +49,7 @@ Here are the commands we ran to download each cookbook:
 1. `knife cookbook site download omnibus_updater`
 1. `knife cookbook site download apache2`
 1. `knife cookbook site download apt`
-1. `knife cookbook site download build-essentials`
+1. `knife cookbook site download build-essential`
 1. `knife cookbook site download mongodb`
 1. `knife cookbook site download omnibus_updater`
 1. `knife cookbook site download passenger_apache2`

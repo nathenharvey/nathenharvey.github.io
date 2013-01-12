@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opschef | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/opschef/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-01-07T23:26:01-05:00</updated>
+  <updated>2013-01-12T16:17:15-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -146,7 +146,7 @@
 <li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download apache2</code></li>
 <li><code>knife cookbook site download apt</code></li>
-<li><code>knife cookbook site download build-essentials</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
 <li><code>knife cookbook site download mongodb</code></li>
 <li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download passenger_apache2</code></li>

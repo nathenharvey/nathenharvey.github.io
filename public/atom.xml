@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-01-07T23:26:01-05:00</updated>
+  <updated>2013-01-12T16:17:15-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -25,7 +25,7 @@
 <blockquote><p>Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his &#8220;Rails With Chef&#8221; proficiency. He works to help others understand the importance of backend compatibility.</p></blockquote>
 
 
-<p>I was asked to write a <a href="https://blog.engineyard.com/2013/devops-innovation/">post about some of the work I&#8217;ve done</a>. This seemed like a good time to reflect on some of the work I&#8217;ve been doing for the past few years.</p>
+<p>I was asked to write a <a href="https://blog.engineyard.com/2013/devops-innovation/">post about some my work</a>. This seemed like a good time to reflect on some of the work I&#8217;ve been doing for the past few years.</p>
 
 <p>In late 2009, I joined <a href="http://www.customink.com">CustomInk</a> to head up the Web Operations team.  While there, I was able to help drive the adoption of many DevOps practices including automation, continuous delivery, collaboration across teams, expanded responsibility, and participation in open source communities.</p>
 
@@ -187,7 +187,7 @@
 <li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download apache2</code></li>
 <li><code>knife cookbook site download apt</code></li>
-<li><code>knife cookbook site download build-essentials</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
 <li><code>knife cookbook site download mongodb</code></li>
 <li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download passenger_apache2</code></li>
