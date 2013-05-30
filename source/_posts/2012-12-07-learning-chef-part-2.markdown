@@ -51,7 +51,6 @@ Here are the commands we ran to download each cookbook:
 1. `knife cookbook site download apt`
 1. `knife cookbook site download build-essential`
 1. `knife cookbook site download mongodb`
-1. `knife cookbook site download omnibus_updater`
 1. `knife cookbook site download passenger_apache2`
 
 After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:
