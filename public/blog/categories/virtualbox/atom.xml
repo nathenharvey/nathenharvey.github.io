@@ -4,7 +4,7 @@
   <title><![CDATA[Category: virtualbox | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-01-12T16:17:15-05:00</updated>
+  <updated>2013-08-13T08:41:51-04:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -157,6 +157,9 @@ chef.node_name = "patrick_vm"
 end
 ```
 Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
+
 
 <h2>Checkpoint</h2>
 

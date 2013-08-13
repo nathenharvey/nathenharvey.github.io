@@ -4,7 +4,7 @@
   <title><![CDATA[Category: devops | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/devops/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-01-12T16:17:15-05:00</updated>
+  <updated>2013-08-13T08:41:51-04:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -148,7 +148,6 @@
 <li><code>knife cookbook site download apt</code></li>
 <li><code>knife cookbook site download build-essential</code></li>
 <li><code>knife cookbook site download mongodb</code></li>
-<li><code>knife cookbook site download omnibus_updater</code></li>
 <li><code>knife cookbook site download passenger_apache2</code></li>
 </ol>
 
@@ -439,6 +438,9 @@ chef.node_name = "patrick_vm"
 end
 ```
 Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
+
 
 <h2>Checkpoint</h2>
 
