@@ -134,6 +134,8 @@ end
 ```
 Be sure to check [the Vagrant website](http://vagrantup.com) for more information about Vagrant.
 
+<iframe width="560" height="315" src="//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
+
 
 ## Checkpoint
 
