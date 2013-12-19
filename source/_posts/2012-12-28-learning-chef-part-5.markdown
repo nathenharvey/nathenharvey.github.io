@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learning Chef - Part 5"
-date: 2013-12-19 12:52
+date: 2012-12-28 12:52
 comments: true
 categories: 
  - chef
