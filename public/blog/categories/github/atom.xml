@@ -4,7 +4,7 @@
   <title><![CDATA[Category: github | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/github/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-12-19T12:50:46-05:00</updated>
+  <updated>2013-12-19T12:59:19-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 6]]></title>
+    <link href="http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-6/"/>
+    <updated>2013-12-19T12:52:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-6</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 5]]></title>
+    <link href="http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-5/"/>
+    <updated>2013-12-19T12:52:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-5</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
@@ -25,6 +69,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -65,6 +111,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -107,6 +155,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -291,280 +341,6 @@ end
 <p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
 
 <p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1/"/>
-    <updated>2012-12-06T17:07:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/12/06/learning-chef-part-1</id>
-    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
-
-<ul>
-<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
-<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
-<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
-<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
-</ul>
-
-
-<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
-
-<p><blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote></p>
-
-<p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
-
-<p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
-
-<p>You can <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">watch all of the videos in the YouTube playlist</a> or keep reading and watch each video in turn.</p>
-
-<h2>Introduction</h2>
-
-<p>In this video we introduce ourselves and the project.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-<!-- more -->
-
-
-<h2>Overview of Chef</h2>
-
-<p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8" frameborder="0" allowfullscreen></iframe>
-
-
-<p>For our project the Chef Workstation will be Patrick's laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
-
-<h2>Register for Hosted Chef</h2>
-
-<p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>Invite Another User to Your Chef Organization</h2>
-
-<p>If you're not the only one managing your infrastructure, you'll want to invite you co-workers to join your Chef Organization.  Watch this video to see how to invite another user to join your Chef Organization.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>Initialize a git Repository</h2>
-
-<p>When managing your infrastructure as code, you'll want to store that code in some source code repository.  For this tutorial, we're going to use <a href="http://git-scm.com/">git</a>, a distributed version control system.  The git repository will be publicly hosted on <a href="https://github.com/mulderp/learning-chef">github</a>.</p>
-
-<p>Your workstation will need to have Chef installed.  We verify that Patrick has already installed Chef but if you haven't installed Chef on your workstation yet, you can grab it from <a href="http://www.opscode.com/chef/install/">http://www.opscode.com/chef/install/</a>.</p>
-
-<p>Next we create the Chef repository on the local workstation:</p>
-
-<ol>
-<li><code>git clone git@github.com:opscode/chef-repo.git</code> This will clone the file and directory structure needed to get started with Chef.  Of course, you could also just download a zip or tar.gz of the files from <a href="https://github.com/opscode/chef-repo/downloads">https://github.com/opscode/chef-repo/downloads</a>.</li>
-<li><code>cd chef-repo</code> Change in to the directory that was just created.</li>
-<li><code>rm -rf .git</code> Remove the git directory from the cloned repository, we're going to create our own git repo.</li>
-<li><code>git init</code> - Initialize a new git repository for our infrastructure code.</li>
-<li>Create a new repository on <a href="http://github.com">github.com</a> if you'd like to store your repository there.</li>
-<li>Commit the initial changes and push to your repository.</li>
-</ol>
-
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>Configure Knife</h2>
-
-<p>The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:</p>
-
-<ul>
-<li><code>knife.rb</code> - This configuration file can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
-<li><code>ORGANIZATION-validator.pem</code> -  This private key can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
-<li><code>USER.pem</code> - This private key an be downloaded from the <a href="https://www.opscode.com/account/password">Change Password section of the Account Management page</a>.</li>
-</ul>
-
-
-<p>We'll then move this files into a <code>.chef</code> directory in our chef-repo.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>Initialize Vagrant</h2>
-
-<p><a href="http://vagrantup.com">Vagrant</a> is a tool that makes it super easy to launch and manage virtual machines on your local workstation.  We're going to create a Vagrant-managed virtual machine to act as our Node.  Vagrant manages each virtual machine as a "box."  Opscode makes a number of Vagrant boxes available through it's <a href="https://github.com/opscode/bento">bento project on github.com</a>.</p>
-
-<ol>
-<li>Initialize Vagrant by running <code>vagrant init</code></li>
-<li>Modify the <code>Vagrantfile</code> so that it contains (at least) the following:</li>
-</ol>
-
-
-<p><code>ruby Vagrantfile
-Vagrant::Config.run do |config|
-  config.vm.box = "opscode-ubuntu-12.04"
-  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
-end
-</code></p>
-
-<p>Finally, run <code>vagrant up</code> to launch the Vagrant box.</p>
-
-<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/o9HtZ1nDoTI" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>First Converge</h2>
-
-<p>The first time <code>vagrant up</code> is run for this box, it must download the file from Opscode's Amazon S3 file store.  This can take some time so, while it's running, you may want to expand your Vagrant file a bit more.  We'll configure Vagrant to use the <code>chef_client</code> provisioner.  You'll find more <a href="http://vagrantup.com/v1/docs/provisioners/chef_server.html">information about the chef_client provisioner on the Vagrant website</a>.</p>
-
-<p> Here are the relevant settings in our Vagrantfile by the end of the video:</p>
-
-<p>``` ruby Vagrantfile
-Vagrant::Config.run do |config|
-  config.vm.box = "opscode-ubuntu-12.04"
-  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"</p>
-
-<p>  config.vm.provision :chef_client do |chef|</p>
-
-<pre><code>chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
-chef.validation_key_path = "./.chef/fidor-validator.pem"
-chef.validation_client_name = "fidor-validator"
-chef.node_name = "patrick_vm"
-</code></pre>
-
-<p>  end
-end
-```
-Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
-
-<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>Checkpoint</h2>
-
-<p>Congratulations!!  You've now got a working Chef development environment including:</p>
-
-<ol>
-<li>A free account on Opscode's Hosted Chef.</li>
-<li>A workstation configured to connect to your Hosted Chef account</li>
-<li>A git repository for tracking all of your infrastructure code changes</li>
-<li>A Vagrant-managed virtual machine running on your local workstation</li>
-<li>The virtual machine is a node managed by Chef</li>
-</ol>
-
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/qgPvedOKD1I" frameborder="0" allowfullscreen></iframe>
-
-
-<h2>What's Next</h2>
-
-<p>In <a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Learning Chef - Part 2</a> we will grab some cookbooks from the <a href="http://community.opscode.com">Opscode Community Site</a> and use those to start managing our node.</p>
-
-<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
-    <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
-    <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
-
-<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
-
-<h2>Deploying to Heroku</h2>
-
-<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You'll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don't yet have an account.</p>
-
-<p>Once you've got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
-
-<ol>
-<li><code>git clone git@github.com:customink/greenscreen.git</code></li>
-<li><code>cd greenscreen</code></li>
-<li><code>gem install heroku</code></li>
-<li><code>heroku create</code></li>
-<li><code>git push heroku master</code></li>
-<li><code>heroku open</code></li>
-</ol>
-
-
-<p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
-
-<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
-
-<p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
-
-<!--more-->
-
-
-<h2>Deploying with Chef</h2>
-
-<p>If your build servers are not publicly accessible, Heroku won't be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
-
-<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
-
-<p><code>ruby
-include_recipe "greenscreen"
-</code></p>
-
-<p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
-
-<p>The cookbook allows you to specify credentials and jobs to include or ignore with each server and allows you to set-up multiple Green Screens on the same node. At CustomInk, we use different Green Screen applications for different teams.</p>
-
-<p>Here's an excerpt from one of our Chef environment files:</p>
-
-<p>``` ruby
-"greenscreens" => [
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen",
-:port =&gt; "4567",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build01.customink.office:8080/cc.xml"
-  },
-  {
-    :url =&gt; "http://build02.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password"
-  },
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :ignore_jobs =&gt; ["www_redirects"]
-  }
-]
-</code></pre>
-
-<p>  },
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen.webops",
-:port =&gt; "4568",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :jobs =&gt; ["www_redirects"]
-  },
-  {
-    :url =&gt; "http://build04.customink.office/cc.xml",
-    :username =&gt; "jenkins",
-    :password =&gt; "jenkis_password"
-  }
-]
-</code></pre>
-
-<p>  }
-]
-```</p>
-
-<p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
 ]]></content>
   </entry>
   

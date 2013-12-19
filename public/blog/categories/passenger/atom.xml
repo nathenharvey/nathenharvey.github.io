@@ -4,7 +4,7 @@
   <title><![CDATA[Category: passenger | Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/blog/categories/passenger/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-12-19T12:50:46-05:00</updated>
+  <updated>2013-12-19T12:59:19-05:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 6]]></title>
+    <link href="http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-6/"/>
+    <updated>2013-12-19T12:52:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-6</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 5]]></title>
+    <link href="http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-5/"/>
+    <updated>2013-12-19T12:52:00-05:00</updated>
+    <id>http://www.nathenharvey.com/blog/2013/12/19/learning-chef-part-5</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
@@ -25,6 +69,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -65,6 +111,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -107,6 +155,8 @@
 <li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
 <li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
 </ul>
 
 
@@ -291,30 +341,6 @@ end
 <p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
 
 <p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Passenger and PHP]]></title>
-    <link href="http://www.nathenharvey.com/blog/2010/06/11/passenger-and-php/"/>
-    <updated>2010-06-11T09:25:00-04:00</updated>
-    <id>http://www.nathenharvey.com/blog/2010/06/11/passenger-and-php</id>
-    <content type="html"><![CDATA[<p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn't working anymore.</p>
-
-<p>Compared the configurations and everything looked OK, no changes were made as part of the migration. PHP module was being loaded, URL was being properly aliased, etc. Watched my logs and saw that Passenger was attempting to serve up the request which is not what I wanted.</p>
-
-<p>A quick update to my Directory's definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
-
-<p>``` apache
-  Alias /blog /shared/www/blog
-  <Directory /shared/www/blog></p>
-
-<pre><code>DirectoryIndex index.php 
-PassengerEnabled off
-</code></pre>
-
-<p>  </Directory>
-```</p>
 ]]></content>
   </entry>
   
