@@ -115,8 +115,12 @@
         <lastmod>2013-01-07T23:26:50-05:00</lastmod>
     </url>
     <url>
+        <loc>http://www.nathenharvey.com/blog/2013/12/19/devop-with-me/</loc>
+        <lastmod>2013-12-19T12:50:00-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://www.nathenharvey.com/blog/archives/</loc>
-        <lastmod>2013-08-13T08:39:55-04:00</lastmod>
+        <lastmod>2013-12-19T12:50:00-05:00</lastmod>
     </url>
     <url>
         <loc>http://www.nathenharvey.com/blog/resume/</loc>
@@ -124,6 +128,6 @@
     </url>
     <url>
         <loc>http://www.nathenharvey.com/</loc>
-        <lastmod>2013-08-13T08:39:55-04:00</lastmod>
+        <lastmod>2013-12-19T12:50:00-05:00</lastmod>
     </url>
 </urlset>
