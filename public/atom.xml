@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://www.nathenharvey.com/atom.xml" rel="self"/>
   <link href="http://www.nathenharvey.com/"/>
-  <updated>2013-12-19T13:02:11-05:00</updated>
+  <updated>2014-05-01T21:39:03-04:00</updated>
   <id>http://www.nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[DevOps Explained]]></title>
+    <link href="http://www.nathenharvey.com/blog/2014/05/01/devops-explained/"/>
+    <updated>2014-05-01T21:31:00-04:00</updated>
+    <id>http://www.nathenharvey.com/blog/2014/05/01/devops-explained</id>
+    <content type="html"><![CDATA[<p>We created a little video to help explain DevOps.  This video was initially released during <a href="http://chefconf.com">#ChefConf 2014</a>.</p>
+
+<p>Please note, this video does include some explicit language.  However, there is a <a href="https://www.youtube.com/watch?v=g-BF0z7eFoU">version that&#8217;s safe for all audiences</a>.</p>
+
+<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/0P0HD5pE-zU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This and all of the other <a href="http://www.youtube.com/watch?v=g-BF0z7eFoU&amp;list=PL11cZfNdwNyMmx0msapJfuGsLV43C7XsA">videos from #ChefConf are available on YouTube</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[DevOp with Me]]></title>
@@ -1609,85 +1625,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 <li>everyone who came out to my presentation and to everyone I met at MongoSV</li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MongoDB Masters]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/29/mongodb-masters/"/>
-    <updated>2011-12-29T13:46:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/29/mongodb-masters</id>
-    <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
-
-<blockquote><p>The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community.</p><footer><strong>10gen</strong> <cite><a href='http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters'>Announcing the MongoDB Masters</a></cite></footer></blockquote>
-
-
-<p>I am honored to be counted among such a <a href="http://wiki.mongodb.org/display/DOCS/MongoDB+Masters">great group of MongoDB enthusiasts</a>. I was selected to join the Masters primarily because of my work with the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> which I&#8217;ve been helping to organize for almost a year. The group has monthly meetings at <a href="http://www.customink.com">CustomInk</a>&#8217;s headquarters in Tysons, VA.</p>
-
-<p>The day before MongoSV, most of the MongoDB Masters met for the inaugural Masters Summit. The Masters Summit was run like an &#8220;un-conference&#8221;; the members decided on topics and broke into discussion groups to cover each topic. There were also a number of lightning talks.</p>
-
-<p>We had break-out groups on 16 different topics including</p>
-
-<ul>
-<li>Operations, hosting, and production architecture</li>
-<li>Drivers</li>
-<li>MongoDB and Windows</li>
-<li>Reporting</li>
-</ul>
-
-
-<!--more-->
-
-
-<p>I participated in a couple of sessions about operations, one about hosting user groups, and one about reporting with MongoDB.</p>
-
-<h3>MongoDB User Groups</h3>
-
-<p>I was able to share some of my experience with hosting the DC MongoDB User group in this session. There were a few other user group organizers who participated including:</p>
-
-<ul>
-<li><a href="http://twitter.com/harrymarr">Harry Marr</a> and <a href="http://twitter.com/davidmytton">David Mytton</a> from the London User Group</li>
-<li><a href="http://twitter.com/m_smalley">Mark Smalley</a> from the Malaysia User Group</li>
-<li><a href="http://twitter.com/doryokujin">Takahiro Inoue</a> from the Tokyo User Group</li>
-</ul>
-
-
-<p><a href="http://twitter.com/ameliamango">Amelia</a>, <a href="http://twitter.com/francescaPasha">Francesca</a>, <a href="http://twitter.com/meghanpgill">Meghan</a>, and <a href="http://twitter.com/sam_10gen">Sam</a> who help organize community events for 10gen and <a href="http://twitter.com/cwestin63">Chris Westin</a>, also from 10gen, joined the discussion, too.</p>
-
-<p>I was amazed to hear how large the Tokyo User Group is - over 600 members. They meet monthly on Saturdays, have multiple corporate sponsors, and great attendance at their meetings. I&#8217;m not sure how a Saturday user group meeting would go over in the US but suspect we&#8217;d see a very light turnout.</p>
-
-<p>It was also great to hear some of the things that Chris Westin has done to organize the <a href="http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/">Bay Area Large-Scale Production Engineering meetup</a>. I read his blog post, <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>, prior to the meeting so I had an idea about what some of his ideas were.  It was great to hear him echoing some of the things we&#8217;ve put into practice with the DC group.</p>
-
-<p>After the discussion, I published a couple of blog posts on <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a> and <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
-
-<h3>Reporting with MongoDB</h3>
-
-<p>It seems there are still many questions around the best way to approach reporting on the data stored in a MongoDB. Sure, you can build custom reports easily enough with the data and that&#8217;ll be even easier when the new aggregation framework is released. However, the real challenge comes when you need to expose data in MongoDB AND data housed in your RDBMS to the same reporting tools. This is certainly a challenge we face at CustomInk. I still don&#8217;t feel that there is an easy answer in this area.  A couple of options were discussed including building custom ETL logic to load your MongoDB data into a RDBMS that can be used for reporting. I was particularly interested in the approach <a href="http://twitter.com/jwage">Jonathan Wage</a> and his colleagues at <a href="https://opensky.com/">OpenSky</a> are using. They&#8217;ve got a daemon that tails the MongoDB Oplog and updates a RDBMS as appropriate. This seems like a good approach and one I&#8217;d like to explore further.</p>
-
-<h3>Side conversations</h3>
-
-<h4>Configuration Management with Chef and Puppet</h4>
-
-<p><a href="http://twitter.com/rick446">Rick Copeland</a>, <a href="http://twitter.com/mdirolf">Mike Dirolf</a>, <a href="http://twitter.com/m_smalley">Mark Smalley</a>, and I had a couple of conversations about Chef and Puppet. Of course the conversation included questions of which to use and why. At CustomInk, we&#8217;ve got experience with both so I shared some information on <a href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Why We Chose Chef Over Puppet at CustomInk</a>.</p>
-
-<h4>Full-text search in MongoDB</h4>
-
-<p>During an open discussion, the question of full-text search within MongoDB came up. This topic seems to be a regular in any MongoDB roadmap discussions and the functionality always seems to be &#8220;very close, maybe in the n+1 release.&#8221; I think it was <a href="http://twitter.com/mdirolf">Mike Dirolf</a> who first voiced an opinion that I happen to share: &#8220;Stop working on it and focus on other features.&#8221;</p>
-
-<p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I&#8217;ve used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
-
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" title="MongoDB Masters" alt="MongoDB Masters">
-I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8217;s box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
-
-<h3>Swag</h3>
-
-<p>It wouldn&#8217;t be a 10gen event without a little swag, right?! MongoDB Masters were treated to custom coffee mugs, MongoDB Masters t-shirts, and great MongoDB Masters jackets.</p>
-
-<h2>Next steps</h2>
-
-<p>The MongoDB Masters program is still pretty new. We&#8217;re looking for ways to get the most out of the group. Google hangouts and IRC are where we&#8217;re headed next but who knows where we&#8217;ll go from there. I&#8217;d love to hear any ideas you have for how to make a group like this successful and productive.</p>
-
-<p>If you want to keep-up with the MongoDB Masters on Twitter, you can follow the <a href="https://twitter.com/#!/nathenharvey/mongo-masters/members">Twitter list that I maintain</a>.</p>
 ]]></content>
   </entry>
   

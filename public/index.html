@@ -9,8 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content=" Come DevOp with me! We&#8217;ll explore what DevOps is and what it is not.
-">
+  <meta name="description" content="We created a little video to help explain DevOps. This video was initially released during #ChefConf 2014. Please note, this video does include some &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +79,49 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-01T21:31:00-04:00" pubdate data-updated="true">May 1<span>st</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>We created a little video to help explain DevOps.  This video was initially released during <a href="http://chefconf.com">#ChefConf 2014</a>.</p>
+
+<p>Please note, this video does include some explicit language.  However, there is a <a href="https://www.youtube.com/watch?v=g-BF0z7eFoU">version that&#8217;s safe for all audiences</a>.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/0P0HD5pE-zU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This and all of the other <a href="http://www.youtube.com/watch?v=g-BF0z7eFoU&amp;list=PL11cZfNdwNyMmx0msapJfuGsLV43C7XsA">videos from #ChefConf are available on YouTube</a>.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -654,70 +696,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-29T22:30:00-04:00" pubdate data-updated="true">May 29<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It&#8217;s becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I&#8217;ll look at a &#8220;minimum viable testing&#8221; (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
-
-<h3>Testing with Chef</h3>
-
-<p>The idea of building automated tests for your infrastructure code has been getting a lot of traction lately.  When it comes to <a href="http://www.opscode.com/chef/">Chef</a>, many tools are starting to emerge.</p>
-
-<p>The first tool in this area to get any significant traction, that I know of, was <a href="http://www.cucumber-chef.org/">cucumber-chef</a>.  I first learned of this tool when I saw a pre-release copy of <a href="http://shop.oreilly.com/product/0636920020042.do">Test-Driven Infrastructure with Chef</a> at the O&#8217;Reilly booth at <a href="http://velocityconf.com/velocity2011">Velocity Conf 2011</a>.  <a href="http://twitter.com/lordcope">Stephen Nelson-Smith</a>, the book&#8217;s author and framework&#8217;s lead developer, proposes an outside-in approach to testing where your tests can also act as monitors that look after the health of your infrastructure.  I like the idea of this approach and feel it makes a lot of sense in a greenfield environment.  One benefit of this approach is that it blurs the line between testing and monitoring.  You can easily hook-up your monitoring system to your cucumber tests.</p>
-
-<p><a href="https://github.com/acrmp/chefspec">ChefSpec</a> is another tool for testing your Chef code.  It is a gem that makes it easy to write <a href="http://rspec.info/">RSpec</a> examples for Chef cookbooks.  This style of testing allows you to execute your tests without needing to converge the node that your tests are running on.  In other words, you can execute your tests without needing to provision a server.  One huge appeal to this style of testing is that the feedback loop is very small.  You&#8217;ll get feedback about your cookbook changes within seconds or a very few minutes of saving your changes.</p>
-
-<p><a href="https://github.com/calavera/minitest-chef-handler">Minitest Chef Handler</a> is yet another tool for testing with Chef.  This runs a suite of <a href="https://github.com/seattlerb/minitest">minitest</a> tests as a report handler in your Chef-managed nodes.  As you may know, report handlers are run at the end of each <a href="http://wiki.opscode.com/display/chef/Anatomy+of+a+Chef+Run">chef run, or convergence</a>.</p>
-
-<h3>Testing at ChefConf</h3>
-
-<p>At the inaugural <a href="http://chefconf.opscode.com">#ChefConf</a> there were many sessions that included information about many companies&#8217; approach to testing.  Here&#8217;s a quick list of some of the sessions:</p>
-
-<ul>
-<li><p><a href="http://www.foodfightshow.org/2012/04/episode-10-testallthethings-testing.html">Food Fight Show Episode #10 - TESTALLTHETHINGS</a> &#8211; This wasn&#8217;t actually part of #ChefConf but is &#8216;required listening&#8217; for anyone interested in learning more about this space.</p></li>
-<li><p><a href="http://chefconf2012.sched.org/event/bfe13edac99e2b4d8582f0cd1005ee73?iframe=no&amp;w=700&amp;sidebar=no&amp;bg=no">#ChefConf Pre-event Hackday: TEST ALL THE THINGS!!!</a></p></li>
-<li><p><a href="https://github.com/atomic-penguin/ntp">NTP Cookbook with tests</a> - tests were added to this cookbook as part of the hackday event.</p></li>
-<li><p><a href="http://www.youtube.com/watch?v=o2e0aZUAVGw">Test-driven Development for Chef Practitioners</a> (video)</p></li>
-<li><p><a href="http://www.youtube.com/watch?v=dPaYfAIvqxw">Test Driven Development Roundtable</a> (video)</p></li>
-</ul>
-
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -733,6 +711,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/12/19/devop-with-me/">DevOp with Me</a>
       </li>
     
@@ -746,10 +728,6 @@
     
       <li class="post">
         <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a>
       </li>
     
   </ul>
@@ -811,7 +789,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Nathen Harvey -
+  Copyright &copy; 2014 - Nathen Harvey -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
