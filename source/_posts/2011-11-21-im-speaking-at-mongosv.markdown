@@ -12,7 +12,6 @@ categories:
   - mongosv
   - user groups
 ---
-{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png 320 156 "MongoSV" "MongoSV" %}
 
 [MongoSV](http://www.10gen.com/events/mongosv-2011) is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.
 
