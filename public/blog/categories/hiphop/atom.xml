@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hiphop | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/hiphop/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/hiphop/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[DevOp with Me]]></title>
-    <link href="http://www.nathenharvey.com/blog/2013/12/19/devop-with-me/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me/"/>
     <updated>2013-12-19T12:47:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2013/12/19/devop-with-me</id>
-    <content type="html"><![CDATA[<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me</id>
+    <content type="html"><![CDATA[<iframe width="560" height="315" src="http://nathenharvey.github.com/nathenharvey//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
 
 
 <p>Come DevOp with me! We'll explore what DevOps is and what it is not.</p>

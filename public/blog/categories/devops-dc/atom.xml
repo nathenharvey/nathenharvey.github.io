@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: DevOps DC | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/devops-dc/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/devops-dc/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/29/mongodb-community-awards/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
     <updated>2011-12-29T23:54:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/29/mongodb-community-awards</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
     <content type="html"><![CDATA[<p>During this year's <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
 
 <p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
@@ -58,9 +58,9 @@
   
   <entry>
     <title type="html"><![CDATA[Agenda Tips for a Tech User Group]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/agenda-tips-for-a-tech-user-group/"/>
     <updated>2011-12-13T19:53:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/agenda-tips-for-a-tech-user-group</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">previous post</a>, I gave some <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a>. In this post, I'll focus on the actual meeting format we typically use for our <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a>. You may find that this format works well for any technical user group.</p>
 
 <p>We've experimented with a couple of different formats but I think we've settled into something that generally works for us. Some of these don't work with a meeting that's larger than 20 people; adjust accordingly.</p>
@@ -120,9 +120,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tips for Hosting a Tech User Group]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
     <updated>2011-12-13T19:24:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
     <content type="html"><![CDATA[<p>In January of 2011, I started hosting a <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">monthly MongoDB meetup</a>. My employer, <a href="http://www.customink.com/">CustomInk</a>, was looking for ways to become better known in the local DC technology market. We were also just getting started with our initial production deployment of MonogoDB. Having engineers from the area come to our office, get to know CustomInk, and share their experiences with using MongoDB was a great opportunity!</p>
 
 <p>Before I get much further, I'd like to give a hat tip to those user groups and podcasts that I learned from and stole ideas from. Namely, <a href="http://www.meetup.com/dcruby/">DC RUG</a>, <a href="http://www.meetup.com/bmore-on-rails/">B'more on Rails group</a>, and the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>.</p>

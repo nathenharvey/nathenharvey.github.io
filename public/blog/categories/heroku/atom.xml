@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: heroku | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/heroku/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/heroku/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
     <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
@@ -117,9 +117,9 @@ include_recipe "greenscreen"
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/30/octopress/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/30/octopress</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png" width="300" height="225" title="Octopress" alt="Octopress">
 I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
 
@@ -137,9 +137,9 @@ I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a>
   
   <entry>
     <title type="html"><![CDATA[Why we chose Chef over Puppet at CustomInk]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
     <updated>2011-11-21T03:29:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
     <content type="html"><![CDATA[<p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
 
 <p>Before we get into any of the specifics, I want to make it clear that the "right" answer to this question is a simple, but emphatic "yes!" Yes, you should be using a tool that allows you to manage your infrastructure as code. That tool should NOT be a server.txt file that you keep on the machine that documents the installation, set-up, and configuration changes you've made. Moving that text to somewhere other than the local server is a step in the right direction but isn't really the answer. Moving the server.txt file to your corporate wiki is going to suck just as bad.</p>

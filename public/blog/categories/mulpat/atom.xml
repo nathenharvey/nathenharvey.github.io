@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: mulpat | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/mulpat/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/mulpat/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 6]]></title>
-    <link href="http://www.nathenharvey.com/blog/2013/01/16/learning-chef-part-6/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6/"/>
     <updated>2013-01-16T12:52:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2013/01/16/learning-chef-part-6</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -30,16 +30,16 @@
 </ul>
 
 
-<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://nathenharvey.github.com/nathenharvey//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 5]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/12/28/learning-chef-part-5/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5/"/>
     <updated>2012-12-28T12:52:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/12/28/learning-chef-part-5</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -52,16 +52,16 @@
 </ul>
 
 
-<iframe width="560" height="315" src="http://www.nathenharvey.com//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://nathenharvey.github.com/nathenharvey//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/12/19/learning-chef-part-4/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4/"/>
     <updated>2012-12-19T13:53:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/12/19/learning-chef-part-4</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -101,9 +101,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3/"/>
     <updated>2012-12-14T12:14:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -145,9 +145,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
-    <link href="http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/"/>
     <updated>2012-12-07T13:18:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>

@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="One of the big themes that emerged during #ChefConf was that we should be testing our infrastructure code. Software engineers have been practicing &hellip;">
+  <meta name="description" content="In my last post, MVT: Foodcritic and Travis CI I described the process for having Travis CI look after your cookbooks and run Foodcritic, the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://www.nathenharvey.com/blog/page/2">
+  <link rel="canonical" href="http://nathenharvey.github.com/nathenharvey/blog/page/2">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -63,7 +63,7 @@
   
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
-    <input type="hidden" name="q" value="site:www.nathenharvey.com" />
+    <input type="hidden" name="q" value="site:nathenharvey.github.com/nathenharvey" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
@@ -79,6 +79,109 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: Knife Test and Travis CI</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-06T21:26:00-04:00" pubdate data-updated="true">Jul 6<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we&#8217;ll iterate on the &#8220;Minimum Viable Test&#8221; idea by adding in support for knife&#8217;s cookbook testing.</p>
+
+<p>Wait, I&#8217;m already running foodcritic, do I really need to run <code>knife cookbook test</code>, too?</p>
+
+<p>I&#8217;ll use a very simple example to demonstrate that you do.</p>
+
+<p>Let&#8217;s create a very basic cookbook:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>knife cookbook create very_basic
+</span><span class='line'>** Creating cookbook very_basic
+</span><span class='line'>** Creating README <span class="k">for </span>cookbook: very_basic
+</span><span class='line'>** Creating metadata <span class="k">for </span>cookbook: very_basic
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next, we&#8217;ll write a flawed recipe:</p>
+
+<figure class='code'><figcaption><span>cookbooks/very_basic/recipes/default.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">package</span> <span class="s2">&quot;flawed&quot;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">action</span> <span class="ss">:nothing</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, run foodcritic on this cookbook:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>foodcritic cookbooks/very_basic
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Foodcritic doesn&#8217;t throw any errors or find any problem with the cookbook.</p>
+
+<p>Let&#8217;s try testing it with knife:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>knife cookbook <span class="nb">test </span>very_basic
+</span><span class='line'>checking very_basic
+</span><span class='line'>Running syntax check on very_basic
+</span><span class='line'>Validating ruby files
+</span><span class='line'>FATAL: Cookbook file recipes/default.rb has a ruby syntax error:
+</span><span class='line'>FATAL: /Users/nharvey/projects/chef-hosted/.chef/../cookbooks/very_basic/recipes/default.rb:22: syntax error, unexpected keyword_end, expecting <span class="nv">$end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>OK, it should now be obvious that <code>knife cookbook test</code> should be included as part of our MVT.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/06/mvt-knife-test-and-travisci/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -638,63 +741,6 @@ I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogg
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/29/mongosv/">MongoSV</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-29T15:45:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
-
-<blockquote><p>MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p><footer><strong>10gen</strong> <cite><a href='http://www.10gen.com/events/mongosv-2011'>MongoSV 2011</a></cite></footer></blockquote>
-
-
-<h2>Impressions and Observations</h2>
-
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
-I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
-
-<h3>Schema free != Design free</h3>
-
-<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
-
-<h3>Aggregation Framework</h3>
-
-<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/12/29/mongosv/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -712,6 +758,10 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/05/05/lopsa-east-2014/">LOPSA-East 2014</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
       </li>
     
@@ -725,10 +775,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     
       <li class="post">
         <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
       </li>
     
   </ul>

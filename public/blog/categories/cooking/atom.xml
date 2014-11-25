@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cooking | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/cooking/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/cooking/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Brine your turkey!]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/11/21/brine-your-turkey/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/brine-your-turkey/"/>
     <updated>2011-11-21T04:48:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/11/21/brine-your-turkey</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/brine-your-turkey</id>
     <content type="html"><![CDATA[<p>It's Thanksgiving week. That means it's time to start prepping your turkey.</p>
 
 <p>In my opinion there are <strong>three very important things required for a terrific turkey</strong>:</p>

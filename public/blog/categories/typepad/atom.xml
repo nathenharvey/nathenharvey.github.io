@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: typepad | Nathen Harvey]]></title>
-  <link href="http://www.nathenharvey.com/blog/categories/typepad/atom.xml" rel="self"/>
-  <link href="http://www.nathenharvey.com/"/>
-  <updated>2014-05-01T21:39:03-04:00</updated>
-  <id>http://www.nathenharvey.com/</id>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/typepad/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T10:24:31-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://www.nathenharvey.com/blog/2011/12/30/octopress/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
-    <id>http://www.nathenharvey.com/blog/2011/12/30/octopress</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
     <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png" width="300" height="225" title="Octopress" alt="Octopress">
 I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
 
