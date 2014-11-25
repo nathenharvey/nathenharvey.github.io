@@ -4,7 +4,7 @@
   <title><![CDATA[Category: heroku | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/heroku/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T10:24:31-05:00</updated>
+  <updated>2014-11-25T16:25:56-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -120,7 +120,7 @@ include_recipe "greenscreen"
     <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png" width="300" height="225" title="Octopress" alt="Octopress">
+    <content type="html"><![CDATA[<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png 300 225 "Octopress" "Octopress" %}
 I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
 
 <p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
@@ -146,7 +146,9 @@ I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a>
 
 <p>I think Mark Imbriaco summed it up quite nicely in 140 characters or less:</p>
 
-<p><blockquote><p>Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou</p><footer><strong>@markimbriaco</strong> <cite><a href='https://twitter.com/markimbriaco/statuses/89180299824599041'>twitter.com/markimbriaco/&hellip;</a></cite></footer></blockquote></p>
+<p>{% blockquote @markimbriaco https://twitter.com/markimbriaco/statuses/89180299824599041 %}
+Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou
+{% endblockquote %}</p>
 
 <p>As you consider which tool is right for you, you'll need to consider a number of questions. I think of these as the WIIFs, or "what's in it for..." questions:</p>
 

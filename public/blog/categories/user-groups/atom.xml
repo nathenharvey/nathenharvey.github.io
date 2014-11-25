@@ -4,7 +4,7 @@
   <title><![CDATA[Category: user groups | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/user-groups/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T10:24:31-05:00</updated>
+  <updated>2014-11-25T16:25:56-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -40,7 +40,7 @@
 
 <h2>I'm going to SXSW Interactive!</h2>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" title="SXSW Interactive" alt="SXSW Interactive"></p>
+<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png 352 169 "SXSW Interactive" "SXSW Interactive" %}</p>
 
 <p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
 
@@ -187,7 +187,7 @@
     <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/im-speaking-at-mongosv/"/>
     <updated>2011-11-21T03:57:00-05:00</updated>
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/im-speaking-at-mongosv</id>
-    <content type="html"><![CDATA[<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png" width="320" height="156" title="MongoSV" alt="MongoSV"></p>
+    <content type="html"><![CDATA[<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/MongoSV_badge.png 320 156 "MongoSV" "MongoSV" %}</p>
 
 <p><a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a> is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p>
 

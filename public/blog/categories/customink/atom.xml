@@ -4,7 +4,7 @@
   <title><![CDATA[Category: customink | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/customink/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T10:24:31-05:00</updated>
+  <updated>2014-11-25T16:25:56-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -259,7 +259,14 @@ gem 'chef', '~> 10.12.0'
 
 <p><a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> is a lint tool for your Chef cookbooks.</p>
 
-<p><blockquote><p></p></p><p><p>Foodcritic has two goals:</p></p><p><ul><br/><li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li><br/><li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.</p></blockquote></p></li>
+<p>{% blockquote http://acrmp.github.com/foodcritic/ %}</p>
+
+<p>Foodcritic has two goals:</p>
+
+<ul>
+<li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li>
+<li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.
+{% endblockquote %}</p></li>
 </ul>
 
 
@@ -275,7 +282,9 @@ gem 'chef', '~> 10.12.0'
 
 <p>Travis CI is:</p>
 
-<p><blockquote><p>A hosted continuous integration service for the open source community.</p></blockquote></p>
+<p>{% blockquote http://about.travis-ci.org/docs/ %}
+A hosted continuous integration service for the open source community.
+{% endblockquote %}</p>
 
 <p>Using Travis CI in conjunction with Foodcritic, we'd have a basic automated test foundation to build on.</p>
 
@@ -463,7 +472,9 @@ end</p>
 
 <p>Is this a huge accomplishment? No.  But it is a great first step.</p>
 
-<p><blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote></p>
+<p>{% blockquote @btmerr https://twitter.com/#!/btmerr/status/157941260680835072 %}
+.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.
+{% endblockquote %}</p>
 
 <p>We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!</p>
 ]]></content>

@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="I was selected to share some of my experience with MongoDB at MongoSV. MongoSV is an annual one-day conference in Silicon Valley dedicated to the &hellip;">
+  <meta name="description" content="Shortly before MongoSV 2011, 10gen announced the MongoDB Masters Program. The MongoDB Masters program is designed to recognize the achievements of &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -79,63 +79,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/12/29/mongosv/">MongoSV</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-12-29T15:45:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
-
-<blockquote><p>MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p><footer><strong>10gen</strong> <cite><a href='http://www.10gen.com/events/mongosv-2011'>MongoSV 2011</a></cite></footer></blockquote>
-
-
-<h2>Impressions and Observations</h2>
-
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
-I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
-
-<h3>Schema free != Design free</h3>
-
-<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
-
-<h3>Aggregation Framework</h3>
-
-<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2011/12/29/mongosv/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
   
   
     <article>
@@ -693,9 +636,60 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
     </article>
   
-  <div class="pagination">
+  
+    <article>
+      
+  <header>
     
-      <a class="prev" href="/blog/page/4/">&larr; Older</a>
+      <h1 class="entry-title"><a href="/blog/2010/06/11/passenger-and-php/">Passenger and PHP</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-06-11T09:25:00-04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2010</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn&#8217;t working anymore.</p>
+
+<p>Compared the configurations and everything looked OK, no changes were made as part of the migration. PHP module was being loaded, URL was being properly aliased, etc. Watched my logs and saw that Passenger was attempting to serve up the request which is not what I wanted.</p>
+
+<p>A quick update to my Directory&#8217;s definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='apache'><span class='line'>  <span class="nb">Alias</span> <span class="sx">/blog</span> <span class="sx">/shared/www/blog</span>
+</span><span class='line'>  <span class="nt">&lt;Directory</span> <span class="s">/shared/www/blog</span><span class="nt">&gt;</span>
+</span><span class='line'>    <span class="nb">DirectoryIndex</span> index.php
+</span><span class='line'>    <span class="nb">PassengerEnabled</span> <span class="k">off</span>
+</span><span class='line'>  <span class="nt">&lt;/Directory&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -708,10 +702,6 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2014/05/05/lopsa-east-2014/">LOPSA-East 2014</a>
-      </li>
     
       <li class="post">
         <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
@@ -727,6 +717,10 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
     
       <li class="post">
         <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
       </li>
     
   </ul>

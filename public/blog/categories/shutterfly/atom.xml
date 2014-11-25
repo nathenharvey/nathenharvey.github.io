@@ -4,7 +4,7 @@
   <title><![CDATA[Category: shutterfly | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/shutterfly/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T10:24:31-05:00</updated>
+  <updated>2014-11-25T16:25:56-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -20,11 +20,13 @@
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
     <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
 
-<p><blockquote><p>MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p><footer><strong>10gen</strong> <cite><a href='http://www.10gen.com/events/mongosv-2011'>MongoSV 2011</a></cite></footer></blockquote></p>
+<p>{% blockquote 10gen http://www.10gen.com/events/mongosv-2011 MongoSV 2011 %}
+MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.
+{% endblockquote %}</p>
 
 <h2>Impressions and Observations</h2>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
+<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg 400 299 "MongoSV" "MongoSV" %}
 I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
 
 <h3>Schema free != Design free</h3>
