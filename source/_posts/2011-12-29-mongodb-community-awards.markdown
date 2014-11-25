@@ -28,7 +28,7 @@ This is the first year that 10gen has organized these awards. I think they're a 
 I was honored to be selected as a [finalist in the Community Champion category](http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners). As a co-organizer for both the [Washington DC MongoDB User Group](http://www.meetup.com/Washington-DC-MongoDB-Users-Group/) and [DevOps DC](http://www.meetup.com/DevOpsDC/), I work to bring together people who are interested in MongoDB and other great technologies. We've grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer. 
 
 ## I'm going to SXSW Interactive!
-{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png 352 169 "SXSW Interactive" "SXSW Interactive" %}
+<img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" />
 
 Shortly before the voting was opened to the public, 10gen announced the [grand prize](http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement):  a trip to [South By Southwest Interactive](http://sxsw.com/interactive). The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!
 

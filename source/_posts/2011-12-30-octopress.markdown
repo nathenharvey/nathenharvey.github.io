@@ -12,7 +12,6 @@ categories:
   - typepad
   - wordpress
 ---
-{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/octopress.png 300 225 "Octopress" "Octopress" %}
 I've recently switched my blog from [Blogger](http://www.blogger.com) to [Octopress](http://octopress.org). After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.
 
 Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.

@@ -56,7 +56,7 @@ During an open discussion, the question of full-text search within MongoDB came 
 
 Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I've used Solr with MongoDB successfully on one project and think this is the right way to go.
 
-{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg 320 250 "MongoDB Masters" "MongoDB Masters" %}
+<img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" alt="MongoDB Masters" />
 I also agree with some of 10gen's concern that search is like a pandora's box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.
 
 ### Swag

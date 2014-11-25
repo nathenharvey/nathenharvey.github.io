@@ -4,7 +4,7 @@
   <title><![CDATA[Category: shutterfly | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/shutterfly/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T16:45:38-05:00</updated>
+  <updated>2014-11-25T16:54:04-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -24,7 +24,7 @@
 
 <h2>Impressions and Observations</h2>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
 I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
 
 <h3>Schema free != Design free</h3>

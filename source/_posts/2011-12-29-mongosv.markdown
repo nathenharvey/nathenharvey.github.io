@@ -19,7 +19,7 @@ I was selected to share some of my experience with MongoDB at MongoSV.
 
 
 ## Impressions and Observations
-{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg 400 299 "MongoSV" "MongoSV" %}
+<img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
 I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.
 
 ### Schema free != Design free

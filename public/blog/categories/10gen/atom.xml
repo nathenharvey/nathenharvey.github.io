@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 10gen | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/10gen/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T16:45:38-05:00</updated>
+  <updated>2014-11-25T16:54:04-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -40,7 +40,7 @@
 
 <h2>I'm going to SXSW Interactive!</h2>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" title="SXSW Interactive" alt="SXSW Interactive"></p>
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" /></p>
 
 <p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
 
@@ -67,7 +67,7 @@
 
 <h2>Impressions and Observations</h2>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
 I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
 
 <h3>Schema free != Design free</h3>
@@ -197,7 +197,7 @@ I've been to a few other similar MongoDB events in NYC and DC but this was the l
 
 <p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I've used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
 
-<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" title="MongoDB Masters" alt="MongoDB Masters">
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" alt="MongoDB Masters" />
 I also agree with some of 10gen's concern that search is like a pandora's box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
 
 <h3>Swag</h3>
