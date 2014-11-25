@@ -4,7 +4,7 @@
   <title><![CDATA[Category: meetup | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/meetup/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T16:25:56-05:00</updated>
+  <updated>2014-11-25T16:34:02-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -40,7 +40,7 @@
 
 <h2>I'm going to SXSW Interactive!</h2>
 
-<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png 352 169 "SXSW Interactive" "SXSW Interactive" %}</p>
+<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" title="SXSW Interactive" alt="SXSW Interactive"></p>
 
 <p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
 
@@ -63,13 +63,11 @@
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
     <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
 
-<p>{% blockquote 10gen http://www.10gen.com/events/mongosv-2011 MongoSV 2011 %}
-MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.
-{% endblockquote %}</p>
+<p><blockquote><p>MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p><footer><strong>10gen</strong> <cite><a href='http://www.10gen.com/events/mongosv-2011'>MongoSV 2011</a></cite></footer></blockquote></p>
 
 <h2>Impressions and Observations</h2>
 
-<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg 400 299 "MongoSV" "MongoSV" %}
+<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" title="MongoSV" alt="MongoSV">
 I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
 
 <h3>Schema free != Design free</h3>
@@ -143,9 +141,7 @@ I've been to a few other similar MongoDB events in NYC and DC but this was the l
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters</id>
     <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
 
-<p>{% blockquote 10gen http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters Announcing the MongoDB Masters %}
-The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community.
-{% endblockquote %}</p>
+<p><blockquote><p>The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community.</p><footer><strong>10gen</strong> <cite><a href='http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters'>Announcing the MongoDB Masters</a></cite></footer></blockquote></p>
 
 <p>I am honored to be counted among such a <a href="http://wiki.mongodb.org/display/DOCS/MongoDB+Masters">great group of MongoDB enthusiasts</a>. I was selected to join the Masters primarily because of my work with the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> which I've been helping to organize for almost a year. The group has monthly meetings at <a href="http://www.customink.com">CustomInk</a>'s headquarters in Tysons, VA.</p>
 
@@ -201,7 +197,7 @@ The MongoDB Masters program is designed to recognize the achievements of leaders
 
 <p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I've used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
 
-<p>{% img right http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg 320 250 "MongoDB Masters" "MongoDB Masters" %}
+<p><img class="right" src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" title="MongoDB Masters" alt="MongoDB Masters">
 I also agree with some of 10gen's concern that search is like a pandora's box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
 
 <h3>Swag</h3>

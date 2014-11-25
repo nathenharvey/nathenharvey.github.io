@@ -4,7 +4,7 @@
   <title><![CDATA[Category: jmorton | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/jmorton/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T16:25:56-05:00</updated>
+  <updated>2014-11-25T16:34:02-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -52,9 +52,7 @@
 
 <p>Is this a huge accomplishment? No.  But it is a great first step.</p>
 
-<p>{% blockquote @btmerr https://twitter.com/#!/btmerr/status/157941260680835072 %}
-.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.
-{% endblockquote %}</p>
+<p><blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote></p>
 
 <p>We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!</p>
 ]]></content>

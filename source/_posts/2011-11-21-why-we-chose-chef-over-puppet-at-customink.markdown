@@ -19,9 +19,7 @@ Before we get into any of the specifics, I want to make it clear that the "right
 
 I think Mark Imbriaco summed it up quite nicely in 140 characters or less:
 
-{% blockquote @markimbriaco https://twitter.com/markimbriaco/statuses/89180299824599041 %}
-Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou
-{% endblockquote %}
+"Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou"
 
 As you consider which tool is right for you, you'll need to consider a number of questions. I think of these as the WIIFs, or "what's in it for..." questions:
 <!--more-->
