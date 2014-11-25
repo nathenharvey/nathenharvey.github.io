@@ -14,9 +14,7 @@ categories:
 ---
 Shortly before [MongoSV 2011](http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters), 10gen announced the [MongoDB Masters](http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters) Program.
 
-{% blockquote 10gen http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters Announcing the MongoDB Masters %}
-The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community.
-{% endblockquote %}
+"The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community."
 
 I am honored to be counted among such a [great group of MongoDB enthusiasts](http://wiki.mongodb.org/display/DOCS/MongoDB+Masters). I was selected to join the Masters primarily because of my work with the [Washington DC MongoDB User Group](http://www.meetup.com/Washington-DC-MongoDB-Users-Group/) which I've been helping to organize for almost a year. The group has monthly meetings at [CustomInk](http://www.customink.com)'s headquarters in Tysons, VA.
 

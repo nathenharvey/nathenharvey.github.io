@@ -28,9 +28,7 @@ categories:
 
 In November of 2012, [Patrick Mulder](https://twitter.com/mulpat) posted a [request on the Chef mailing list](http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html).  He was 
 
-{% blockquote %}
-looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.
-{% endblockquote %}
+"looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step."
 
 I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions [broadcast live on YouTube](http://www.youtube.com/watch?v=l7-nAHdplD4&list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP).  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.  
 

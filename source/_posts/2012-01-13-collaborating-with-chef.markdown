@@ -42,8 +42,6 @@ Thanks to [@chmurph2](http://twitter.com/chmurph2) and [@jmorton](http://twitter
 
 Is this a huge accomplishment? No.  But it is a great first step.
 
-{% blockquote @btmerr https://twitter.com/#!/btmerr/status/157941260680835072 %}
-.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.
-{% endblockquote %}
+".@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration."
 
 We've always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian's saying, I'm not sure everyone doing everything makes sense. We're one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that's a WIN!

@@ -9,9 +9,7 @@ Last week Engine Yard announced the winners of their inaugural [Engine Yard Inno
 
 I was both honored and surprised when I learned that I had been chosen as the Engine Yard Innovator in the DevOps category.
 
-{% blockquote https://blog.engineyard.com/2013/engine-yard-innovators-awards/ %}
-Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his "Rails With Chef" proficiency. He works to help others understand the importance of backend compatibility. 
-{% endblockquote %}
+"Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his "Rails With Chef" proficiency. He works to help others understand the importance of backend compatibility. "
 
 I was asked to write a [post about some my work](https://blog.engineyard.com/2013/devops-innovation/). This seemed like a good time to reflect on some of the work I've been doing for the past few years.
 

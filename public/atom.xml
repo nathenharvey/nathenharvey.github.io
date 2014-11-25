@@ -4,7 +4,7 @@
   <title><![CDATA[Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T16:40:35-05:00</updated>
+  <updated>2014-11-25T16:45:38-05:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -72,8 +72,7 @@
 
 <p>I was both honored and surprised when I learned that I had been chosen as the Engine Yard Innovator in the DevOps category.</p>
 
-<blockquote><p>Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his &#8220;Rails With Chef&#8221; proficiency. He works to help others understand the importance of backend compatibility.</p></blockquote>
-
+<p>&#8220;Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his &#8220;Rails With Chef&#8221; proficiency. He works to help others understand the importance of backend compatibility. &#8221;</p>
 
 <p>I was asked to write a <a href="https://blog.engineyard.com/2013/devops-innovation/">post about some my work</a>. This seemed like a good time to reflect on some of the work I&#8217;ve been doing for the past few years.</p>
 
@@ -443,8 +442,7 @@
 
 <p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
 
-<blockquote><p>looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.</p></blockquote>
-
+<p>&#8220;looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.&#8221;</p>
 
 <p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
 
@@ -960,7 +958,12 @@
 
 <p><a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> is a lint tool for your Chef cookbooks.</p>
 
-<blockquote><p>Foodcritic has two goals:</p><p>* To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p><p>* To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.</p></blockquote>
+<p>&#8220;Foodcritic has two goals:</p>
+
+<ul>
+<li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li>
+<li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.&#8221;</p></li>
+</ul>
 
 
 <h4>Why start with Foodcritic?</h4>
@@ -975,8 +978,7 @@
 
 <p>Travis CI is:</p>
 
-<blockquote><p>A hosted continuous integration service for the open source community.</p></blockquote>
-
+<p>&#8220;A hosted continuous integration service for the open source community.&#8221;</p>
 
 <p>Using Travis CI in conjunction with Foodcritic, we&#8217;d have a basic automated test foundation to build on.</p>
 
@@ -1296,8 +1298,7 @@
 
 <p>Is this a huge accomplishment? No.  But it is a great first step.</p>
 
-<blockquote><p>.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.</p><footer><strong>@btmerr</strong> <cite><a href='https://twitter.com/#!/btmerr/status/157941260680835072'>twitter.com/#!/btmerr/status/&hellip;</a></cite></footer></blockquote>
-
+<p>&#8221;.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.&#8221;</p>
 
 <p>We&#8217;ve always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian&#8217;s saying, I&#8217;m not sure everyone doing everything makes sense. We&#8217;re one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that&#8217;s a WIN!</p>
 ]]></content>
@@ -1556,8 +1557,7 @@ I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogg
     <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
     <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
 
-<blockquote><p>MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p><footer><strong>10gen</strong> <cite><a href='http://www.10gen.com/events/mongosv-2011'>MongoSV 2011</a></cite></footer></blockquote>
-
+<p>&#8220;MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.&#8221;</p>
 
 <h2>Impressions and Observations</h2>
 

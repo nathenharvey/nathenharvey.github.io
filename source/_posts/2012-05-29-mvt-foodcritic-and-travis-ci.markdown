@@ -52,14 +52,12 @@ At the inaugural [#ChefConf](http://chefconf.opscode.com) there were many sessio
 
 [Foodcritic](http://acrmp.github.com/foodcritic/) is a lint tool for your Chef cookbooks.
 
-{% blockquote http://acrmp.github.com/foodcritic/ %}
 
-Foodcritic has two goals:
+"Foodcritic has two goals:
 
 * To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.
 
-* To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.
-{% endblockquote %}
+* To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style."
 
 #### Why start with Foodcritic?
 
@@ -73,9 +71,7 @@ One benefit of the post-converge approach is the ability to use your tests as he
 
 Travis CI is:
 
-{% blockquote http://about.travis-ci.org/docs/ %}
-A hosted continuous integration service for the open source community.
-{% endblockquote %}
+"A hosted continuous integration service for the open source community."
 
 Using Travis CI in conjunction with Foodcritic, we'd have a basic automated test foundation to build on.
 
