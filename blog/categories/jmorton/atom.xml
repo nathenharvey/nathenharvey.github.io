@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Jmorton | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/jmorton/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T17:44:01-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Collaborating With Chef]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/"/>
+    <updated>2012-01-13T16:25:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef</id>
+    <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
+
+<p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren&#8217;t important but let&#8217;s look at how we worked together to implement the changes.</p>
+
+<h2>Before Chef</h2>
+
+<p>In the past, here&#8217;s how the changes likely would have been implemented.</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer asks the ops team to make the change</li>
+<li>Ops makes the update using the appropriate tools</li>
+</ol>
+
+
+<p>OR</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer considers asking the ops team to make the change but thinks better of it</li>
+<li>Developer makes the change manually, Ops doesn&#8217;t know, Ops can no longer provision a new server properly.</li>
+</ol>
+
+
+<h2>With Chef</h2>
+
+<p>We&#8217;ve been using Chef for some time and have just started asking our developers to help maintain their own apps. This week, two applications needed to know about some additional external services. This required a simple update to a YAML file in each application. In both cases, I asked the developers to clone our chef repo, make the changes they needed, and submit a pull request.</p>
+
+<p>In one instance, the simple services.yml turned into a pull request with updates to a number of nagios nrpe checks that we&#8217;re running. Something that the developer didn&#8217;t ask for originally but took the initiative to add while in the code.</p>
+
+<p>Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> and <a href="http://twitter.com/jmorton">@jmorton</a> for taking their first steps into Chef.</p>
+
+<p>Is this a huge accomplishment? No.  But it is a great first step.</p>
+
+<p>&#8221;.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.&#8221;</p>
+
+<p>We&#8217;ve always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian&#8217;s saying, I&#8217;m not sure everyone doing everything makes sense. We&#8217;re one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that&#8217;s a WIN!</p>
+]]></content>
+  </entry>
+  
+</feed>

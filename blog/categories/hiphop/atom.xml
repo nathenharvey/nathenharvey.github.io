@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Hiphop | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/hiphop/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T17:44:01-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[DevOp With Me]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me/"/>
+    <updated>2013-12-19T12:47:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me</id>
+    <content type="html"><![CDATA[<iframe width="560" height="315" src="//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Come DevOp with me! We&#8217;ll explore what DevOps is and what it is not.</p>
+]]></content>
+  </entry>
+  
+</feed>

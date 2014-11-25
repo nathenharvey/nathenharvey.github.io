@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Learning Chef - Part 1 - Nathen Harvey</title>
+  <meta name="author" content="Nathen Harvey">
+
+  
+  <meta name="description" content="Learning Chef Series Part 1 - Introduce the project, configure workstation, and register a node with hosted Chef
+Part 2 - Download cookbooks from the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Nathen Harvey" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27983419-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Nathen Harvey</a></h1>
+  
+    <h2>a blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nathenharvey.github.com/nathenharvey" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Learning Chef - Part 1</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2012-12-06T17:07:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>5:07 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
+
+<p>&#8220;looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.&#8221;</p>
+
+<p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
+
+<p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
+
+<p>You can <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">watch all of the videos in the YouTube playlist</a> or keep reading and watch each video in turn.</p>
+
+<h2>Introduction</h2>
+
+<p>In this video we introduce ourselves and the project.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<h2>Overview of Chef</h2>
+
+<p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8" frameborder="0" allowfullscreen></iframe>
+
+
+<p>For our project the Chef Workstation will be Patrick&#8217;s laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
+
+<h2>Register for Hosted Chef</h2>
+
+<p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Invite Another User to Your Chef Organization</h2>
+
+<p>If you&#8217;re not the only one managing your infrastructure, you&#8217;ll want to invite you co-workers to join your Chef Organization.  Watch this video to see how to invite another user to join your Chef Organization.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Initialize a git Repository</h2>
+
+<p>When managing your infrastructure as code, you&#8217;ll want to store that code in some source code repository.  For this tutorial, we&#8217;re going to use <a href="http://git-scm.com/">git</a>, a distributed version control system.  The git repository will be publicly hosted on <a href="https://github.com/mulderp/learning-chef">github</a>.</p>
+
+<p>Your workstation will need to have Chef installed.  We verify that Patrick has already installed Chef but if you haven&#8217;t installed Chef on your workstation yet, you can grab it from <a href="http://www.opscode.com/chef/install/">http://www.opscode.com/chef/install/</a>.</p>
+
+<p>Next we create the Chef repository on the local workstation:</p>
+
+<ol>
+<li><code>git clone git@github.com:opscode/chef-repo.git</code> This will clone the file and directory structure needed to get started with Chef.  Of course, you could also just download a zip or tar.gz of the files from <a href="https://github.com/opscode/chef-repo/downloads">https://github.com/opscode/chef-repo/downloads</a>.</li>
+<li><code>cd chef-repo</code> Change in to the directory that was just created.</li>
+<li><code>rm -rf .git</code> Remove the git directory from the cloned repository, we&#8217;re going to create our own git repo.</li>
+<li><code>git init</code> - Initialize a new git repository for our infrastructure code.</li>
+<li>Create a new repository on <a href="http://github.com">github.com</a> if you&#8217;d like to store your repository there.</li>
+<li>Commit the initial changes and push to your repository.</li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Configure Knife</h2>
+
+<p>The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:</p>
+
+<ul>
+<li><code>knife.rb</code> - This configuration file can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>ORGANIZATION-validator.pem</code> -  This private key can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>USER.pem</code> - This private key an be downloaded from the <a href="https://www.opscode.com/account/password">Change Password section of the Account Management page</a>.</li>
+</ul>
+
+
+<p>We&#8217;ll then move this files into a <code>.chef</code> directory in our chef-repo.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Initialize Vagrant</h2>
+
+<p><a href="http://vagrantup.com">Vagrant</a> is a tool that makes it super easy to launch and manage virtual machines on your local workstation.  We&#8217;re going to create a Vagrant-managed virtual machine to act as our Node.  Vagrant manages each virtual machine as a &#8220;box.&#8221;  Opscode makes a number of Vagrant boxes available through it&#8217;s <a href="https://github.com/opscode/bento">bento project on github.com</a>.</p>
+
+<ol>
+<li>Initialize Vagrant by running <code>vagrant init</code></li>
+<li>Modify the <code>Vagrantfile</code> so that it contains (at least) the following:</li>
+</ol>
+
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, run <code>vagrant up</code> to launch the Vagrant box.</p>
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/o9HtZ1nDoTI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>First Converge</h2>
+
+<p>The first time <code>vagrant up</code> is run for this box, it must download the file from Opscode&#8217;s Amazon S3 file store.  This can take some time so, while it&#8217;s running, you may want to expand your Vagrant file a bit more.  We&#8217;ll configure Vagrant to use the <code>chef_client</code> provisioner.  You&#8217;ll find more <a href="http://vagrantup.com/v1/docs/provisioners/chef_server.html">information about the chef_client provisioner on the Vagrant website</a>.</p>
+
+<p> Here are the relevant settings in our Vagrantfile by the end of the video:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Checkpoint</h2>
+
+<p>Congratulations!!  You&#8217;ve now got a working Chef development environment including:</p>
+
+<ol>
+<li>A free account on Opscode&#8217;s Hosted Chef.</li>
+<li>A workstation configured to connect to your Hosted Chef account</li>
+<li>A git repository for tracking all of your infrastructure code changes</li>
+<li>A Vagrant-managed virtual machine running on your local workstation</li>
+<li>The virtual machine is a node managed by Chef</li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/qgPvedOKD1I" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In <a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Learning Chef - Part 2</a> we will grab some cookbooks from the <a href="http://community.opscode.com">Opscode Community Site</a> and use those to start managing our node.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nathen Harvey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2012-12-06T17:07:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>6</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>5:07 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/chef/'>chef</a>, <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/knife/'>knife</a>, <a class='category' href='/blog/categories/mulpat/'>mulpat</a>, <a class='category' href='/blog/categories/opschef/'>opschef</a>, <a class='category' href='/blog/categories/opscode/'>opscode</a>, <a class='category' href='/blog/categories/sysadmin/'>sysadmin</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>, <a class='category' href='/blog/categories/virtualbox/'>virtualbox</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1/" data-via="nathenharvey" data-counturl="http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/06/mvt-knife-test-and-travisci/" title="Previous Post: MVT: knife test and Travis CI">&laquo; MVT: knife test and Travis CI</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/12/07/learning-chef-part-2/" title="Next Post: Learning Chef - Part 2">Learning Chef - Part 2 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/19/devop-with-me/">DevOp With Me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/learning-chef-part-6/">Learning Chef - Part 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
+      </li>
+    
+  </ul>
+</section>
+Included file &#8216;asides/twitter.html&#8217; not found in _includes directory
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/nathenharvey">@nathenharvey</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nathenharvey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nathen Harvey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'nathenharvey';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1/';
+        var disqus_url = 'http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

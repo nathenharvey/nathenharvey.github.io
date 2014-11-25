@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Svargo | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/svargo/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T17:44:01-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MVT: Knife Test and Travis CI]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
+    <updated>2012-07-06T21:26:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci</id>
+    <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we&#8217;ll iterate on the &#8220;Minimum Viable Test&#8221; idea by adding in support for knife&#8217;s cookbook testing.</p>
+
+<p>Wait, I&#8217;m already running foodcritic, do I really need to run <code>knife cookbook test</code>, too?</p>
+
+<p>I&#8217;ll use a very simple example to demonstrate that you do.</p>
+
+<p>Let&#8217;s create a very basic cookbook:</p>
+
+<pre><code class="sh">knife cookbook create very_basic
+** Creating cookbook very_basic
+** Creating README for cookbook: very_basic
+** Creating metadata for cookbook: very_basic
+</code></pre>
+
+<p>Next, we&#8217;ll write a flawed recipe:</p>
+
+<pre><code class="ruby cookbooks/very_basic/recipes/default.rb">package "flawed" do
+  action :nothing
+end
+end
+</code></pre>
+
+<p>Now, run foodcritic on this cookbook:</p>
+
+<pre><code class="sh">foodcritic cookbooks/very_basic
+</code></pre>
+
+<p>Foodcritic doesn&#8217;t throw any errors or find any problem with the cookbook.</p>
+
+<p>Let&#8217;s try testing it with knife:</p>
+
+<pre><code class="sh">knife cookbook test very_basic
+checking very_basic
+Running syntax check on very_basic
+Validating ruby files
+FATAL: Cookbook file recipes/default.rb has a ruby syntax error:
+FATAL: /Users/nharvey/projects/chef-hosted/.chef/../cookbooks/very_basic/recipes/default.rb:22: syntax error, unexpected keyword_end, expecting $end
+</code></pre>
+
+<p>OK, it should now be obvious that <code>knife cookbook test</code> should be included as part of our MVT.</p>
+
+<!-- more -->
+
+
+<p>To get Travis CI running <code>knife cookbook test</code> for us, we&#8217;ll need to add or update the following files:</p>
+
+<ul>
+<li>.travis.yml</li>
+<li>Rakefile</li>
+<li>test/.chef/knife.rb</li>
+<li>test/support/Gemfile</li>
+</ul>
+
+
+<p>Of course, this assumes you&#8217;ve configured your cookbook as described in the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.  Let&#8217;s start with the Rakefile.</p>
+
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
+
+desc "Runs knife cookbook test"
+task :knife do
+  Rake::Task[:prepare_sandbox].execute
+
+  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o #{sandbox_path}/../"
+end
+
+task :prepare_sandbox do
+  files = %w{*.md *.rb attributes definitions files libraries providers recipes resources templates}
+
+  rm_rf sandbox_path
+  mkdir_p sandbox_path
+  cp_r Dir.glob("{#{files.join(',')}}"), sandbox_path
+end
+
+private
+def sandbox_path
+  File.join(File.dirname(__FILE__), %w(tmp cookbooks cookbook))
+end
+</code></pre>
+
+<p>In the file snippet above, I&#8217;ve only included the parts that are relevant for getting knife working.  I&#8217;ll include the full source of the Rakefile at the end of the article.</p>
+
+<p>Next, let&#8217;s add this rake task to our .travis.yml file.</p>
+
+<pre><code class="ruby .travis.yml">language: ruby
+gemfile:
+   - test/support/Gemfile
+rvm:
+  - 1.9.2
+  - 1.9.3
+script:
+  - bundle exec rake knife
+</code></pre>
+
+<p>To successfully run the knife command, Travis CI will need a very minimal Chef configuration.</p>
+
+<pre><code class="ruby test/.chef/knife.rb">cache_type 'BasicFile'
+cache_options(:path =&gt; "#{ENV['HOME']}/.chef/checksums")
+</code></pre>
+
+<p>And, of course, we&#8217;ll need to add Chef to our Gemfile.  Be sure to specify a modern version as Travis CI will use 0.8.10 by default (at the time of this writing).</p>
+
+<pre><code class="ruby test/support/Gemfile">source "https://rubygems.org"
+
+gem 'rake'
+gem 'chef', '~&gt; 10.12.0'
+</code></pre>
+
+<p>That&#8217;s it.  On your next <code>git push</code> Travis CI should run <code>knife cookbook test</code> on your cookbook.</p>
+
+<h2>Running locally</h2>
+
+<p>To run the rake tasks locally, you&#8217;ll need to tell bundler where the Gemfile is, or you&#8217;ll need to move it to the root directory of your cookbook and update .travis.yml appropriately.  Use the following command to run your tests locally:</p>
+
+<p><code>BUNDLE_GEMFILE=test/support/Gemfile rake knife</code>
+<code>BUNDLE_GEMFILE=test/support/Gemfile rake foodcritic</code></p>
+
+<h2>Full source code</h2>
+
+<p>You can checkout this <a href="https://github.com/customink-webops/percona-install/compare/03b944...d423b14">Github compare view</a> to see the changes made to the code from the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.</p>
+
+<pre><code class="ruby test/.chef/knife.rb">cache_type 'BasicFile'
+cache_options(:path =&gt; "#{ENV['HOME']}/.chef/checksums")
+</code></pre>
+
+<pre><code class="ruby .travis.yml">language: ruby
+gemfile:
+   - test/support/Gemfile
+rvm:
+  - 1.9.2
+  - 1.9.3
+script:
+  - bundle exec rake knife
+  - bundle exec rake foodcritic
+</code></pre>
+
+<p>The Rakefile was refactored a bit since the previous post:</p>
+
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
+
+task :default =&gt; 'foodcritic'
+
+desc "Runs foodcritic linter"
+task :foodcritic do
+  Rake::Task[:prepare_sandbox].execute
+
+  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)
+    sh "foodcritic -f any #{sandbox_path}"
+  else
+    puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
+  end
+end
+
+desc "Runs knife cookbook test"
+task :knife do
+  Rake::Task[:prepare_sandbox].execute
+
+  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o #{sandbox_path}/../"
+end
+
+task :prepare_sandbox do
+  files = %w{*.md *.rb attributes definitions files libraries providers recipes resources templates}
+
+  rm_rf sandbox_path
+  mkdir_p sandbox_path
+  cp_r Dir.glob("{#{files.join(',')}}"), sandbox_path
+end
+
+private
+def sandbox_path
+  File.join(File.dirname(__FILE__), %w(tmp cookbooks cookbook))
+end
+</code></pre>
+
+<pre><code class="ruby test/support/Gemfile">source "https://rubygems.org"
+
+gem 'rake'
+gem 'foodcritic'
+gem 'chef', '~&gt; 10.12.0'
+</code></pre>
+
+<h3>Credit</h3>
+
+<p>A big &#8220;Thank You!&#8221; shout-out to <a href="http://twitter.com/sethvargo">Seth Vargo</a> for writing most of the code used in this post!</p>
+]]></content>
+  </entry>
+  
+</feed>

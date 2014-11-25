@@ -1,0 +1,490 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Learning Chef - Part 2 - Nathen Harvey</title>
+  <meta name="author" content="Nathen Harvey">
+
+  
+  <meta name="description" content="Learning Chef Series Part 1 - Introduce the project, configure workstation, and register a node with hosted Chef
+Part 2 - Download cookbooks from the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Nathen Harvey" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27983419-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Nathen Harvey</a></h1>
+  
+    <h2>a blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nathenharvey.github.com/nathenharvey" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Learning Chef - Part 2</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2012-12-07T13:18:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>1:18 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<h2>Review of Part 1</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Read the blog post for Part 1</a></li>
+</ul>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/E4ibkS1LbPk" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Discuss Chef Solo vs. Chef Server</h2>
+
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don&#8217;t get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Download a number of cookbooks from the community site</h2>
+
+<p>Now that we&#8217;ve got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We&#8217;ll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+
+<p>Here are the commands we ran to download each cookbook:</p>
+
+<ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+</ol>
+
+
+<p>After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:</p>
+
+<p><code>tar xzvf COOKBOOK_NAME.tar.gz -C cookbooks</code></p>
+
+<p>Finally, upload each cookbook to the Hosted Chef server:</p>
+
+<p><code>knife cookbook upload COOKBOOK_NAME</code></p>
+
+<p>This video shows the process for grabbing the <code>omnibus_updater</code> cookbook off of the <a href="http://community.opscode.com">community site</a>.</p>
+
+<ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>tar xzvf omnibus_updater-0.0.5.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload omnibus_updater</code></li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This video shows the process for grabbing the <code>mongodb</code> cookbook, and it&#8217;s dependency, the <code>apt</code> cookbook, off of the community site.</p>
+
+<ol>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>tar xzvf mongodb-0.11.0.tar.gz -C cookbooks</code></li>
+<li><code>tar xzvf apt-1.5.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload apt</code></li>
+<li><code>knife cookbook upload mongodb</code></li>
+</ol>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/wyLtF261a6A" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Update the run list for our node</h2>
+
+<p>There are a number of ways to update a node&#8217;s run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+
+<p>In our session, we first used the Opscode Chef management interface.</p>
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Q0BgCLSqJJU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>You can also update your node&#8217;s run list using knife.  In this video, we&#8217;ll use knife to add mongodb to the node&#8217;s run list.</p>
+
+<ol>
+<li><code>export EDITOR=vim</code> - knife uses the <code>EDITOR</code> environment variable to determine which application to launch when you edit the node.</li>
+<li>Add <code>"recipe[mongodb]"</code> to the <code>run_list</code></li>
+<li>Run <code>chef-client</code> on the node using the <code>vagrant provision</code> command.</li>
+</ol>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/5xU3A-SvdJc" frameborder="0" allowfullscreen></iframe>
+
+
+<p>We&#8217;ll follow the same steps to add <code>passenger_apache2</code> to our run list.</p>
+
+<ol>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+<li><code>tar xzvf passenger_apache2-1.0.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>tar xzvf apache2-1.3.2.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload apache2</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
+<li><code>tar xzvf build-essential-1.2.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload build-essential</code></li>
+<li><code>knife cookbook upload passenger_apache2</code></li>
+</ol>
+
+
+<p>We will then add <code>passenger_apache2</code> to the run list using <code>knife node edit patrick_vm</code>.  When we run <code>vagrant provision</code>, we&#8217;ll hit an error that requires us to add <code>apt</code> to the run list prior to <code>passenger_apache2</code>.</p>
+
+<p>By the end of this video, the run list should look like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"run_list" : [
+</span><span class='line'>    "recipe[apt]",
+</span><span class='line'>    "recipe[omnibus_updater]",
+</span><span class='line'>    "recipe[mongodb]",
+</span><span class='line'>    "recipe[passenger_apache2]"
+</span><span class='line'>]</span></code></pre></td></tr></table></div></figure>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0-Bid-eiJHY" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Add port forwarding to the Vagrant instance</h2>
+
+<p>Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here&#8217;s the full Vagrantfile:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">forward_port</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">8080</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ag0w_IqkgBI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Summarizing Part 2</h2>
+
+<p>We now have the following in place:</p>
+
+<ul>
+<li>A node managed by Chef - our Vagrant VM</li>
+<li>The latest version of Chef (10.16.2) is running on the node</li>
+<li>Six cookbooks added to our local workstation</li>
+<li>Six cookbooks added to our Hosted Chef organization</li>
+<li>The run list for our node was updated</li>
+<li>The node has a working MongoDB database running</li>
+<li>The node has Apache and Passenger running</li>
+<li>Port Forwarding is configured on the Vagrant VM</li>
+</ul>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/7Cxfv40w7wQ" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nathen Harvey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2012-12-07T13:18:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>7</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>1:18 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/apache/'>apache</a>, <a class='category' href='/blog/categories/chef/'>chef</a>, <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/knife/'>knife</a>, <a class='category' href='/blog/categories/mongodb/'>mongodb</a>, <a class='category' href='/blog/categories/mulpat/'>mulpat</a>, <a class='category' href='/blog/categories/opschef/'>opschef</a>, <a class='category' href='/blog/categories/opscode/'>opscode</a>, <a class='category' href='/blog/categories/passenger/'>passenger</a>, <a class='category' href='/blog/categories/sysadmin/'>sysadmin</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/" data-via="nathenharvey" data-counturl="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/12/06/learning-chef-part-1/" title="Previous Post: Learning Chef - Part 1">&laquo; Learning Chef - Part 1</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/12/14/learning-chef-part-3/" title="Next Post: Learning Chef - Part 3">Learning Chef - Part 3 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/19/devop-with-me/">DevOp With Me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/learning-chef-part-6/">Learning Chef - Part 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
+      </li>
+    
+  </ul>
+</section>
+Included file &#8216;asides/twitter.html&#8217; not found in _includes directory
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/nathenharvey">@nathenharvey</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nathenharvey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nathen Harvey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'nathenharvey';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/';
+        var disqus_url = 'http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
