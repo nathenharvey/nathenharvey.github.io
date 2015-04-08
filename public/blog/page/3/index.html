@@ -9,7 +9,7 @@
   <meta name="author" content="Nathen Harvey">
 
   
-  <meta name="description" content="Shortly before MongoSV 2011, 10gen announced the MongoDB Masters Program. &#8220;The MongoDB Masters program is designed to recognize the &hellip;">
+  <meta name="description" content="During this year&#8217;s MongoSV, 10gen presented awards to peer-nominated community members for their contributions to the MongoDB project. There &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -71,7 +71,6 @@
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
   <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/blog/resume">Resume</a></li>
 </ul>
 
 </nav>
@@ -79,6 +78,114 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/29/mongodb-community-awards/">MongoDB Community Awards</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-29T23:54:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+
+<p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
+
+<ol>
+<li><strong>Innovative Application Award</strong> - recognizes a company or individual who has built an innovative application using MongoDB.</li>
+<li><strong>Core Contributor Award</strong> - recognizes a community member for significant contribution to the codebase of the MongoDB core server, language drivers, or tools.</li>
+<li><strong>Community Champion Award</strong> - recognizes an individual for their efforts evangelizing and growing the MongoDB community.</li>
+</ol>
+
+
+<p>This is the first year that 10gen has organized these awards. I think they&#8217;re a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/12/29/mongodb-community-awards/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/29/mongosv/">MongoSV</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-29T15:45:00-05:00" pubdate data-updated="true">Dec 29<span>th</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
+
+<p>&#8220;MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.&#8221;</p>
+
+<h2>Impressions and Observations</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
+I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
+
+<h3>Schema free != Design free</h3>
+
+<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
+
+<h3>Aggregation Framework</h3>
+
+<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2011/12/29/mongosv/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -581,111 +688,9 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/">Testing Mod_rewrite and Apache Redirects</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-16T09:00:00-04:00" pubdate data-updated="true">Jul 16<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>At <a href="http://www.customink.com">CustomInk</a>, we recently migrated from mongrel to Passenger for our Ruby on Rails website. This migration included a full rewrite of our apache configuration files.</p>
-
-<p>With over 500 redirect and rewrite rules in place I needed a way to ensure my copy-n-paste skills were up to snuff and that we didn&#8217;t loose any redirects along the way.</p>
-
-<p>In my search for help, I found a <a href="http://www.viget.com/extend/test-drive-mod-rewrite-rules-with-testunit/">blog post by Patrick Reagan from Viget labs</a> that described a method for writing tests that will verify all the rewrite rules and redirects. Patrick&#8217;s ideas were packaged up into a gem and available on <a href="http://github.com/eightbitraptor/http_redirect_test">github</a>.</p>
-
-<p>I can now write up tests like:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">should_redirect</span> <span class="s2">&quot;/cink/ideas/ideas.jsp&quot;</span><span class="p">,</span> <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="s2">&quot;/inspiration/&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So now I can to some TDC (test-driven configuration) whenever I get a request for a new redirect.</p>
-
-<p>What other methods have you used to test your rewrite rules?</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/06/11/passenger-and-php/">Passenger and PHP</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-06-11T09:25:00-04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn&#8217;t working anymore.</p>
-
-<p>Compared the configurations and everything looked OK, no changes were made as part of the migration. PHP module was being loaded, URL was being properly aliased, etc. Watched my logs and saw that Passenger was attempting to serve up the request which is not what I wanted.</p>
-
-<p>A quick update to my Directory&#8217;s definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='apache'><span class='line'>  <span class="nb">Alias</span> <span class="sx">/blog</span> <span class="sx">/shared/www/blog</span>
-</span><span class='line'>  <span class="nt">&lt;Directory</span> <span class="s">/shared/www/blog</span><span class="nt">&gt;</span>
-</span><span class='line'>    <span class="nb">DirectoryIndex</span> index.php
-</span><span class='line'>    <span class="nb">PassengerEnabled</span> <span class="k">off</span>
-</span><span class='line'>  <span class="nt">&lt;/Directory&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
+    
+      <a class="prev" href="/blog/page/4/">&larr; Older</a>
     
     <a href="/blog/archives">Blog Archives</a>
     
@@ -699,7 +704,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Nathen Harvey -
+  Copyright &copy; 2015 - Nathen Harvey -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
