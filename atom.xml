@@ -1,0 +1,1629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T18:07:35-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[DevOps Explained]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2014/05/01/devops-explained/"/>
+    <updated>2014-05-01T21:31:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2014/05/01/devops-explained</id>
+    <content type="html"><![CDATA[<p>We created a little video to help explain DevOps.  This video was initially released during <a href="http://chefconf.com">#ChefConf 2014</a>.</p>
+
+<p>Please note, this video does include some explicit language.  However, there is a <a href="https://www.youtube.com/watch?v=g-BF0z7eFoU">version that&#8217;s safe for all audiences</a>.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/0P0HD5pE-zU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This and all of the other <a href="http://www.youtube.com/watch?v=g-BF0z7eFoU&amp;list=PL11cZfNdwNyMmx0msapJfuGsLV43C7XsA">videos from #ChefConf are available on YouTube</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[DevOp With Me]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me/"/>
+    <updated>2013-12-19T12:47:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me</id>
+    <content type="html"><![CDATA[<iframe width="560" height="315" src="//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Come DevOp with me! We&#8217;ll explore what DevOps is and what it is not.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 6]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6/"/>
+    <updated>2013-01-16T12:52:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Engine Yard DevOps Innovator]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/01/07/ey-devops-innovator/"/>
+    <updated>2013-01-07T07:00:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/01/07/ey-devops-innovator</id>
+    <content type="html"><![CDATA[<p>Last week Engine Yard announced the winners of their inaugural <a href="https://blog.engineyard.com/2013/engine-yard-innovators-awards/">Engine Yard Innovators Awards</a>.</p>
+
+<p>I was both honored and surprised when I learned that I had been chosen as the Engine Yard Innovator in the DevOps category.</p>
+
+<p>&#8220;Our DevOps category winner is Nathen Harvey. A devops guru who has been travelling from conference to conference evangelizing the use of Chef, Nathen is known for his &#8220;Rails With Chef&#8221; proficiency. He works to help others understand the importance of backend compatibility. &#8221;</p>
+
+<p>I was asked to write a <a href="https://blog.engineyard.com/2013/devops-innovation/">post about some my work</a>. This seemed like a good time to reflect on some of the work I&#8217;ve been doing for the past few years.</p>
+
+<p>In late 2009, I joined <a href="http://www.customink.com">CustomInk</a> to head up the Web Operations team.  While there, I was able to help drive the adoption of many DevOps practices including automation, continuous delivery, collaboration across teams, expanded responsibility, and participation in open source communities.</p>
+
+<!-- more -->
+
+
+<p>At CustomInk, we transformed our infrastructure from one that was primarily hand-crafted, static, and managed by a few people to one that is flexible, automatically provisioned, and managed by many.  We changed the way we deployed software going from two deploys a month to multiple deploys each day. Developers were no longer stuck waiting for the Operations team to deploy code; the Operations team no longer played the role of &#8220;merge monkey.&#8221; We redefined what it meant for a developer to be &#8220;done&#8221; with a bit of functionality:  no longer was a commit to the master branch sufficient, the functionality wasn&#8217;t &#8220;done&#8221; until it was in production.</p>
+
+<p>What were the results of these changes?  We increased the number of deploys while dramatically reducing the number of rollbacks.  We reduced the amount of time it took features to go from planning to production with a goal of minimizing the amount of work in progress at any given time.  Developers and Operations collaborated on more projects each helping the other improve their skills, techniques, and processes.  Our addiction to automation allowed us to deliver more value to our customers faster than ever before.</p>
+
+<p>Many things enabled us to make such dramatic changes in our organization.  One of the most important catalysts for these changes was the things we were learning from others in the technical community.  We took ideas from other companies like <a href="http://codeascraft.etsy.com/">Etsy</a> and modified them to fit our needs.  We learned about new tools and techniques from blog posts, podcasts, and conferences.  We took time to learn and expirement with new tools, technologies, and techniques.  We felt it was important to give back to the community.</p>
+
+<p>I helped launch <a href="http://technology.customink.com/">EngineerInk</a>, the CustomInk Technology Blog and <a href="https://twitter.com/custominktech">@custominktech</a>, the twitter account for sharing CustomInk&#8217;s technology news.  Additionally, I co-founded the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOpsDC</a>.  Both of these groups meet regularly to exchange ideas, share knowledge, and network.  We are also known to enjoy a craft beer or two at each meeting.</p>
+
+<p>I&#8217;ve been lucky enough to share some of our successes at various conferences including <a href="http://www.confreaks.com/videos/882-railsconf2012-taming-the-kraken-how-operations-enables-developer-productivity">RailsConf</a>.</p>
+
+<p>The transformation, sharing, and success we enjoyed at CustomInk would not have been possible were it not for the attitude, dedication, and drive of the people involved.  When it comes to technology though, the one tool that most directly enabled these changes is Chef, the configuration management framework from Opscode.  I&#8217;ve written about our <a href="http://technology.customink.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">decision to use Chef</a> and quite a few <a href="http://technology.customink.com/blog/our-team/nathen-harvey.html">other articles</a> about Chef on EngineerInk.  Sure, Chef is a great and very powerful tool but there&#8217;s really a lot more to Chef than a bunch of Ruby code.</p>
+
+<p>When I first started working with Chef, it reminded me of Rails when I first stated using it back in 2007.  Here was a framework built around a strong, vibrant, and welcoming community.  There were lots of building blocks (cookbooks, knife plugins, etc.) being developed and shared.  Chef, like Ruby, felt dedicated to developer happiness.  The best days at the office were those where I spent the majority of my time automating with Chef.  In early 2012, I joined <a href="http://twitter.com/bryanwb">Bryan Berry</a> on his <a href="http://foodfightshow.org">Food Fight Show</a> podcast to share news of newly published <a href="http://community.opscode.com/cookbooks">Chef Cookbooks</a> - the &#8220;What&#8217;s Cookin&#8217;&#8221; report. I&#8217;ve since joined the show as a co-host and have been fortunate enough to interview some of the thought leaders in the DevOps movement.  I&#8217;ve also had the opportunity to speak about Chef at a number of conferences including <a href="http://technology.customink.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/">RubyNation</a>, <a href="http://www.10gen.com/presentations?application=All&amp;programming_lang=All&amp;speaker=1120&amp;event=&amp;language=All">MongoDB Conferences</a>, and <a href="http://www.youtube.com/watch?v=uREL4FFPddo">#ChefConf</a>.</p>
+
+<p>In August, 2012, I left CustomInk to work as a Technical Community Manager at Opscode.  This allows me to devote even more time evangelizing Chef and <a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">helping people learn Chef</a>.</p>
+
+<p>DevOps is not about tool choices and Chef isn&#8217;t required to adopt DevOps practices in your organization.  However, DevOps does require passionate individuals who are excited to tackle tough challenges and enjoy working with technology, their colleagues, and the larger technical and business communities.  For me, Chef is a tool and a community that make me happy, keep me passionate about the work I&#8217;m doing, and encourage me to share with others.</p>
+
+<p>I would like to thank the entire team at Engine Yard for their continued support of the Ruby, PHP, Open Source, and DevOps communities.  I truly am humbled to be selected as the DevOps Innovator.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 5]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5/"/>
+    <updated>2012-12-28T12:52:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4/"/>
+    <updated>2012-12-19T13:53:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>Part 4 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 4, we completed the application deploy and then looked at <a href="http://docs.opscode.com/essentials_roles.html">roles</a>.</p>
+
+<p>I&#8217;ll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<p>Also, you can grab the code from the following repositories on github:</p>
+
+<ul>
+<li><a href="http://github.com/mulderp/learning-chef">Chef Repository</a></li>
+<li><a href="http://github.com/mulderp/chef-demo">Rails Application</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fb4DJJmhUt8" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In Learning Chef - Part 5 we will move the MongoDB to it&#8217;s own VM.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3/"/>
+    <updated>2012-12-14T12:14:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>Part 3 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
+
+<p>The application wasn&#8217;t fully deployed by the end of the tutorial but we&#8217;ll pick-up from there next time.</p>
+
+<p>I&#8217;ll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+
+<p>Also, you can grab the code from the following repositories on github:</p>
+
+<ul>
+<li><a href="http://github.com/mulderp/learning-chef">Chef Repository</a></li>
+<li><a href="http://github.com/mulderp/chef-demo">Rails Application</a></li>
+</ul>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In <a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a> we finish the deployment of the sample application and then explore roles.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/"/>
+    <updated>2012-12-07T13:18:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>Part 2 of our Learning Chef tutorial was run as a Google+ Hangout that was streamed to YouTube.</p>
+
+<h2>Review of Part 1</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Read the blog post for Part 1</a></li>
+</ul>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/E4ibkS1LbPk" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Discuss Chef Solo vs. Chef Server</h2>
+
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don&#8217;t get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<p></p>
+
+<h2>Download a number of cookbooks from the community site</h2>
+
+<p>Now that we&#8217;ve got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We&#8217;ll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+
+<p>Here are the commands we ran to download each cookbook:</p>
+
+<ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+</ol>
+
+
+<p>After downloading each cookbook, extract it to the cookbooks directory of the chef-repo:</p>
+
+<p><code>tar xzvf COOKBOOK_NAME.tar.gz -C cookbooks</code></p>
+
+<p>Finally, upload each cookbook to the Hosted Chef server:</p>
+
+<p><code>knife cookbook upload COOKBOOK_NAME</code></p>
+
+<p>This video shows the process for grabbing the <code>omnibus_updater</code> cookbook off of the <a href="http://community.opscode.com">community site</a>.</p>
+
+<ol>
+<li><code>knife cookbook site download omnibus_updater</code></li>
+<li><code>tar xzvf omnibus_updater-0.0.5.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload omnibus_updater</code></li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This video shows the process for grabbing the <code>mongodb</code> cookbook, and it&#8217;s dependency, the <code>apt</code> cookbook, off of the community site.</p>
+
+<ol>
+<li><code>knife cookbook site download mongodb</code></li>
+<li><code>knife cookbook site download apt</code></li>
+<li><code>tar xzvf mongodb-0.11.0.tar.gz -C cookbooks</code></li>
+<li><code>tar xzvf apt-1.5.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload apt</code></li>
+<li><code>knife cookbook upload mongodb</code></li>
+</ol>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/wyLtF261a6A" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Update the run list for our node</h2>
+
+<p>There are a number of ways to update a node&#8217;s run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+
+<p>In our session, we first used the Opscode Chef management interface.</p>
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/Q0BgCLSqJJU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>You can also update your node&#8217;s run list using knife.  In this video, we&#8217;ll use knife to add mongodb to the node&#8217;s run list.</p>
+
+<ol>
+<li><code>export EDITOR=vim</code> - knife uses the <code>EDITOR</code> environment variable to determine which application to launch when you edit the node.</li>
+<li>Add <code>"recipe[mongodb]"</code> to the <code>run_list</code></li>
+<li>Run <code>chef-client</code> on the node using the <code>vagrant provision</code> command.</li>
+</ol>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/5xU3A-SvdJc" frameborder="0" allowfullscreen></iframe>
+
+
+<p>We&#8217;ll follow the same steps to add <code>passenger_apache2</code> to our run list.</p>
+
+<ol>
+<li><code>knife cookbook site download passenger_apache2</code></li>
+<li><code>tar xzvf passenger_apache2-1.0.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook site download apache2</code></li>
+<li><code>tar xzvf apache2-1.3.2.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload apache2</code></li>
+<li><code>knife cookbook site download build-essential</code></li>
+<li><code>tar xzvf build-essential-1.2.0.tar.gz -C cookbooks</code></li>
+<li><code>knife cookbook upload build-essential</code></li>
+<li><code>knife cookbook upload passenger_apache2</code></li>
+</ol>
+
+
+<p>We will then add <code>passenger_apache2</code> to the run list using <code>knife node edit patrick_vm</code>.  When we run <code>vagrant provision</code>, we&#8217;ll hit an error that requires us to add <code>apt</code> to the run list prior to <code>passenger_apache2</code>.</p>
+
+<p>By the end of this video, the run list should look like:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>"run_list" : [
+</span><span class='line'>    "recipe[apt]",
+</span><span class='line'>    "recipe[omnibus_updater]",
+</span><span class='line'>    "recipe[mongodb]",
+</span><span class='line'>    "recipe[passenger_apache2]"
+</span><span class='line'>]</span></code></pre></td></tr></table></div></figure>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/0-Bid-eiJHY" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Add port forwarding to the Vagrant instance</h2>
+
+<p>Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here&#8217;s the full Vagrantfile:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">forward_port</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">8080</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/ag0w_IqkgBI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Summarizing Part 2</h2>
+
+<p>We now have the following in place:</p>
+
+<ul>
+<li>A node managed by Chef - our Vagrant VM</li>
+<li>The latest version of Chef (10.16.2) is running on the node</li>
+<li>Six cookbooks added to our local workstation</li>
+<li>Six cookbooks added to our Hosted Chef organization</li>
+<li>The run list for our node was updated</li>
+<li>The node has a working MongoDB database running</li>
+<li>The node has Apache and Passenger running</li>
+<li>Port Forwarding is configured on the Vagrant VM</li>
+</ul>
+
+
+<iframe width="420" height="315" src="http://www.youtube.com/embed/7Cxfv40w7wQ" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Chef - Part 1]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1/"/>
+    <updated>2012-12-06T17:07:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/06/learning-chef-part-1</id>
+    <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
+
+<ul>
+<li><a href="http://nathenharvey.com/blog/2012/12/06/learning-chef-part-1/">Part 1</a> - Introduce the project, configure workstation, and register a node with hosted Chef</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Part 2</a> - Download cookbooks from the community site, add MongoDB, Apache, and Passenger to our node</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Part 3</a> - Start writing a cookbook to deploy our application</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Part 4</a> - Finish the application deploy, introduce roles</li>
+<li><a href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/">Part 5</a> - Multi-node Vagrant</li>
+<li><a href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/">Part 6</a></li>
+</ul>
+
+
+<p>In November of 2012, <a href="https://twitter.com/mulpat">Patrick Mulder</a> posted a <a href="http://lists.opscode.com/sympa/arc/chef/2012-11/msg00389.html">request on the Chef mailing list</a>.  He was</p>
+
+<p>&#8220;looking for some 1-1 teaching via skype to help me get going in setting up a basic DB server from scratch, as well as a basic dev server as intermediary step.&#8221;</p>
+
+<p>I thought this would be an excellent opportunity to feed my recent addiction to Google+ Hangouts.  I would provide Patrick some one-on-one tutoring if he would agree to having the sessions <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">broadcast live on YouTube</a>.  We had some technical issues getting our first session going in a Google+ Hangout but we were able to meet via Skype and I captured video of the session.</p>
+
+<p>Our goal is to help you get up and running on Chef by following our progress.  The intent is to have additional sessions run via Google+ Hangouts that are steamed live to YouTube.  This post includes our first session which has been broken into nine short videos.  I hope you enjoy these videos and are able to learn something about Chef, too.  Both Patrick and I are looking forward to your feedback on this experiment.</p>
+
+<p>You can <a href="http://www.youtube.com/watch?v=l7-nAHdplD4&amp;list=PLKK5zTDXqzFM53J6-rikDrqbbY0Pu-9SP">watch all of the videos in the YouTube playlist</a> or keep reading and watch each video in turn.</p>
+
+<h2>Introduction</h2>
+
+<p>In this video we introduce ourselves and the project.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/l7-nAHdplD4" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<!-- more -->
+
+
+<h2>Overview of Chef</h2>
+
+<p>In this video we visit the newly launched <a href="http://docs.opscode.com">Chef Documentation Site</a> and look over the <a href="http://docs.opscode.com/chef_overview.html">Overview of Chef</a> diagram.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2BCNpHNZzy8" frameborder="0" allowfullscreen></iframe>
+
+
+<p>For our project the Chef Workstation will be Patrick&#8217;s laptop, the Chef Server will be <a href="http://www.opscode.com/hosted-chef/">Opscode Hosted Chef</a>, and the first node we create will be a virtual machine that is managed by <a href="http://vagrantup.com">Vagrant</a>.</p>
+
+<h2>Register for Hosted Chef</h2>
+
+<p>In this video Patrick will <a href="http://www.opscode.com/hosted-chef/">sign-up for a Hosted Chef account</a>. We will use the free trial which allows you to manage up to 5 nodes for free.  After signing-up and verifying his email address, Patrick will <a href="https://manage.opscode.com">login to Hosted Chef</a> at <a href="https://manage.opscode.com">https://manage.opscode.com</a>.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/7n_mwo9-pIA" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Invite Another User to Your Chef Organization</h2>
+
+<p>If you&#8217;re not the only one managing your infrastructure, you&#8217;ll want to invite you co-workers to join your Chef Organization.  Watch this video to see how to invite another user to join your Chef Organization.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/5pwVYvetEW4" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Initialize a git Repository</h2>
+
+<p>When managing your infrastructure as code, you&#8217;ll want to store that code in some source code repository.  For this tutorial, we&#8217;re going to use <a href="http://git-scm.com/">git</a>, a distributed version control system.  The git repository will be publicly hosted on <a href="https://github.com/mulderp/learning-chef">github</a>.</p>
+
+<p>Your workstation will need to have Chef installed.  We verify that Patrick has already installed Chef but if you haven&#8217;t installed Chef on your workstation yet, you can grab it from <a href="http://www.opscode.com/chef/install/">http://www.opscode.com/chef/install/</a>.</p>
+
+<p>Next we create the Chef repository on the local workstation:</p>
+
+<ol>
+<li><code>git clone git@github.com:opscode/chef-repo.git</code> This will clone the file and directory structure needed to get started with Chef.  Of course, you could also just download a zip or tar.gz of the files from <a href="https://github.com/opscode/chef-repo/downloads">https://github.com/opscode/chef-repo/downloads</a>.</li>
+<li><code>cd chef-repo</code> Change in to the directory that was just created.</li>
+<li><code>rm -rf .git</code> Remove the git directory from the cloned repository, we&#8217;re going to create our own git repo.</li>
+<li><code>git init</code> - Initialize a new git repository for our infrastructure code.</li>
+<li>Create a new repository on <a href="http://github.com">github.com</a> if you&#8217;d like to store your repository there.</li>
+<li>Commit the initial changes and push to your repository.</li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/KdoquSLbZOI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Configure Knife</h2>
+
+<p>The Chef server provides three files that must be in the Chef repository and are required when connecting to the Chef server. For Hosted Chef and Private Chef, log on and download the following files:</p>
+
+<ul>
+<li><code>knife.rb</code> - This configuration file can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>ORGANIZATION-validator.pem</code> -  This private key can be downloaded from the <a href="https://manage.opscode.com/organizations">Organizations page</a>.</li>
+<li><code>USER.pem</code> - This private key an be downloaded from the <a href="https://www.opscode.com/account/password">Change Password section of the Account Management page</a>.</li>
+</ul>
+
+
+<p>We&#8217;ll then move this files into a <code>.chef</code> directory in our chef-repo.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6UoRTvpUIZ0" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Initialize Vagrant</h2>
+
+<p><a href="http://vagrantup.com">Vagrant</a> is a tool that makes it super easy to launch and manage virtual machines on your local workstation.  We&#8217;re going to create a Vagrant-managed virtual machine to act as our Node.  Vagrant manages each virtual machine as a &#8220;box.&#8221;  Opscode makes a number of Vagrant boxes available through it&#8217;s <a href="https://github.com/opscode/bento">bento project on github.com</a>.</p>
+
+<ol>
+<li>Initialize Vagrant by running <code>vagrant init</code></li>
+<li>Modify the <code>Vagrantfile</code> so that it contains (at least) the following:</li>
+</ol>
+
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, run <code>vagrant up</code> to launch the Vagrant box.</p>
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/o9HtZ1nDoTI" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>First Converge</h2>
+
+<p>The first time <code>vagrant up</code> is run for this box, it must download the file from Opscode&#8217;s Amazon S3 file store.  This can take some time so, while it&#8217;s running, you may want to expand your Vagrant file a bit more.  We&#8217;ll configure Vagrant to use the <code>chef_client</code> provisioner.  You&#8217;ll find more <a href="http://vagrantup.com/v1/docs/provisioners/chef_server.html">information about the chef_client provisioner on the Vagrant website</a>.</p>
+
+<p> Here are the relevant settings in our Vagrantfile by the end of the video:</p>
+
+<figure class='code'><figcaption><span>Vagrantfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Vagrant</span><span class="o">::</span><span class="no">Config</span><span class="o">.</span><span class="n">run</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box</span> <span class="o">=</span> <span class="s2">&quot;opscode-ubuntu-12.04&quot;</span>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">box_url</span> <span class="o">=</span> <span class="s2">&quot;https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box&quot;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">vm</span><span class="o">.</span><span class="n">provision</span> <span class="ss">:chef_client</span> <span class="k">do</span> <span class="o">|</span><span class="n">chef</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">chef_server_url</span> <span class="o">=</span> <span class="s2">&quot;https://api.opscode.com/organizations/fidor&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_key_path</span> <span class="o">=</span> <span class="s2">&quot;./.chef/fidor-validator.pem&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">validation_client_name</span> <span class="o">=</span> <span class="s2">&quot;fidor-validator&quot;</span>
+</span><span class='line'>    <span class="n">chef</span><span class="o">.</span><span class="n">node_name</span> <span class="o">=</span> <span class="s2">&quot;patrick_vm&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>Checkpoint</h2>
+
+<p>Congratulations!!  You&#8217;ve now got a working Chef development environment including:</p>
+
+<ol>
+<li>A free account on Opscode&#8217;s Hosted Chef.</li>
+<li>A workstation configured to connect to your Hosted Chef account</li>
+<li>A git repository for tracking all of your infrastructure code changes</li>
+<li>A Vagrant-managed virtual machine running on your local workstation</li>
+<li>The virtual machine is a node managed by Chef</li>
+</ol>
+
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/qgPvedOKD1I" frameborder="0" allowfullscreen></iframe>
+
+
+<h2>What&#8217;s Next</h2>
+
+<p>In <a href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/">Learning Chef - Part 2</a> we will grab some cookbooks from the <a href="http://community.opscode.com">Opscode Community Site</a> and use those to start managing our node.</p>
+
+<p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MVT: Knife Test and Travis CI]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
+    <updated>2012-07-06T21:26:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci</id>
+    <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we&#8217;ll iterate on the &#8220;Minimum Viable Test&#8221; idea by adding in support for knife&#8217;s cookbook testing.</p>
+
+<p>Wait, I&#8217;m already running foodcritic, do I really need to run <code>knife cookbook test</code>, too?</p>
+
+<p>I&#8217;ll use a very simple example to demonstrate that you do.</p>
+
+<p>Let&#8217;s create a very basic cookbook:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>knife cookbook create very_basic
+</span><span class='line'>** Creating cookbook very_basic
+</span><span class='line'>** Creating README <span class="k">for</span> cookbook: very_basic
+</span><span class='line'>** Creating metadata <span class="k">for</span> cookbook: very_basic
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next, we&#8217;ll write a flawed recipe:</p>
+
+<figure class='code'><figcaption><span>cookbooks/very_basic/recipes/default.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">package</span> <span class="s2">&quot;flawed&quot;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">action</span> <span class="ss">:nothing</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, run foodcritic on this cookbook:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>foodcritic cookbooks/very_basic
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>Foodcritic doesn&#8217;t throw any errors or find any problem with the cookbook.</p>
+
+<p>Let&#8217;s try testing it with knife:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>knife cookbook <span class="nb">test </span>very_basic
+</span><span class='line'>checking very_basic
+</span><span class='line'>Running syntax check on very_basic
+</span><span class='line'>Validating ruby files
+</span><span class='line'>FATAL: Cookbook file recipes/default.rb has a ruby syntax error:
+</span><span class='line'>FATAL: /Users/nharvey/projects/chef-hosted/.chef/../cookbooks/very_basic/recipes/default.rb:22: syntax error, unexpected keyword_end, expecting <span class="nv">$end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p>OK, it should now be obvious that <code>knife cookbook test</code> should be included as part of our MVT.</p>
+
+<!-- more -->
+
+
+<p>To get Travis CI running <code>knife cookbook test</code> for us, we&#8217;ll need to add or update the following files:</p>
+
+<ul>
+<li>.travis.yml</li>
+<li>Rakefile</li>
+<li>test/.chef/knife.rb</li>
+<li>test/support/Gemfile</li>
+</ul>
+
+
+<p>Of course, this assumes you&#8217;ve configured your cookbook as described in the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.  Let&#8217;s start with the Rakefile.</p>
+
+<figure class='code'><figcaption><span>Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/bin/env rake</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">task</span> <span class="ss">:prepare_sandbox</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">files</span> <span class="o">=</span> <span class="sx">%w{*.md *.rb attributes definitions files libraries providers recipes resources templates}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">rm_rf</span> <span class="n">sandbox_path</span>
+</span><span class='line'>  <span class="n">mkdir_p</span> <span class="n">sandbox_path</span>
+</span><span class='line'>  <span class="n">cp_r</span> <span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;{</span><span class="si">#{</span><span class="n">files</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">}&quot;</span><span class="p">),</span> <span class="n">sandbox_path</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">sandbox_path</span>
+</span><span class='line'>  <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">),</span> <span class="sx">%w(tmp cookbooks cookbook)</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In the file snippet above, I&#8217;ve only included the parts that are relevant for getting knife working.  I&#8217;ll include the full source of the Rakefile at the end of the article.</p>
+
+<p>Next, let&#8217;s add this rake task to our .travis.yml file.</p>
+
+<figure class='code'><figcaption><span>.travis.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">language</span><span class="p">:</span> <span class="n">ruby</span>
+</span><span class='line'><span class="ss">gemfile</span><span class="p">:</span>
+</span><span class='line'>   <span class="o">-</span> <span class="nb">test</span><span class="o">/</span><span class="n">support</span><span class="o">/</span><span class="no">Gemfile</span>
+</span><span class='line'><span class="ss">rvm</span><span class="p">:</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">2</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span><span class='line'><span class="ss">script</span><span class="p">:</span>
+</span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">knife</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>To successfully run the knife command, Travis CI will need a very minimal Chef configuration.</p>
+
+<figure class='code'><figcaption><span>test/.chef/knife.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">cache_type</span> <span class="s1">&#39;BasicFile&#39;</span>
+</span><span class='line'><span class="n">cache_options</span><span class="p">(</span><span class="ss">:path</span> <span class="o">=&gt;</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;HOME&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2">/.chef/checksums&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And, of course, we&#8217;ll need to add Chef to our Gemfile.  Be sure to specify a modern version as Travis CI will use 0.8.10 by default (at the time of this writing).</p>
+
+<figure class='code'><figcaption><span>test/support/Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s2">&quot;https://rubygems.org&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;rake&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;chef&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 10.12.0&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&#8217;s it.  On your next <code>git push</code> Travis CI should run <code>knife cookbook test</code> on your cookbook.</p>
+
+<h2>Running locally</h2>
+
+<p>To run the rake tasks locally, you&#8217;ll need to tell bundler where the Gemfile is, or you&#8217;ll need to move it to the root directory of your cookbook and update .travis.yml appropriately.  Use the following command to run your tests locally:</p>
+
+<p><code>BUNDLE_GEMFILE=test/support/Gemfile rake knife</code>
+<code>BUNDLE_GEMFILE=test/support/Gemfile rake foodcritic</code></p>
+
+<h2>Full source code</h2>
+
+<p>You can checkout this <a href="https://github.com/customink-webops/percona-install/compare/03b944...d423b14">Github compare view</a> to see the changes made to the code from the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.</p>
+
+<figure class='code'><figcaption><span>test/.chef/knife.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">cache_type</span> <span class="s1">&#39;BasicFile&#39;</span>
+</span><span class='line'><span class="n">cache_options</span><span class="p">(</span><span class="ss">:path</span> <span class="o">=&gt;</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="no">ENV</span><span class="o">[</span><span class="s1">&#39;HOME&#39;</span><span class="o">]</span><span class="si">}</span><span class="s2">/.chef/checksums&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>.travis.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">language</span><span class="p">:</span> <span class="n">ruby</span>
+</span><span class='line'><span class="ss">gemfile</span><span class="p">:</span>
+</span><span class='line'>   <span class="o">-</span> <span class="nb">test</span><span class="o">/</span><span class="n">support</span><span class="o">/</span><span class="no">Gemfile</span>
+</span><span class='line'><span class="ss">rvm</span><span class="p">:</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">2</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span><span class='line'><span class="ss">script</span><span class="p">:</span>
+</span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">knife</span>
+</span><span class='line'>  <span class="o">-</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">foodcritic</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Rakefile was refactored a bit since the previous post:</p>
+
+<figure class='code'><figcaption><span>Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/bin/env rake</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="s1">&#39;foodcritic&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs foodcritic linter&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:foodcritic</span> <span class="k">do</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">if</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">sh</span> <span class="s2">&quot;foodcritic -f any </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;WARN: foodcritic run is skipped as Ruby </span><span class="si">#{</span><span class="no">RUBY_VERSION</span><span class="si">}</span><span class="s2"> is &lt; 1.9.2.&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">task</span> <span class="ss">:prepare_sandbox</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">files</span> <span class="o">=</span> <span class="sx">%w{*.md *.rb attributes definitions files libraries providers recipes resources templates}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">rm_rf</span> <span class="n">sandbox_path</span>
+</span><span class='line'>  <span class="n">mkdir_p</span> <span class="n">sandbox_path</span>
+</span><span class='line'>  <span class="n">cp_r</span> <span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;{</span><span class="si">#{</span><span class="n">files</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">}&quot;</span><span class="p">),</span> <span class="n">sandbox_path</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'><span class="k">def</span> <span class="nf">sandbox_path</span>
+</span><span class='line'>  <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">),</span> <span class="sx">%w(tmp cookbooks cookbook)</span><span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>test/support/Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s2">&quot;https://rubygems.org&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;rake&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;foodcritic&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;chef&#39;</span><span class="p">,</span> <span class="s1">&#39;~&gt; 10.12.0&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Credit</h3>
+
+<p>A big &#8220;Thank You!&#8221; shout-out to <a href="http://twitter.com/sethvargo">Seth Vargo</a> for writing most of the code used in this post!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MVT: Foodcritic and Travis CI]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
+    <updated>2012-05-29T22:30:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
+    <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It&#8217;s becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I&#8217;ll look at a &#8220;minimum viable testing&#8221; (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
+
+<h3>Testing with Chef</h3>
+
+<p>The idea of building automated tests for your infrastructure code has been getting a lot of traction lately.  When it comes to <a href="http://www.opscode.com/chef/">Chef</a>, many tools are starting to emerge.</p>
+
+<p>The first tool in this area to get any significant traction, that I know of, was <a href="http://www.cucumber-chef.org/">cucumber-chef</a>.  I first learned of this tool when I saw a pre-release copy of <a href="http://shop.oreilly.com/product/0636920020042.do">Test-Driven Infrastructure with Chef</a> at the O&#8217;Reilly booth at <a href="http://velocityconf.com/velocity2011">Velocity Conf 2011</a>.  <a href="http://twitter.com/lordcope">Stephen Nelson-Smith</a>, the book&#8217;s author and framework&#8217;s lead developer, proposes an outside-in approach to testing where your tests can also act as monitors that look after the health of your infrastructure.  I like the idea of this approach and feel it makes a lot of sense in a greenfield environment.  One benefit of this approach is that it blurs the line between testing and monitoring.  You can easily hook-up your monitoring system to your cucumber tests.</p>
+
+<p><a href="https://github.com/acrmp/chefspec">ChefSpec</a> is another tool for testing your Chef code.  It is a gem that makes it easy to write <a href="http://rspec.info/">RSpec</a> examples for Chef cookbooks.  This style of testing allows you to execute your tests without needing to converge the node that your tests are running on.  In other words, you can execute your tests without needing to provision a server.  One huge appeal to this style of testing is that the feedback loop is very small.  You&#8217;ll get feedback about your cookbook changes within seconds or a very few minutes of saving your changes.</p>
+
+<p><a href="https://github.com/calavera/minitest-chef-handler">Minitest Chef Handler</a> is yet another tool for testing with Chef.  This runs a suite of <a href="https://github.com/seattlerb/minitest">minitest</a> tests as a report handler in your Chef-managed nodes.  As you may know, report handlers are run at the end of each <a href="http://wiki.opscode.com/display/chef/Anatomy+of+a+Chef+Run">chef run, or convergence</a>.</p>
+
+<h3>Testing at ChefConf</h3>
+
+<p>At the inaugural <a href="http://chefconf.opscode.com">#ChefConf</a> there were many sessions that included information about many companies&#8217; approach to testing.  Here&#8217;s a quick list of some of the sessions:</p>
+
+<ul>
+<li><p><a href="http://www.foodfightshow.org/2012/04/episode-10-testallthethings-testing.html">Food Fight Show Episode #10 - TESTALLTHETHINGS</a> &#8211; This wasn&#8217;t actually part of #ChefConf but is &#8216;required listening&#8217; for anyone interested in learning more about this space.</p></li>
+<li><p><a href="http://chefconf2012.sched.org/event/bfe13edac99e2b4d8582f0cd1005ee73?iframe=no&amp;w=700&amp;sidebar=no&amp;bg=no">#ChefConf Pre-event Hackday: TEST ALL THE THINGS!!!</a></p></li>
+<li><p><a href="https://github.com/atomic-penguin/ntp">NTP Cookbook with tests</a> - tests were added to this cookbook as part of the hackday event.</p></li>
+<li><p><a href="http://www.youtube.com/watch?v=o2e0aZUAVGw">Test-driven Development for Chef Practitioners</a> (video)</p></li>
+<li><p><a href="http://www.youtube.com/watch?v=dPaYfAIvqxw">Test Driven Development Roundtable</a> (video)</p></li>
+</ul>
+
+
+<!--more-->
+
+
+<h3>Foodcritic</h3>
+
+<p><a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> is a lint tool for your Chef cookbooks.</p>
+
+<p>&#8220;Foodcritic has two goals:</p>
+
+<ul>
+<li><p>To make it easier to flag problems in your Chef cookbooks that will cause Chef to blow up when you attempt to converge. This is about faster feedback. If you automate checks for common problems you can save a lot of time.</p></li>
+<li><p>To encourage discussion within the Chef community on the more subjective stuff - what does a good cookbook look like? Opscode have avoided being overly prescriptive which by and large I think is a good thing. Having a set of rules to base discussion on helps drive out what we as a community think is good style.&#8221;</p></li>
+</ul>
+
+
+<h4>Why start with Foodcritic?</h4>
+
+<p>Given the plethora of options available, why should you start with Foodcritic?  Well, you have to start somewhere.  We felt Foodcritic was a good choice because it was easy to get started with, the tests ran quickly, and we are working under the assumption that once we started some automated testing, we&#8217;ll start layering on more and more pieces as we go.  After some initial experiments, we found that we could get Foodcritic looking after our each cookbook in a matter of minutes and local tests running in seconds.</p>
+
+<p>The pseudo-converge approaches (like ChefSpec) initially feel like we&#8217;ll need to do a lot of mocking that will take some time to get correct.  The post-converge approaches (like cucumber-chef and minitest) will take longer to run and are a bit more complex.</p>
+
+<p>One benefit of the post-converge approach is the ability to use your tests as health monitors.  We already have monitoring in place and use it as an indicator that a node is fully provisioned.  We call this &#8220;monitor-driven development.&#8221;  Given that, it was better for us to get started with something that runs without requiring a full converge.  Foodcritic fit the bill quite nicely.</p>
+
+<h3>Travis CI</h3>
+
+<p>Travis CI is:</p>
+
+<p>&#8220;A hosted continuous integration service for the open source community.&#8221;</p>
+
+<p>Using Travis CI in conjunction with Foodcritic, we&#8217;d have a basic automated test foundation to build on.</p>
+
+<h3>Automated Foodcritic tests with Travis CI <a name="steps"></a></h3>
+
+<p>Using Foodcritic and Travis CI, you can quickly set-up a &#8220;minimum viable testing&#8221; (MVT) environment.  The idea is that once you have some sort of tests running against your cookbooks, you&#8217;ll want to add more and doing so will be easy.  Let&#8217;s look at how to add Foodcritic and Travis CI to your cookbook workflow.</p>
+
+<h4>Initial set-up</h4>
+
+<p>Follow these steps to get everything set-up and ready for your first tests:</p>
+
+<ol>
+<li><code>gem install foodcritic</code></li>
+<li>Go to <a href="http://travis-ci.org/">Travis CI</a> and follow the Sign In link at the top.</li>
+<li>Activate the GitHub Service Hook for your cookbook&#8217;s repository from your TravisCI profile page.  Each of your cookbooks has its own repository, right?!</li>
+</ol>
+
+
+<h4>Configure your project</h4>
+
+<p>The next step is to add a .travis.yml file to your project.</p>
+
+<figure class='code'><figcaption><span>.travis.yml</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="ss">language</span><span class="p">:</span> <span class="n">ruby</span>
+</span><span class='line'><span class="ss">gemfile</span><span class="p">:</span>
+</span><span class='line'>   <span class="o">-</span> <span class="nb">test</span><span class="o">/</span><span class="n">support</span><span class="o">/</span><span class="no">Gemfile</span>
+</span><span class='line'><span class="ss">rvm</span><span class="p">:</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">2</span>
+</span><span class='line'>  <span class="o">-</span> <span class="mi">1</span><span class="o">.</span><span class="mi">9</span><span class="o">.</span><span class="mi">3</span>
+</span><span class='line'><span class="ss">script</span><span class="p">:</span> <span class="n">bundle</span> <span class="nb">exec</span> <span class="n">rake</span> <span class="n">foodcritic</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This file tells Travis CI how to build your project.  We&#8217;ve specified the language (ruby) and the versions of ruby to use when testing this cookbook (1.9.2 and 1.9.3).  We&#8217;ve also specified a Gemfile and script to execute when testing this project.  Let&#8217;s add a Gemfile to a new directory in our cookbook, <code>test/support</code>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>mkdir -p <span class="nb">test</span>/support
+</span><span class='line'>touch <span class="nb">test</span>/support/Gemfile
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Our Gemfile is pretty simple, just include <code>rake</code> and <code>foodcritic</code>.</p>
+
+<figure class='code'><figcaption><span>Gemfile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">source</span> <span class="s2">&quot;https://rubygems.org&quot;</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;rake&#39;</span>
+</span><span class='line'><span class="n">gem</span> <span class="s1">&#39;foodcritic&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, we&#8217;ll need to add a Rake file that will be run each time Travis builds our project.</p>
+
+<figure class='code'><figcaption><span>Rakefile</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1">#!/usr/bin/env rake</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs foodcritic linter&quot;</span>
+</span><span class='line'><span class="n">task</span> <span class="ss">:foodcritic</span> <span class="k">do</span>
+</span><span class='line'>  <span class="k">if</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">sandbox</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">),</span> <span class="sx">%w{tmp foodcritic cookbook}</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">prepare_foodcritic_sandbox</span><span class="p">(</span><span class="n">sandbox</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">sh</span> <span class="s2">&quot;foodcritic --epic-fail any </span><span class="si">#{</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">sandbox</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span class='line'>  <span class="k">else</span>
+</span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;WARN: foodcritic run is skipped as Ruby </span><span class="si">#{</span><span class="no">RUBY_VERSION</span><span class="si">}</span><span class="s2"> is &lt; 1.9.2.&quot;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">task</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="s1">&#39;foodcritic&#39;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">prepare_foodcritic_sandbox</span><span class="p">(</span><span class="n">sandbox</span><span class="p">)</span>
+</span><span class='line'>  <span class="n">files</span> <span class="o">=</span> <span class="sx">%w{*.md *.rb attributes definitions files libraries providers</span>
+</span><span class='line'><span class="sx">recipes resources templates}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">rm_rf</span> <span class="n">sandbox</span>
+</span><span class='line'>  <span class="n">mkdir_p</span> <span class="n">sandbox</span>
+</span><span class='line'>  <span class="n">cp_r</span> <span class="no">Dir</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s2">&quot;{</span><span class="si">#{</span><span class="n">files</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span><span class="si">}</span><span class="s2">}&quot;</span><span class="p">),</span> <span class="n">sandbox</span>
+</span><span class='line'>  <span class="nb">puts</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This Rakefile will copy the contents of our cookbook to a temporary directory and run the foodcritic tests on the temporary directory.  Note the <code>--epic-fail</code> tag is used to fail the build (return a non-zero exit code) on <code>any</code> rule that does not pass.</p>
+
+<p>That&#8217;s it!  When you push your commit to github, you should see Travis CI pick-up the changes, run your build, and report on status.</p>
+
+<h3>Share Your Build Status</h3>
+
+<p>One final step that you may consider is adding a build status indicator to your README.  This simple line in your README will let others know what the current build status is for your cookbook.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="o">[</span>!<span class="o">[</span>Build Status<span class="o">](</span>https://secure.travis-ci.org/<span class="o">[</span>YOUR_GITHUB_USERNAME<span class="o">]</span>/<span class="o">[</span>YOUR_PROJECT_NAME<span class="o">]</span>.png<span class="o">)](</span>http://travis-ci.org/<span class="o">[</span>YOUR_GITHUB_USERNAME<span class="o">]</span>/<span class="o">[</span>YOUR_PROJECT_NAME<span class="o">])</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Thanks &amp; Additional Resources</h3>
+
+<p>A big &#8220;Thank You!&#8221; shout-out to <a href="https://twitter.com/fnichol">Fletcher Nichol</a> and <a href="https://twitter.com/atomic_penguin">Eric G. Wolfe</a> from whom I &#8216;borrowed&#8217; the <code>Rakefile</code> and <code>.travis.yml</code> used in this post.</p>
+
+<p>More information on Foodcritic and Travis CI can be found here:</p>
+
+<ul>
+<li><a href="http://acrmp.github.com/foodcritic/">Foodcritic</a></li>
+<li><a href="http://about.travis-ci.org/docs/user/getting-started/">Travis CI: Getting started guide</a></li>
+<li><a href="http://about.travis-ci.org/docs/user/status-images/">Travis CI: Status Images</a></li>
+</ul>
+
+
+<h3>Next Post</h3>
+
+<p>Be sure to read the next post on this topic:  <a href="http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/">MVT: knife test and Travis CI</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[5 Things You Always Wanted to Know About Chef]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/"/>
+    <updated>2012-05-26T21:51:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef</id>
+    <content type="html"><![CDATA[<p>When I first started working with Chef, there were a couple of areas that I knew were going to be really awesome and helpful but I wasn&#8217;t sure how to get started with them.  In this presentation, I&#8217;ll provide a quick introduction to five things you&#8217;ve always wanted to know about Chef but were afraid to ask.</p>
+
+<p>I gave this presentation at <a href="http://chefconf.opscode.com">#ChefConf 2012</a>.</p>
+
+<p>Level-up your Chef skills by learning about these areas of Chef:</p>
+
+<ul>
+<li><strong>Attribute Precedence</strong> - Role, environment, cookbook, data bag? Which attribute value will be used in my chef run?</li>
+<li><strong>Encrypted Databags</strong> - Chef 0.10 brought us encrypted databags. We&#8217;ll look at how to create and use databags and how to keep them up-to-date in your repository.</li>
+<li><strong>LWRP</strong> - What is a LWRP? How and why do you create one? We&#8217;ll look at a couple of sample LWRPs and learn how to build a simple one.</li>
+<li><strong>Error Handlers</strong> - Demystify exception and report handlers by writing a simple one and seeing examples of how they work in the wild.</li>
+<li><strong>Capistrano and Chef</strong> - Take a quick look at why and how to integrate Chef search into your Capistrano configuration to make deploying your Rails apps even easier.</li>
+</ul>
+
+
+<p>One thing I didn&#8217;t mention in the presentation was how to use the data from the encrypted data bag.  I&#8217;ve updated the slides to include this info but it doesn&#8217;t appear in the video.  In any case, here&#8217;s a quick demo of how you might use it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">creds</span> <span class="o">=</span> <span class="no">Chef</span><span class="o">::</span><span class="no">EncryptedDataBagItem</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;db&quot;</span><span class="p">,</span> <span class="s2">&quot;creds&quot;</span><span class="p">)</span>
+</span><span class='line'><span class="n">env_db_creds</span> <span class="o">=</span> <span class="n">db_creds</span><span class="o">[</span><span class="n">node</span><span class="o">[</span><span class="s2">&quot;rails_env&quot;</span><span class="o">]]</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">template</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">app_dir</span><span class="si">}</span><span class="s2">/shared/config/database.yml&quot;</span> <span class="k">do</span>
+</span><span class='line'>  <span class="n">source</span> <span class="s2">&quot;database.yml.erb&quot;</span>
+</span><span class='line'>  <span class="n">variables</span><span class="p">(</span>
+</span><span class='line'>    <span class="ss">:rails_env</span> <span class="o">=&gt;</span> <span class="n">node</span><span class="o">[</span><span class="s2">&quot;rails_env&quot;</span><span class="o">]</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="n">env_db_creds</span><span class="o">[</span><span class="s2">&quot;username&quot;</span><span class="o">]</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="n">env_db_creds</span><span class="o">[</span><span class="s2">&quot;password&quot;</span><span class="o">]</span>
+</span><span class='line'>  <span class="p">)</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Video</h3>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/uREL4FFPddo" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>Slides</h3>
+
+<script async class="speakerdeck-embed" data-id="4fb532f2850667001f0008f8" data-ratio="1.2945638432364097" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<hr />
+
+<p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/26/5-things-you-always-wanted-to-know-about-chef/">CustomInk Technology blog</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Joy of Cooking - Whip Up a Rails Environment With Chef]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/"/>
+    <updated>2012-05-25T14:59:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef</id>
+    <content type="html"><![CDATA[<p>You&#8217;ve heard of Chef, Puppet, and other frameworks that can help you build out your infrastructure. You&#8217;ve been meaning to play around with one or more of them for some time now. Now&#8217;s your chance; Start cooking up on your own servers!</p>
+
+<p>In this presentation, I provide an introduction to Chef with a focus on what you&#8217;ll need to know to get a Rails application up and running.</p>
+
+<p>Topics include:
+  * Introduction to Chef
+  * Nodes, roles, environments, and other terminology
+  * Introduction to cookbooks
+  * Provisioning an environment for a Rails application
+  * Deploying with Capistrano</p>
+
+<p>You won&#8217;t be ready to compete in Iron Chef, but you will be ready to serve up your own Rails environment in no time.</p>
+
+<p>I gave slightly different versions of this presentation at <a href="http://www.rubynation.org/">RubyNation 2012</a> and <a href="http://chefconf.opscode.com">#ChefConf 2012</a>.</p>
+
+<p>I&#8217;d really appreciate any comments, questions, or feedback in the comments section below.</p>
+
+<h3>Video from ChefConf</h3>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/X1mmzERRkeI" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>Slides</h3>
+
+<script async class="speakerdeck-embed" data-id="4fb421272cf6f5001f00ba85" data-ratio="1.2945638432364097" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<hr />
+
+<p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/25/the-joy-of-cooking-whip-up-a-rails-environment-with-chef/">CustomInk Technology blog</a>.</sub></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Taming the Kraken - How Operations Enables Developer Productivity]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/"/>
+    <updated>2012-05-25T14:31:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity</id>
+    <content type="html"><![CDATA[<p>At <a href="http://railsconf2012.com/">RailsConf 2012</a>, I gave a presentation on how the <a href="http://www.customink.com">CustomInk</a> web operations team enables developer productivity.</p>
+
+<p>There&#8217;s always a bit of tension when getting features from idea to production. In this talk, I describe some of the changes CustomInk has made to reduce this friction and keep the new features coming. Gone are the days of bi-monthly deploys, office pools dedicated to guessing when this deploy will be rolled back, and the ceremony surrounding the deploy-rollback-fix-deploy cycle. Today, ideas flow from product managers to developers to production with ease thanks to a number of changes that we&#8217;ve made to our teams, processes and tools.</p>
+
+<p>Presenting at RailsConf was a really enjoyable experience and the presentation was well received.  There were lots of questions from the audience after the presentation.  Unfortunately, the Q &amp; A section was not captured in the video.  I&#8217;d really appreciate any questions or feedback you have, just drop a comment below.</p>
+
+<h3>Video</h3>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/5vzNzQzmAk0" frameborder="0" allowfullscreen></iframe>
+
+
+<h3>Slides</h3>
+
+<script async class="speakerdeck-embed" data-id="4f96da12947c45001f018683" data-ratio="1.2945638432364097" src="//speakerdeck.com/assets/embed.js"></script>
+
+
+<hr />
+
+<p><sub>Reposted from the <a href="http://technology.customink.com/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/">CustomInk Technology blog</a>.</sub></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Collaborating With Chef]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/"/>
+    <updated>2012-01-13T16:25:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef</id>
+    <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
+
+<p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren&#8217;t important but let&#8217;s look at how we worked together to implement the changes.</p>
+
+<h2>Before Chef</h2>
+
+<p>In the past, here&#8217;s how the changes likely would have been implemented.</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer asks the ops team to make the change</li>
+<li>Ops makes the update using the appropriate tools</li>
+</ol>
+
+
+<p>OR</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer considers asking the ops team to make the change but thinks better of it</li>
+<li>Developer makes the change manually, Ops doesn&#8217;t know, Ops can no longer provision a new server properly.</li>
+</ol>
+
+
+<h2>With Chef</h2>
+
+<p>We&#8217;ve been using Chef for some time and have just started asking our developers to help maintain their own apps. This week, two applications needed to know about some additional external services. This required a simple update to a YAML file in each application. In both cases, I asked the developers to clone our chef repo, make the changes they needed, and submit a pull request.</p>
+
+<p>In one instance, the simple services.yml turned into a pull request with updates to a number of nagios nrpe checks that we&#8217;re running. Something that the developer didn&#8217;t ask for originally but took the initiative to add while in the code.</p>
+
+<p>Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> and <a href="http://twitter.com/jmorton">@jmorton</a> for taking their first steps into Chef.</p>
+
+<p>Is this a huge accomplishment? No.  But it is a great first step.</p>
+
+<p>&#8221;.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.&#8221;</p>
+
+<p>We&#8217;ve always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian&#8217;s saying, I&#8217;m not sure everyone doing everything makes sense. We&#8217;re one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that&#8217;s a WIN!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Deploying Green Screen]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
+    <updated>2012-01-02T16:59:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
+    <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
+
+<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project&#8217;s <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you&#8217;ll need for doing so. In this post, I&#8217;ll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
+
+<h2>Deploying to Heroku</h2>
+
+<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You&#8217;ll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don&#8217;t yet have an account.</p>
+
+<p>Once you&#8217;ve got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
+
+<ol>
+<li><code>git clone git@github.com:customink/greenscreen.git</code></li>
+<li><code>cd greenscreen</code></li>
+<li><code>gem install heroku</code></li>
+<li><code>heroku create</code></li>
+<li><code>git push heroku master</code></li>
+<li><code>heroku open</code></li>
+</ol>
+
+
+<p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
+
+<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
+
+<p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
+
+<!--more-->
+
+
+<h2>Deploying with Chef</h2>
+
+<p>If your build servers are not publicly accessible, Heroku won&#8217;t be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
+
+<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node&#8217;s recipes.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">include_recipe</span> <span class="s2">&quot;greenscreen&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Of course, if you&#8217;re just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
+
+<p>The cookbook allows you to specify credentials and jobs to include or ignore with each server and allows you to set-up multiple Green Screens on the same node. At CustomInk, we use different Green Screen applications for different teams.</p>
+
+<p>Here&#8217;s an excerpt from one of our Chef environment files:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="s2">&quot;greenscreens&quot;</span> <span class="o">=&gt;</span> <span class="o">[</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">&quot;greenscreen&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:port</span> <span class="o">=&gt;</span> <span class="s2">&quot;4567&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:servers</span> <span class="o">=&gt;</span> <span class="o">[</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://build01.customink.office:8080/cc.xml&quot;</span>
+</span><span class='line'>      <span class="p">},</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://build02.customink.office:8080/cc.xml&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson_password&quot;</span>
+</span><span class='line'>      <span class="p">},</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://build03.customink.office:8080/cc.xml&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson_password&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:ignore_jobs</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;www_redirects&quot;</span><span class="o">]</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="o">]</span>
+</span><span class='line'>  <span class="p">},</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>    <span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">&quot;greenscreen.webops&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:port</span> <span class="o">=&gt;</span> <span class="s2">&quot;4568&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="ss">:servers</span> <span class="o">=&gt;</span> <span class="o">[</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://build03.customink.office:8080/cc.xml&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="s2">&quot;hudson_password&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:jobs</span> <span class="o">=&gt;</span> <span class="o">[</span><span class="s2">&quot;www_redirects&quot;</span><span class="o">]</span>
+</span><span class='line'>      <span class="p">},</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="ss">:url</span> <span class="o">=&gt;</span> <span class="s2">&quot;http://build04.customink.office/cc.xml&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:username</span> <span class="o">=&gt;</span> <span class="s2">&quot;jenkins&quot;</span><span class="p">,</span>
+</span><span class='line'>        <span class="ss">:password</span> <span class="o">=&gt;</span> <span class="s2">&quot;jenkis_password&quot;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="o">]</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Green Screen]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen/"/>
+    <updated>2012-01-02T14:17:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/greenscreen.jpg" width="300" height="225" alt="Green Screen Monitor" />
+We use Green Screen at <a href="http://www.customink.com">CustomInk</a> to look after our continuous integration servers, currently 3 Hudson servers and one Jenkins cluster. We have a monitor mounted in the engineering office that makes it easy for everyone to quickly assess the build status.</p>
+
+<p>Green Screen is a simple Sinatra application that is <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">easy to configure and deploy</a>.  It works well with any continuous integration server that conforms to the <a href="http://confluence.public.thoughtworks.org/display/CI/Multiple+Project+Summary+Reporting+Standard">multiple project summary reporting standard</a>.</p>
+
+<p>You can see a sample Green Screen app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a>.  Be forewarned, this sample Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
+
+<!--more-->
+
+
+<h2>History</h2>
+
+<p>Green Screen was originally implemented by <a href="https://github.com/martinjandrews">Marty Andrews</a> and <a href="http://blog.martyandrews.net/2009/08/greenscreen-build-monitor-bvc.html">announced on his blog in 2009</a>. In the original version, a build that was in progress would blink on the screen.
+<img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4565_building.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4565_building.jpg" /></p>
+
+<p><a href="https://github.com/rsutphin">Rhett Sutphin</a> improved the layout of green screen and introduced a new color, yellow, for builds that are in progress.
+<img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg" /></p>
+
+<p>After using these versions for a while at CustomInk, we decided that the most important thing to know was which builds were failing. Once you get past a handful of builds, it&#8217;s no longer very interesting to see every build. We forked Rhett&#8217;s version and created a <a href="https://github.com/customink/greenscreen">new layout for Green Screen</a>.</p>
+
+<p>If everything is passing, the screen is basically one giant checkmark.</p>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg" /></p>
+
+<p>If there are any failing builds, they&#8217;re shown in the main area while all others are displayed on the right.</p>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg" /></p>
+
+<p>Finally, a build that previously failed will be shown in yellow while it&#8217;s rebuilding.</p>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg" />
+We&#8217;ve also added support for controlling which builds are displayed from each CI server. So that you can explicitly include or exclude builds or just go with the default behavior of showing all builds on the server.</p>
+
+<h2>Deploying</h2>
+
+<p>I&#8217;ll cover a couple of deployment options for Green Screen in my <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">next post</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
+    <updated>2011-12-30T00:42:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I&#8217;ve found that the Octopress works best for my personal blog.</p>
+
+<p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
+
+<p>The rake- and git-based workflow feels very natural.  After all, this is a &#8220;blogging framework for hackers.&#8221;</p>
+
+<p>The standard layout and plugins are working well for me with little customization.</p>
+
+<p>Deploying is a snap. I&#8217;m currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
+
+<p>The simplicity and familiar workflow really make for an excellent blogging platform! Thanks <a href="http://twitter.com/imathis">@imathis</a> for giving us <a href="http://octopress.org">Octopress</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MongoDB Community Awards]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
+    <updated>2011-12-29T23:54:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
+    <content type="html"><![CDATA[<p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+
+<p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
+
+<ol>
+<li><strong>Innovative Application Award</strong> - recognizes a company or individual who has built an innovative application using MongoDB.</li>
+<li><strong>Core Contributor Award</strong> - recognizes a community member for significant contribution to the codebase of the MongoDB core server, language drivers, or tools.</li>
+<li><strong>Community Champion Award</strong> - recognizes an individual for their efforts evangelizing and growing the MongoDB community.</li>
+</ol>
+
+
+<p>This is the first year that 10gen has organized these awards. I think they&#8217;re a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+
+<!--more-->
+
+
+<h2>Community Champion Award</h2>
+
+<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We&#8217;ve grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
+
+<h2>I&#8217;m going to SXSW Interactive!</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" /></p>
+
+<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I&#8217;ve always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
+
+<p>As I reviewed the finalists, I was pretty certain I wouldn&#8217;t be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
+
+<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I&#8217;d been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
+
+<h2>Thanks!</h2>
+
+<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who &#8216;rocked the vote&#8217;!</p>
+
+<p>I&#8217;m looking forward to meeting up with the other Community Award winners in Austin!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MongoSV]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/"/>
+    <updated>2011-12-29T15:45:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
+    <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
+
+<p>&#8220;MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.&#8221;</p>
+
+<h2>Impressions and Observations</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
+I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
+
+<h3>Schema free != Design free</h3>
+
+<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
+
+<h3>Aggregation Framework</h3>
+
+<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
+
+<!--more-->
+
+
+<h2>MongoDB at CustomInk - Adoption, Operations, and Community</h2>
+
+<p>My presentation, &#8221;<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>&#8221;, detailed some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we&#8217;re using it in production today, lessons learned, and some of our future plans. I also covered some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. I also described <a href="http://www.customink.com">CustomInk</a>&#8217;s involvement in the MongoDB community.</p>
+
+<p>You can catch a <a href="http://www.10gen.com/presentations/mongosv-2011/mongodb-at-customink-adoption-operations-and-community">video of my presentation on the 10gen site</a> or just checkout the slides below.</p>
+
+<script src="http://speakerdeck.com/embed/4ee19eec04357e0050004017.js"></script>
+
+
+<h2>MongoDB at shutterfly</h2>
+
+<p>It was great to meet <a href="http://twitter.com/kennygorman">Kenny Gorman</a> from shutterfly and share some of our experiences with MongoDB. <a href="http://www.shutterfly.com/">shutterfly</a> and <a href="http://www.customink.com">CustomInk</a> have a lot in common. Of course, both are online retailers but some other things that we share include:</p>
+
+<ul>
+<li>Products are designed by the customer</li>
+<li>Products are tangible, manufactured, and shipped to the customer. Capacity planning is about more than just &#8220;how many servers do we need?&#8221;</li>
+<li>Both sell a variety of products</li>
+<li>The companies were both started in 1999</li>
+<li>Both use MongoDB, Oracle, and MySQL</li>
+<li>Most or all production servers run in a physical datacenter</li>
+</ul>
+
+
+<p>Of course, there are plenty of differences, too. shutterfly is publicly traded and larger than CustomInk.</p>
+
+<p>It was interesting to see how shutterfly&#8217;s approach to adopting MongoDB is very similar to CustomInk&#8217;s. Both store product data in MongoDB but order data lives in relational databases.</p>
+
+<p>Check out Kenny&#8217;s <a href="http://www.10gen.com/presentations/mongosv-2011/performance-tuning-and-scalability">Performance Tuning and Scalability presentation</a>.</p>
+
+<h2>AWS and MongoDB</h2>
+
+<p>Using MongoDB on Amazon&#8217;s AWS was, not surprisingly, another hot topic. I think that if either shutterfly or CustomInk were to launch their business today, they&#8217;d likely look to AWS, or something similar, to house their infrastructure. The truth of the matter is that in 1999 that simply wasn&#8217;t an option so neither company stared there. At CustomInk, we have started moving some of our production services out of the data center and into alternate hosting environments (managed hosting or &#8220;the cloud&#8221;). However, the real sweet spot for us with AWS, at the moment, is staging and test servers. With AWS, we have the ability to quickly, easily, and inexpensively spin up a separate environment for each development branch.</p>
+
+<p>The &#8220;developer happiness&#8221; that MongoDB affords does not make it immune to the &#8220;operational considerations&#8221; that every platform must take into account. These considerations vary from one environment to the next (bare metal, vm in a data center, managed hosting, &#8220;the cloud&#8221;, etc.)  Application that are not built to take advantages of the strengths of each environment will eventually suffer the consequences of running there.  Those consequences may include downtime, poor performance, and/or lots of operational complexity.</p>
+
+<h2>Other videos and presentations</h2>
+
+<p>Check-out <a href="http://www.10gen.com/presentations#event__mongosv-2011">all of the presentations from the conference</a> on the 10gen site.</p>
+
+<p>The conference also included the announcement of the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">MongoDB Community Award winners</a>. But that&#8217;s a story for my <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/">next post</a>.</p>
+
+<h2>Quick thanks to&#8230;</h2>
+
+<ul>
+<li><a href="http://10gen.com">10gen</a> for continually providing such great conferences. The single-day, multi-track at a low cost format works very well .</li>
+<li><a href="http://busyconf.com/">Busyconf</a> for creating <strong>the best</strong> app for conference schedules and hosting the <a href="http://mongosv2011.busyconf.com/schedule/full">MongoSV schedule</a>.</li>
+<li>Adam, Amelia, Francesca, Meghan, Sam, and everyone else for 10gen for organizing the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and MongoSV.</li>
+<li>everyone who came out to my presentation and to everyone I met at MongoSV</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

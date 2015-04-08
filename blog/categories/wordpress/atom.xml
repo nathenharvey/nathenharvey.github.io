@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Wordpress | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T18:07:35-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Octopress]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
+    <updated>2011-12-30T00:42:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I&#8217;ve found that the Octopress works best for my personal blog.</p>
+
+<p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
+
+<p>The rake- and git-based workflow feels very natural.  After all, this is a &#8220;blogging framework for hackers.&#8221;</p>
+
+<p>The standard layout and plugins are working well for me with little customization.</p>
+
+<p>Deploying is a snap. I&#8217;m currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
+
+<p>The simplicity and familiar workflow really make for an excellent blogging platform! Thanks <a href="http://twitter.com/imathis">@imathis</a> for giving us <a href="http://octopress.org">Octopress</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passenger and PHP]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2010/06/11/passenger-and-php/"/>
+    <updated>2010-06-11T09:25:00-04:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2010/06/11/passenger-and-php</id>
+    <content type="html"><![CDATA[<p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn&#8217;t working anymore.</p>
+
+<p>Compared the configurations and everything looked OK, no changes were made as part of the migration. PHP module was being loaded, URL was being properly aliased, etc. Watched my logs and saw that Passenger was attempting to serve up the request which is not what I wanted.</p>
+
+<p>A quick update to my Directory&#8217;s definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
+
+<pre><code class="apache">  Alias /blog /shared/www/blog
+  &lt;Directory /shared/www/blog&gt;
+    DirectoryIndex index.php 
+    PassengerEnabled off
+  &lt;/Directory&gt;
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>

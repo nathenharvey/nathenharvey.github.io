@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>MongoSV - Nathen Harvey</title>
+  <meta name="author" content="Nathen Harvey">
+
+  
+  <meta name="description" content="I was selected to share some of my experience with MongoDB at MongoSV. "MongoSV is an annual one-day conference in Silicon Valley dedicated to the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Nathen Harvey" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27983419-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Nathen Harvey</a></h1>
+  
+    <h2>a blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nathenharvey.github.com/nathenharvey" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">MongoSV</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2011-12-29T15:45:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2011</span></span> <span class='time'>3:45 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
+
+<p>&#8220;MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.&#8221;</p>
+
+<h2>Impressions and Observations</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
+I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
+
+<h3>Schema free != Design free</h3>
+
+<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
+
+<h3>Aggregation Framework</h3>
+
+<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
+
+<!--more-->
+
+
+<h2>MongoDB at CustomInk - Adoption, Operations, and Community</h2>
+
+<p>My presentation, &#8221;<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>&#8221;, detailed some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we&#8217;re using it in production today, lessons learned, and some of our future plans. I also covered some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. I also described <a href="http://www.customink.com">CustomInk</a>&#8217;s involvement in the MongoDB community.</p>
+
+<p>You can catch a <a href="http://www.10gen.com/presentations/mongosv-2011/mongodb-at-customink-adoption-operations-and-community">video of my presentation on the 10gen site</a> or just checkout the slides below.</p>
+
+<script src="http://speakerdeck.com/embed/4ee19eec04357e0050004017.js"></script>
+
+
+<h2>MongoDB at shutterfly</h2>
+
+<p>It was great to meet <a href="http://twitter.com/kennygorman">Kenny Gorman</a> from shutterfly and share some of our experiences with MongoDB. <a href="http://www.shutterfly.com/">shutterfly</a> and <a href="http://www.customink.com">CustomInk</a> have a lot in common. Of course, both are online retailers but some other things that we share include:</p>
+
+<ul>
+<li>Products are designed by the customer</li>
+<li>Products are tangible, manufactured, and shipped to the customer. Capacity planning is about more than just &#8220;how many servers do we need?&#8221;</li>
+<li>Both sell a variety of products</li>
+<li>The companies were both started in 1999</li>
+<li>Both use MongoDB, Oracle, and MySQL</li>
+<li>Most or all production servers run in a physical datacenter</li>
+</ul>
+
+
+<p>Of course, there are plenty of differences, too. shutterfly is publicly traded and larger than CustomInk.</p>
+
+<p>It was interesting to see how shutterfly&#8217;s approach to adopting MongoDB is very similar to CustomInk&#8217;s. Both store product data in MongoDB but order data lives in relational databases.</p>
+
+<p>Check out Kenny&#8217;s <a href="http://www.10gen.com/presentations/mongosv-2011/performance-tuning-and-scalability">Performance Tuning and Scalability presentation</a>.</p>
+
+<h2>AWS and MongoDB</h2>
+
+<p>Using MongoDB on Amazon&#8217;s AWS was, not surprisingly, another hot topic. I think that if either shutterfly or CustomInk were to launch their business today, they&#8217;d likely look to AWS, or something similar, to house their infrastructure. The truth of the matter is that in 1999 that simply wasn&#8217;t an option so neither company stared there. At CustomInk, we have started moving some of our production services out of the data center and into alternate hosting environments (managed hosting or &#8220;the cloud&#8221;). However, the real sweet spot for us with AWS, at the moment, is staging and test servers. With AWS, we have the ability to quickly, easily, and inexpensively spin up a separate environment for each development branch.</p>
+
+<p>The &#8220;developer happiness&#8221; that MongoDB affords does not make it immune to the &#8220;operational considerations&#8221; that every platform must take into account. These considerations vary from one environment to the next (bare metal, vm in a data center, managed hosting, &#8220;the cloud&#8221;, etc.)  Application that are not built to take advantages of the strengths of each environment will eventually suffer the consequences of running there.  Those consequences may include downtime, poor performance, and/or lots of operational complexity.</p>
+
+<h2>Other videos and presentations</h2>
+
+<p>Check-out <a href="http://www.10gen.com/presentations#event__mongosv-2011">all of the presentations from the conference</a> on the 10gen site.</p>
+
+<p>The conference also included the announcement of the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">MongoDB Community Award winners</a>. But that&#8217;s a story for my <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/">next post</a>.</p>
+
+<h2>Quick thanks to&#8230;</h2>
+
+<ul>
+<li><a href="http://10gen.com">10gen</a> for continually providing such great conferences. The single-day, multi-track at a low cost format works very well .</li>
+<li><a href="http://busyconf.com/">Busyconf</a> for creating <strong>the best</strong> app for conference schedules and hosting the <a href="http://mongosv2011.busyconf.com/schedule/full">MongoSV schedule</a>.</li>
+<li>Adam, Amelia, Francesca, Meghan, Sam, and everyone else for 10gen for organizing the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and MongoSV.</li>
+<li>everyone who came out to my presentation and to everyone I met at MongoSV</li>
+</ul>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nathen Harvey</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2011-12-29T15:45:00-05:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2011</span></span> <span class='time'>3:45 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/10gen/'>10gen</a>, <a class='category' href='/blog/categories/conferences/'>conferences</a>, <a class='category' href='/blog/categories/customink/'>customink</a>, <a class='category' href='/blog/categories/meetup/'>meetup</a>, <a class='category' href='/blog/categories/mongodb/'>mongodb</a>, <a class='category' href='/blog/categories/mongodc/'>mongodc</a>, <a class='category' href='/blog/categories/mongosv/'>mongosv</a>, <a class='category' href='/blog/categories/shutterfly/'>shutterfly</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/" data-via="nathenharvey" data-counturl="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/12/29/mongodb-masters/" title="Previous Post: MongoDB Masters">&laquo; MongoDB Masters</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/12/29/mongodb-community-awards/" title="Next Post: MongoDB Community Awards">MongoDB Community Awards &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/19/devop-with-me/">DevOp With Me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/learning-chef-part-6/">Learning Chef - Part 6</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/07/ey-devops-innovator/">Engine Yard DevOps Innovator</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/28/learning-chef-part-5/">Learning Chef - Part 5</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <a class="twitter-timeline" href="https://twitter.com/nathenharvey" data-widget-id="537380730213773312">Tweets by @nathenharvey</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </ul>
+  
+    <a href="http://twitter.com/nathenharvey" class="twitter-follow-button" data-show-count="false">Follow @nathenharvey</a>
+  
+</section>
+
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/nathenharvey">@nathenharvey</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nathenharvey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Nathen Harvey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'nathenharvey';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/';
+        var disqus_url = 'http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
