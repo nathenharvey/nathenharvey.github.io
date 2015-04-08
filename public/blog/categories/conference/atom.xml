@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conference | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -35,22 +35,18 @@
 
 <p>One thing I didn't mention in the presentation was how to use the data from the encrypted data bag.  I've updated the slides to include this info but it doesn't appear in the video.  In any case, here's a quick demo of how you might use it:</p>
 
-<p>``` ruby
-creds = Chef::EncryptedDataBagItem.load("db", "creds")
-env_db_creds = db_creds[node["rails_env"]]</p>
+<pre><code class="ruby">creds = Chef::EncryptedDataBagItem.load("db", "creds")
+env_db_creds = db_creds[node["rails_env"]]
 
-<p>template "#{app_dir}/shared/config/database.yml" do
+template "#{app_dir}/shared/config/database.yml" do
   source "database.yml.erb"
-  variables(</p>
-
-<pre><code>:rails_env =&gt; node["rails_env"],
-:username =&gt; env_db_creds["username"],
-:password =&gt; env_db_creds["password"]
-</code></pre>
-
-<p>  )
+  variables(
+    :rails_env =&gt; node["rails_env"],
+    :username =&gt; env_db_creds["username"],
+    :password =&gt; env_db_creds["password"]
+  )
 end
-```</p>
+</code></pre>
 
 <h3>Video</h3>
 

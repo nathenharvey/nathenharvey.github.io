@@ -4,7 +4,7 @@
   <title><![CDATA[Category: foodcritic | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/foodcritic/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -93,71 +93,59 @@
 
 <p>The next step is to add a .travis.yml file to your project.</p>
 
-<p><code>ruby .travis.yml
-language: ruby
+<pre><code class="ruby .travis.yml">language: ruby
 gemfile:
    - test/support/Gemfile
 rvm:
   - 1.9.2
   - 1.9.3
 script: bundle exec rake foodcritic
-</code></p>
+</code></pre>
 
 <p>This file tells Travis CI how to build your project.  We've specified the language (ruby) and the versions of ruby to use when testing this cookbook (1.9.2 and 1.9.3).  We've also specified a Gemfile and script to execute when testing this project.  Let's add a Gemfile to a new directory in our cookbook, <code>test/support</code>.</p>
 
-<p><code>sh
-mkdir -p test/support
+<pre><code class="sh">mkdir -p test/support
 touch test/support/Gemfile
-</code></p>
+</code></pre>
 
 <p>Our Gemfile is pretty simple, just include <code>rake</code> and <code>foodcritic</code>.</p>
 
-<p>``` ruby Gemfile
-source "https://rubygems.org"</p>
+<pre><code class="ruby Gemfile">source "https://rubygems.org"
 
-<p>gem 'rake'
+gem 'rake'
 gem 'foodcritic'
-```</p>
+</code></pre>
 
 <p>Finally, we'll need to add a Rake file that will be run each time Travis builds our project.</p>
 
-<p>``` ruby Rakefile</p>
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
 
-<h1>!/usr/bin/env rake</h1>
-
-<p>desc "Runs foodcritic linter"
+desc "Runs foodcritic linter"
 task :foodcritic do
-  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)</p>
+  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)
+    sandbox = File.join(File.dirname(__FILE__), %w{tmp foodcritic cookbook})
+    prepare_foodcritic_sandbox(sandbox)
 
-<pre><code>sandbox = File.join(File.dirname(__FILE__), %w{tmp foodcritic cookbook})
-prepare_foodcritic_sandbox(sandbox)
+    sh "foodcritic --epic-fail any #{File.dirname(sandbox)}"
+  else
+    puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
+  end
+end
 
-sh "foodcritic --epic-fail any #{File.dirname(sandbox)}"
-</code></pre>
+task :default =&gt; 'foodcritic'
 
-<p>  else</p>
+private
 
-<pre><code>puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
-</code></pre>
+def prepare_foodcritic_sandbox(sandbox)
+  files = %w{*.md *.rb attributes definitions files libraries providers
+recipes resources templates}
 
-<p>  end
-end</p>
-
-<p>task :default => 'foodcritic'</p>
-
-<p>private</p>
-
-<p>def prepare_foodcritic_sandbox(sandbox)
-  files = %w{<em>.md </em>.rb attributes definitions files libraries providers
-recipes resources templates}</p>
-
-<p>  rm_rf sandbox
+  rm_rf sandbox
   mkdir_p sandbox
   cp_r Dir.glob("{#{files.join(',')}}"), sandbox
   puts "\n\n"
-end</p>
-
-<p>```</p>
+end
+</code></pre>
 
 <p>This Rakefile will copy the contents of our cookbook to a temporary directory and run the foodcritic tests on the temporary directory.  Note the <code>--epic-fail</code> tag is used to fail the build (return a non-zero exit code) on <code>any</code> rule that does not pass.</p>
 
@@ -167,11 +155,9 @@ end</p>
 
 <p>One final step that you may consider is adding a build status indicator to your README.  This simple line in your README will let others know what the current build status is for your cookbook.</p>
 
-<p>``` sh</p>
-
-<p><a href="http://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME]"><img src="https://secure.travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png" alt="Build Status" /></a></p>
-
-<p>```</p>
+<pre><code class="sh">
+[![Build Status](https://secure.travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](http://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
+</code></pre>
 
 <h3>Thanks &amp; Additional Resources</h3>
 

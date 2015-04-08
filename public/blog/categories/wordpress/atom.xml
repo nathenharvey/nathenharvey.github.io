@@ -4,7 +4,7 @@
   <title><![CDATA[Category: wordpress | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/wordpress/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -43,16 +43,12 @@
 
 <p>A quick update to my Directory's definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
 
-<p>``` apache
-  Alias /blog /shared/www/blog
-  <Directory /shared/www/blog></p>
-
-<pre><code>DirectoryIndex index.php 
-PassengerEnabled off
+<pre><code class="apache">  Alias /blog /shared/www/blog
+  &lt;Directory /shared/www/blog&gt;
+    DirectoryIndex index.php 
+    PassengerEnabled off
+  &lt;/Directory&gt;
 </code></pre>
-
-<p>  </Directory>
-```</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: greenscreen | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/greenscreen/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -80,9 +80,8 @@
 
 <p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
 
-<p><code>ruby
-include_recipe "greenscreen"
-</code></p>
+<pre><code class="ruby ">include_recipe "greenscreen"
+</code></pre>
 
 <p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
 
@@ -90,53 +89,46 @@ include_recipe "greenscreen"
 
 <p>Here's an excerpt from one of our Chef environment files:</p>
 
-<p>``` ruby
-"greenscreens" => [
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen",
-:port =&gt; "4567",
-:servers =&gt; [
+<pre><code class="ruby">"greenscreens" =&gt; [
   {
-    :url =&gt; "http://build01.customink.office:8080/cc.xml"
+    :name =&gt; "greenscreen",
+    :port =&gt; "4567",
+    :servers =&gt; [
+      {
+        :url =&gt; "http://build01.customink.office:8080/cc.xml"
+      },
+      {
+        :url =&gt; "http://build02.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password"
+      },
+      {
+        :url =&gt; "http://build03.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password",
+        :ignore_jobs =&gt; ["www_redirects"]
+      }
+    ]
   },
   {
-    :url =&gt; "http://build02.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password"
-  },
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :ignore_jobs =&gt; ["www_redirects"]
+    :name =&gt; "greenscreen.webops",
+    :port =&gt; "4568",
+    :servers =&gt; [
+      {
+        :url =&gt; "http://build03.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password",
+        :jobs =&gt; ["www_redirects"]
+      },
+      {
+        :url =&gt; "http://build04.customink.office/cc.xml",
+        :username =&gt; "jenkins",
+        :password =&gt; "jenkis_password"
+      }
+    ]
   }
 ]
 </code></pre>
-
-<p>  },
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen.webops",
-:port =&gt; "4568",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :jobs =&gt; ["www_redirects"]
-  },
-  {
-    :url =&gt; "http://build04.customink.office/cc.xml",
-    :username =&gt; "jenkins",
-    :password =&gt; "jenkis_password"
-  }
-]
-</code></pre>
-
-<p>  }
-]
-```</p>
 
 <p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
 ]]></content>

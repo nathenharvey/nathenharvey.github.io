@@ -4,7 +4,7 @@
   <title><![CDATA[Category: travisci | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/travisci/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -26,39 +26,36 @@
 
 <p>Let's create a very basic cookbook:</p>
 
-<p><code>sh
-knife cookbook create very_basic
+<pre><code class="sh">knife cookbook create very_basic
 ** Creating cookbook very_basic
 ** Creating README for cookbook: very_basic
 ** Creating metadata for cookbook: very_basic
-</code>
-Next, we'll write a flawed recipe:</p>
+</code></pre>
 
-<p><code>ruby cookbooks/very_basic/recipes/default.rb
-package "flawed" do
+<p>Next, we'll write a flawed recipe:</p>
+
+<pre><code class="ruby cookbooks/very_basic/recipes/default.rb">package "flawed" do
   action :nothing
 end
 end
-</code></p>
+</code></pre>
 
 <p>Now, run foodcritic on this cookbook:</p>
 
-<p><code>sh
-foodcritic cookbooks/very_basic
-</code></p>
+<pre><code class="sh">foodcritic cookbooks/very_basic
+</code></pre>
 
 <p>Foodcritic doesn't throw any errors or find any problem with the cookbook.</p>
 
 <p>Let's try testing it with knife:</p>
 
-<p><code>sh
-knife cookbook test very_basic
+<pre><code class="sh">knife cookbook test very_basic
 checking very_basic
 Running syntax check on very_basic
 Validating ruby files
 FATAL: Cookbook file recipes/default.rb has a ruby syntax error:
 FATAL: /Users/nharvey/projects/chef-hosted/.chef/../cookbooks/very_basic/recipes/default.rb:22: syntax error, unexpected keyword_end, expecting $end
-</code></p>
+</code></pre>
 
 <p>OK, it should now be obvious that <code>knife cookbook test</code> should be included as part of our MVT.</p>
 
@@ -77,37 +74,34 @@ FATAL: /Users/nharvey/projects/chef-hosted/.chef/../cookbooks/very_basic/recipes
 
 <p>Of course, this assumes you've configured your cookbook as described in the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.  Let's start with the Rakefile.</p>
 
-<p>``` ruby Rakefile</p>
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
 
-<h1>!/usr/bin/env rake</h1>
-
-<p>desc "Runs knife cookbook test"
+desc "Runs knife cookbook test"
 task :knife do
-  Rake::Task[:prepare_sandbox].execute</p>
+  Rake::Task[:prepare_sandbox].execute
 
-<p>  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o #{sandbox_path}/../"
-end</p>
+  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o #{sandbox_path}/../"
+end
 
-<p>task :prepare_sandbox do
-  files = %w{<em>.md </em>.rb attributes definitions files libraries providers recipes resources templates}</p>
+task :prepare_sandbox do
+  files = %w{*.md *.rb attributes definitions files libraries providers recipes resources templates}
 
-<p>  rm_rf sandbox_path
+  rm_rf sandbox_path
   mkdir_p sandbox_path
   cp_r Dir.glob("{#{files.join(',')}}"), sandbox_path
-end</p>
-
-<p>private
-def sandbox_path
-  File.join(File.dirname(<strong>FILE</strong>), %w(tmp cookbooks cookbook))
 end
-```</p>
+
+private
+def sandbox_path
+  File.join(File.dirname(__FILE__), %w(tmp cookbooks cookbook))
+end
+</code></pre>
 
 <p>In the file snippet above, I've only included the parts that are relevant for getting knife working.  I'll include the full source of the Rakefile at the end of the article.</p>
 
 <p>Next, let's add this rake task to our .travis.yml file.</p>
 
-<p><code>ruby .travis.yml
-language: ruby
+<pre><code class="ruby .travis.yml">language: ruby
 gemfile:
    - test/support/Gemfile
 rvm:
@@ -115,22 +109,21 @@ rvm:
   - 1.9.3
 script:
   - bundle exec rake knife
-</code>
-To successfully run the knife command, Travis CI will need a very minimal Chef configuration.</p>
+</code></pre>
 
-<p><code>ruby test/.chef/knife.rb
-cache_type 'BasicFile'
+<p>To successfully run the knife command, Travis CI will need a very minimal Chef configuration.</p>
+
+<pre><code class="ruby test/.chef/knife.rb">cache_type 'BasicFile'
 cache_options(:path =&gt; "#{ENV['HOME']}/.chef/checksums")
-</code></p>
+</code></pre>
 
 <p>And, of course, we'll need to add Chef to our Gemfile.  Be sure to specify a modern version as Travis CI will use 0.8.10 by default (at the time of this writing).</p>
 
-<p>``` ruby test/support/Gemfile
-source "https://rubygems.org"</p>
+<pre><code class="ruby test/support/Gemfile">source "https://rubygems.org"
 
-<p>gem 'rake'
-gem 'chef', '~> 10.12.0'
-```</p>
+gem 'rake'
+gem 'chef', '~&gt; 10.12.0'
+</code></pre>
 
 <p>That's it.  On your next <code>git push</code> Travis CI should run <code>knife cookbook test</code> on your cookbook.</p>
 
@@ -145,13 +138,11 @@ gem 'chef', '~> 10.12.0'
 
 <p>You can checkout this <a href="https://github.com/customink-webops/percona-install/compare/03b944...d423b14">Github compare view</a> to see the changes made to the code from the <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">previous post</a>.</p>
 
-<p><code>ruby test/.chef/knife.rb
-cache_type 'BasicFile'
+<pre><code class="ruby test/.chef/knife.rb">cache_type 'BasicFile'
 cache_options(:path =&gt; "#{ENV['HOME']}/.chef/checksums")
-</code></p>
+</code></pre>
 
-<p><code>ruby .travis.yml
-language: ruby
+<pre><code class="ruby .travis.yml">language: ruby
 gemfile:
    - test/support/Gemfile
 rvm:
@@ -160,61 +151,52 @@ rvm:
 script:
   - bundle exec rake knife
   - bundle exec rake foodcritic
-</code></p>
+</code></pre>
 
 <p>The Rakefile was refactored a bit since the previous post:</p>
 
-<p>``` ruby Rakefile</p>
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
 
-<h1>!/usr/bin/env rake</h1>
+task :default =&gt; 'foodcritic'
 
-<p>task :default => 'foodcritic'</p>
-
-<p>desc "Runs foodcritic linter"
+desc "Runs foodcritic linter"
 task :foodcritic do
-  Rake::Task[:prepare_sandbox].execute</p>
+  Rake::Task[:prepare_sandbox].execute
 
-<p>  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)</p>
+  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)
+    sh "foodcritic -f any #{sandbox_path}"
+  else
+    puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
+  end
+end
 
-<pre><code>sh "foodcritic -f any #{sandbox_path}"
-</code></pre>
-
-<p>  else</p>
-
-<pre><code>puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
-</code></pre>
-
-<p>  end
-end</p>
-
-<p>desc "Runs knife cookbook test"
+desc "Runs knife cookbook test"
 task :knife do
-  Rake::Task[:prepare_sandbox].execute</p>
+  Rake::Task[:prepare_sandbox].execute
 
-<p>  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o #{sandbox_path}/../"
-end</p>
+  sh "bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o #{sandbox_path}/../"
+end
 
-<p>task :prepare_sandbox do
-  files = %w{<em>.md </em>.rb attributes definitions files libraries providers recipes resources templates}</p>
+task :prepare_sandbox do
+  files = %w{*.md *.rb attributes definitions files libraries providers recipes resources templates}
 
-<p>  rm_rf sandbox_path
+  rm_rf sandbox_path
   mkdir_p sandbox_path
   cp_r Dir.glob("{#{files.join(',')}}"), sandbox_path
-end</p>
-
-<p>private
-def sandbox_path
-  File.join(File.dirname(<strong>FILE</strong>), %w(tmp cookbooks cookbook))
 end
-```</p>
 
-<p>``` ruby test/support/Gemfile
-source "https://rubygems.org"</p>
+private
+def sandbox_path
+  File.join(File.dirname(__FILE__), %w(tmp cookbooks cookbook))
+end
+</code></pre>
 
-<p>gem 'rake'
+<pre><code class="ruby test/support/Gemfile">source "https://rubygems.org"
+
+gem 'rake'
 gem 'foodcritic'
-gem 'chef', '~> 10.12.0'
-```</p>
+gem 'chef', '~&gt; 10.12.0'
+</code></pre>
 
 <h3>Credit</h3>
 
@@ -302,71 +284,59 @@ gem 'chef', '~> 10.12.0'
 
 <p>The next step is to add a .travis.yml file to your project.</p>
 
-<p><code>ruby .travis.yml
-language: ruby
+<pre><code class="ruby .travis.yml">language: ruby
 gemfile:
    - test/support/Gemfile
 rvm:
   - 1.9.2
   - 1.9.3
 script: bundle exec rake foodcritic
-</code></p>
+</code></pre>
 
 <p>This file tells Travis CI how to build your project.  We've specified the language (ruby) and the versions of ruby to use when testing this cookbook (1.9.2 and 1.9.3).  We've also specified a Gemfile and script to execute when testing this project.  Let's add a Gemfile to a new directory in our cookbook, <code>test/support</code>.</p>
 
-<p><code>sh
-mkdir -p test/support
+<pre><code class="sh">mkdir -p test/support
 touch test/support/Gemfile
-</code></p>
+</code></pre>
 
 <p>Our Gemfile is pretty simple, just include <code>rake</code> and <code>foodcritic</code>.</p>
 
-<p>``` ruby Gemfile
-source "https://rubygems.org"</p>
+<pre><code class="ruby Gemfile">source "https://rubygems.org"
 
-<p>gem 'rake'
+gem 'rake'
 gem 'foodcritic'
-```</p>
+</code></pre>
 
 <p>Finally, we'll need to add a Rake file that will be run each time Travis builds our project.</p>
 
-<p>``` ruby Rakefile</p>
+<pre><code class="ruby Rakefile">#!/usr/bin/env rake
 
-<h1>!/usr/bin/env rake</h1>
-
-<p>desc "Runs foodcritic linter"
+desc "Runs foodcritic linter"
 task :foodcritic do
-  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)</p>
+  if Gem::Version.new("1.9.2") &lt;= Gem::Version.new(RUBY_VERSION.dup)
+    sandbox = File.join(File.dirname(__FILE__), %w{tmp foodcritic cookbook})
+    prepare_foodcritic_sandbox(sandbox)
 
-<pre><code>sandbox = File.join(File.dirname(__FILE__), %w{tmp foodcritic cookbook})
-prepare_foodcritic_sandbox(sandbox)
+    sh "foodcritic --epic-fail any #{File.dirname(sandbox)}"
+  else
+    puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
+  end
+end
 
-sh "foodcritic --epic-fail any #{File.dirname(sandbox)}"
-</code></pre>
+task :default =&gt; 'foodcritic'
 
-<p>  else</p>
+private
 
-<pre><code>puts "WARN: foodcritic run is skipped as Ruby #{RUBY_VERSION} is &lt; 1.9.2."
-</code></pre>
+def prepare_foodcritic_sandbox(sandbox)
+  files = %w{*.md *.rb attributes definitions files libraries providers
+recipes resources templates}
 
-<p>  end
-end</p>
-
-<p>task :default => 'foodcritic'</p>
-
-<p>private</p>
-
-<p>def prepare_foodcritic_sandbox(sandbox)
-  files = %w{<em>.md </em>.rb attributes definitions files libraries providers
-recipes resources templates}</p>
-
-<p>  rm_rf sandbox
+  rm_rf sandbox
   mkdir_p sandbox
   cp_r Dir.glob("{#{files.join(',')}}"), sandbox
   puts "\n\n"
-end</p>
-
-<p>```</p>
+end
+</code></pre>
 
 <p>This Rakefile will copy the contents of our cookbook to a temporary directory and run the foodcritic tests on the temporary directory.  Note the <code>--epic-fail</code> tag is used to fail the build (return a non-zero exit code) on <code>any</code> rule that does not pass.</p>
 
@@ -376,11 +346,9 @@ end</p>
 
 <p>One final step that you may consider is adding a build status indicator to your README.  This simple line in your README will let others know what the current build status is for your cookbook.</p>
 
-<p>``` sh</p>
-
-<p><a href="http://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME]"><img src="https://secure.travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png" alt="Build Status" /></a></p>
-
-<p>```</p>
+<pre><code class="sh">
+[![Build Status](https://secure.travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME].png)](http://travis-ci.org/[YOUR_GITHUB_USERNAME]/[YOUR_PROJECT_NAME])
+</code></pre>
 
 <h3>Thanks &amp; Additional Resources</h3>
 

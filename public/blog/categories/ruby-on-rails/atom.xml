@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby on rails | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -112,9 +112,8 @@
 
 <p>I can now write up tests like:</p>
 
-<p><code>ruby
-should_redirect "/cink/ideas/ideas.jsp", :to =&gt; "/inspiration/"
-</code></p>
+<pre><code class="ruby">should_redirect "/cink/ideas/ideas.jsp", :to =&gt; "/inspiration/"
+</code></pre>
 
 <p>So now I can to some TDC (test-driven configuration) whenever I get a request for a new redirect.</p>
 
@@ -133,16 +132,12 @@ should_redirect "/cink/ideas/ideas.jsp", :to =&gt; "/inspiration/"
 
 <p>A quick update to my Directory's definition and the issue was fixed. I had to explicitly disable Passenger using <code>PassengerEnabled off</code> as seen below:</p>
 
-<p>``` apache
-  Alias /blog /shared/www/blog
-  <Directory /shared/www/blog></p>
-
-<pre><code>DirectoryIndex index.php 
-PassengerEnabled off
+<pre><code class="apache">  Alias /blog /shared/www/blog
+  &lt;Directory /shared/www/blog&gt;
+    DirectoryIndex index.php 
+    PassengerEnabled off
+  &lt;/Directory&gt;
 </code></pre>
-
-<p>  </Directory>
-```</p>
 ]]></content>
   </entry>
   

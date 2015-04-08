@@ -4,7 +4,7 @@
   <title><![CDATA[Category: virtualbox | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/virtualbox/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -122,12 +122,11 @@
 </ol>
 
 
-<p><code>ruby Vagrantfile
-Vagrant::Config.run do |config|
+<pre><code class="ruby Vagrantfile">Vagrant::Config.run do |config|
   config.vm.box = "opscode-ubuntu-12.04"
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
 end
-</code></p>
+</code></pre>
 
 <p>Finally, run <code>vagrant up</code> to launch the Vagrant box.</p>
 
@@ -142,23 +141,20 @@ end
 
 <p> Here are the relevant settings in our Vagrantfile by the end of the video:</p>
 
-<p>``` ruby Vagrantfile
-Vagrant::Config.run do |config|
+<pre><code class="ruby Vagrantfile">Vagrant::Config.run do |config|
   config.vm.box = "opscode-ubuntu-12.04"
-  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"</p>
+  config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
 
-<p>  config.vm.provision :chef_client do |chef|</p>
-
-<pre><code>chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
-chef.validation_key_path = "./.chef/fidor-validator.pem"
-chef.validation_client_name = "fidor-validator"
-chef.node_name = "patrick_vm"
+  config.vm.provision :chef_client do |chef|
+    chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
+    chef.validation_key_path = "./.chef/fidor-validator.pem"
+    chef.validation_client_name = "fidor-validator"
+    chef.node_name = "patrick_vm"
+  end
+end
 </code></pre>
 
-<p>  end
-end
-```
-Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
+<p>Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more information about Vagrant.</p>
 
 <iframe width="560" height="315" src="http://nathenharvey.github.com/nathenharvey//www.youtube.com/embed/ui72v8Dh8Dk" frameborder="0" allowfullscreen></iframe>
 
@@ -227,9 +223,8 @@ Be sure to check <a href="http://vagrantup.com">the Vagrant website</a> for more
 
 <p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
 
-<p><code>ruby
-include_recipe "greenscreen"
-</code></p>
+<pre><code class="ruby ">include_recipe "greenscreen"
+</code></pre>
 
 <p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
 
@@ -237,53 +232,46 @@ include_recipe "greenscreen"
 
 <p>Here's an excerpt from one of our Chef environment files:</p>
 
-<p>``` ruby
-"greenscreens" => [
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen",
-:port =&gt; "4567",
-:servers =&gt; [
+<pre><code class="ruby">"greenscreens" =&gt; [
   {
-    :url =&gt; "http://build01.customink.office:8080/cc.xml"
+    :name =&gt; "greenscreen",
+    :port =&gt; "4567",
+    :servers =&gt; [
+      {
+        :url =&gt; "http://build01.customink.office:8080/cc.xml"
+      },
+      {
+        :url =&gt; "http://build02.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password"
+      },
+      {
+        :url =&gt; "http://build03.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password",
+        :ignore_jobs =&gt; ["www_redirects"]
+      }
+    ]
   },
   {
-    :url =&gt; "http://build02.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password"
-  },
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :ignore_jobs =&gt; ["www_redirects"]
+    :name =&gt; "greenscreen.webops",
+    :port =&gt; "4568",
+    :servers =&gt; [
+      {
+        :url =&gt; "http://build03.customink.office:8080/cc.xml",
+        :username =&gt; "hudson",
+        :password =&gt; "hudson_password",
+        :jobs =&gt; ["www_redirects"]
+      },
+      {
+        :url =&gt; "http://build04.customink.office/cc.xml",
+        :username =&gt; "jenkins",
+        :password =&gt; "jenkis_password"
+      }
+    ]
   }
 ]
 </code></pre>
-
-<p>  },
-  {</p>
-
-<pre><code>:name =&gt; "greenscreen.webops",
-:port =&gt; "4568",
-:servers =&gt; [
-  {
-    :url =&gt; "http://build03.customink.office:8080/cc.xml",
-    :username =&gt; "hudson",
-    :password =&gt; "hudson_password",
-    :jobs =&gt; ["www_redirects"]
-  },
-  {
-    :url =&gt; "http://build04.customink.office/cc.xml",
-    :username =&gt; "jenkins",
-    :password =&gt; "jenkis_password"
-  }
-]
-</code></pre>
-
-<p>  }
-]
-```</p>
 
 <p>With this configuration, we have 2 Green Screens running, on ports 4567 and 4568. Both are polling build servers and showing different jobs. For instance, the server on 4567 excludes the www_redirects build (<code>:ignore_jobs =&gt; ["www_redirects"]</code>) whereas the server on 4568 only includes this build (<code>:jobs =&gt; ["www_redirects"]</code>) when polling the build03 server.</p>
 ]]></content>
@@ -298,31 +286,28 @@ include_recipe "greenscreen"
 
 <p>I recently ran into an error after a system crash. When I tried to run:</p>
 
-<p><code>bash
-vagrant up
-</code></p>
+<pre><code class="bash">vagrant up
+</code></pre>
 
 <p>the following error was reported:</p>
 
-<p><code>bash
-The VM import failed! Try running `VBoxManage import` on the box file manually
+<pre><code class="bash">The VM import failed! Try running `VBoxManage import` on the box file manually 
 for more verbose error output.
-</code></p>
+</code></pre>
 
 <p>To successfully run VBoxManage import, you first need to locate the .ovf file used by Vagrant when building your VM. Typically, you'll find your box definitions in the <code>~/.vagrant/boxes</code> directory. So, I tried to run the command specified from there:</p>
 
-<p>``` bash
-cd ~/.vagrant/boxes/base</p>
+<pre><code class="bash">cd ~/.vagrant/boxes/base
 
-<p>VBoxManage import box.ovf</p>
+VBoxManage import box.ovf
 
-<p>ERROR: Cannot register the hard disk
+ERROR: Cannot register the hard disk 
 '~/.vagrant/boxes/base/vagrant-centos64-disk.vmdk' with UUID
 {5d2426bf-f04e-40a0-bf36-a27c8d45f920} because a hard disk
 '~/.vagrant/boxes/base/vagrant-centos64-disk.vmdk' with UUID
 {5d2426bf-f04e-40a0-bf36-a27c8d45f920} already exists in the media registry
 ('~/Library/VirtualBox/VirtualBox.xml')
-```</p>
+</code></pre>
 
 <p>To get around this, I simply removed <code>~/Library/VirtualBox/VirtualBox.xml</code>. I was then able to vagrant up and continue on with my Chef cookbook.</p>
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: opschef | Nathen Harvey]]></title>
   <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/opschef/atom.xml" rel="self"/>
   <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T16:45:25-04:00</updated>
+  <updated>2015-04-08T17:56:48-04:00</updated>
   <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
@@ -277,17 +277,13 @@
 
 <p>By the end of this video, the run list should look like:</p>
 
-<p>```
-"run_list" : [</p>
-
-<pre><code>"recipe[apt]",
-"recipe[omnibus_updater]",
-"recipe[mongodb]",
-"recipe[passenger_apache2]"
+<pre><code>"run_list" : [
+    "recipe[apt]",
+    "recipe[omnibus_updater]",
+    "recipe[mongodb]",
+    "recipe[passenger_apache2]"
+]
 </code></pre>
-
-<p>]
-```</p>
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/0-Bid-eiJHY" frameborder="0" allowfullscreen></iframe>
 
@@ -296,23 +292,19 @@
 
 <p>Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here's the full Vagrantfile:</p>
 
-<p>``` ruby Vagrantfile
-Vagrant::Config.run do |config|
+<pre><code class="ruby Vagrantfile">Vagrant::Config.run do |config|
   config.vm.box = "opscode-ubuntu-12.04"
   config.vm.box_url = "https://opscode-vm.s3.amazonaws.com/vagrant/boxes/opscode-ubuntu-12.04.box"
-  config.vm.forward_port 80, 8080</p>
+  config.vm.forward_port 80, 8080
 
-<p>  config.vm.provision :chef_client do |chef|</p>
-
-<pre><code>chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
-chef.validation_key_path = "./.chef/fidor-validator.pem"
-chef.validation_client_name = "fidor-validator"
-chef.node_name = "patrick_vm"
-</code></pre>
-
-<p>  end
+  config.vm.provision :chef_client do |chef|
+    chef.chef_server_url = "https://api.opscode.com/organizations/fidor"
+    chef.validation_key_path = "./.chef/fidor-validator.pem"
+    chef.validation_client_name = "fidor-validator"
+    chef.node_name = "patrick_vm"
+  end
 end
-```</p>
+</code></pre>
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/ag0w_IqkgBI" frameborder="0" allowfullscreen></iframe>
 

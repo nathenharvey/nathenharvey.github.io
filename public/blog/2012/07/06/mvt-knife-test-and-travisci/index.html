@@ -118,8 +118,8 @@
 <span class='line-number'>4</span>
 </pre></td><td class='code'><pre><code class='sh'><span class='line'>knife cookbook create very_basic
 </span><span class='line'>** Creating cookbook very_basic
-</span><span class='line'>** Creating README <span class="k">for </span>cookbook: very_basic
-</span><span class='line'>** Creating metadata <span class="k">for </span>cookbook: very_basic
+</span><span class='line'>** Creating README <span class="k">for</span> cookbook: very_basic
+</span><span class='line'>** Creating metadata <span class="k">for</span> cookbook: very_basic
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -208,7 +208,7 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
-</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb  -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
 </span><span class='line'><span class="k">end</span>
@@ -358,9 +358,9 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs foodcritic linter&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:foodcritic</span> <span class="k">do</span>
-</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
-</span><span class='line'>  <span class="k">if</span> <span class="ss">Gem</span><span class="p">:</span><span class="ss">:Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="ss">Gem</span><span class="p">:</span><span class="ss">:Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">if</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;1.9.2&quot;</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="no">Gem</span><span class="o">::</span><span class="no">Version</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="no">RUBY_VERSION</span><span class="o">.</span><span class="n">dup</span><span class="p">)</span>
 </span><span class='line'>    <span class="n">sh</span> <span class="s2">&quot;foodcritic -f any </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">&quot;</span>
 </span><span class='line'>  <span class="k">else</span>
 </span><span class='line'>    <span class="nb">puts</span> <span class="s2">&quot;WARN: foodcritic run is skipped as Ruby </span><span class="si">#{</span><span class="no">RUBY_VERSION</span><span class="si">}</span><span class="s2"> is &lt; 1.9.2.&quot;</span>
@@ -369,7 +369,7 @@
 </span><span class='line'>
 </span><span class='line'><span class="n">desc</span> <span class="s2">&quot;Runs knife cookbook test&quot;</span>
 </span><span class='line'><span class="n">task</span> <span class="ss">:knife</span> <span class="k">do</span>
-</span><span class='line'>  <span class="ss">Rake</span><span class="p">:</span><span class="ss">:Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
+</span><span class='line'>  <span class="no">Rake</span><span class="o">::</span><span class="no">Task</span><span class="o">[</span><span class="ss">:prepare_sandbox</span><span class="o">].</span><span class="n">execute</span>
 </span><span class='line'>
 </span><span class='line'>  <span class="n">sh</span> <span class="s2">&quot;bundle exec knife cookbook test cookbook -c test/.chef/knife.rb -o </span><span class="si">#{</span><span class="n">sandbox_path</span><span class="si">}</span><span class="s2">/../&quot;</span>
 </span><span class='line'><span class="k">end</span>
