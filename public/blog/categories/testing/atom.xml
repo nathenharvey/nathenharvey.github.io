@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: testing | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/testing/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/testing/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
+    <link href="http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
     <updated>2012-07-06T21:26:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci</id>
+    <id>http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 
 <p>Wait, I'm already running foodcritic, do I really need to run <code>knife cookbook test</code>, too?</p>
@@ -206,9 +206,9 @@ gem 'chef', '~&gt; 10.12.0'
   
   <entry>
     <title type="html"><![CDATA[MVT:  Foodcritic and Travis CI]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
+    <link href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/"/>
     <updated>2012-05-29T22:30:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
+    <id>http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci</id>
     <content type="html"><![CDATA[<p>One of the big themes that emerged during <a href="http://chefconf.opscode.com/">#ChefConf</a> was that we should be testing our infrastructure code.  Software engineers have been practicing test-driven development, behavior-driven development, continuous integration, and many other testing-related practices for a long time.  It's becoming more important for the infrastructure engineers to learn from and apply these practices to our day-to-day workflow.  When it comes to testing Chef-driven infrastructure automation, there are a number of tools and practices that are starting to emerge.  In this article I'll look at a "minimum viable testing" (MVT) approach to this problem using <a href="http://acrmp.github.com/foodcritic/">Foodcritic</a> and <a href="http://travis-ci.org/">Travis CI</a>.  <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/#steps">Follow the steps in this article</a> to get your public cookbooks tested after every <code>git push</code>.</p>
 
 <h3>Testing with Chef</h3>
@@ -371,9 +371,9 @@ end
   
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
+    <link href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
     <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
+    <id>http://nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
@@ -465,9 +465,9 @@ end
   
   <entry>
     <title type="html"><![CDATA[Green Screen]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen/"/>
+    <link href="http://nathenharvey.com/blog/2012/01/02/green-screen/"/>
     <updated>2012-01-02T14:17:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen</id>
+    <id>http://nathenharvey.com/blog/2012/01/02/green-screen</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/greenscreen.jpg" width="300" height="225" alt="Green Screen Monitor" />
@@ -511,9 +511,9 @@ We've also added support for controlling which builds are displayed from each CI
   
   <entry>
     <title type="html"><![CDATA[Testing mod_rewrite and apache redirects]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/"/>
+    <link href="http://nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/"/>
     <updated>2010-07-16T09:00:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects</id>
+    <id>http://nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects</id>
     <content type="html"><![CDATA[<p>At <a href="http://www.customink.com">CustomInk</a>, we recently migrated from mongrel to Passenger for our Ruby on Rails website. This migration included a full rewrite of our apache configuration files.</p>
 
 <p>With over 500 redirect and rewrite rules in place I needed a way to ensure my copy-n-paste skills were up to snuff and that we didn't loose any redirects along the way.</p>

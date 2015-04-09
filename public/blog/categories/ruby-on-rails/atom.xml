@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby on rails | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/ruby-on-rails/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why we chose Chef over Puppet at CustomInk]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
+    <link href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
     <updated>2011-11-21T03:29:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
+    <id>http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
     <content type="html"><![CDATA[<p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
 
 <p>Before we get into any of the specifics, I want to make it clear that the "right" answer to this question is a simple, but emphatic "yes!" Yes, you should be using a tool that allows you to manage your infrastructure as code. That tool should NOT be a server.txt file that you keep on the machine that documents the installation, set-up, and configuration changes you've made. Moving that text to somewhere other than the local server is a step in the right direction but isn't really the answer. Moving the server.txt file to your corporate wiki is going to suck just as bad.</p>
@@ -101,9 +101,9 @@
   
   <entry>
     <title type="html"><![CDATA[Testing mod_rewrite and apache redirects]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/"/>
+    <link href="http://nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects/"/>
     <updated>2010-07-16T09:00:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects</id>
+    <id>http://nathenharvey.com/blog/2010/07/16/testing-mod-rewrite-and-apache-redirects</id>
     <content type="html"><![CDATA[<p>At <a href="http://www.customink.com">CustomInk</a>, we recently migrated from mongrel to Passenger for our Ruby on Rails website. This migration included a full rewrite of our apache configuration files.</p>
 
 <p>With over 500 redirect and rewrite rules in place I needed a way to ensure my copy-n-paste skills were up to snuff and that we didn't loose any redirects along the way.</p>
@@ -123,9 +123,9 @@
   
   <entry>
     <title type="html"><![CDATA[Passenger and PHP]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2010/06/11/passenger-and-php/"/>
+    <link href="http://nathenharvey.com/blog/2010/06/11/passenger-and-php/"/>
     <updated>2010-06-11T09:25:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2010/06/11/passenger-and-php</id>
+    <id>http://nathenharvey.com/blog/2010/06/11/passenger-and-php</id>
     <content type="html"><![CDATA[<p>I recently migrated a site from mongrel to passenger. Today I learned that the wordpress site that was served up by the same webserver wasn't working anymore.</p>
 
 <p>Compared the configurations and everything looked OK, no changes were made as part of the migration. PHP module was being loaded, URL was being properly aliased, etc. Watched my logs and saw that Passenger was attempting to serve up the request which is not what I wanted.</p>

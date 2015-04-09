@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dctech | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/dctech/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/dctech/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[DevOps Days DC]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2015/04/08/devops-days-dc/"/>
+    <link href="http://nathenharvey.com/blog/2015/04/08/devops-days-dc/"/>
     <updated>2015-04-08T16:29:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2015/04/08/devops-days-dc</id>
-    <content type="html"><![CDATA[<p><a href="http://www.devopsdays.org/events/2015-washington-dc/" target="_doddc"><img src="http://nathenharvey.github.com/nathenharvey/images/doddc.png" align="right" border="none"/></a>
+    <id>http://nathenharvey.com/blog/2015/04/08/devops-days-dc</id>
+    <content type="html"><![CDATA[<p><a href="http://www.devopsdays.org/events/2015-washington-dc/" target="_doddc"><img src="http://nathenharvey.com/images/doddc.png" align="right" border="none"/></a>
 DevOps is a cultural and professional movement, focused on how we build and operate high velocity organizations, born from the experiences of its practitioners.</p>
 
 <p>Since 2009, DevOps practitioners have been gathering for locally organized conferences known as DevOps Days.  We will be hosting <a href="http://www.devopsdays.org/events/2015-washington-dc/">DevOpsDays DC on June 11 and 12</a>.</p>
