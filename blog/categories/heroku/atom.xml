@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: heroku | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.com/blog/categories/heroku/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.com/"/>
-  <updated>2015-04-09T11:59:21-04:00</updated>
-  <id>http://nathenharvey.com/</id>
+  <title><![CDATA[Category: Heroku | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/heroku/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T18:07:35-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
     <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
-<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
+<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project&#8217;s <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you&#8217;ll need for doing so. In this post, I&#8217;ll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
 
 <h2>Deploying to Heroku</h2>
 
-<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You'll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don't yet have an account.</p>
+<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You&#8217;ll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don&#8217;t yet have an account.</p>
 
-<p>Once you've got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
+<p>Once you&#8217;ve got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
 
 <ol>
 <li><code>git clone git@github.com:customink/greenscreen.git</code></li>
@@ -40,7 +40,7 @@
 
 <p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
 
-<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
+<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
 
 <p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
 
@@ -49,18 +49,18 @@
 
 <h2>Deploying with Chef</h2>
 
-<p>If your build servers are not publicly accessible, Heroku won't be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
+<p>If your build servers are not publicly accessible, Heroku won&#8217;t be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
 
-<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
+<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node&#8217;s recipes.</p>
 
 <pre><code class="ruby ">include_recipe "greenscreen"
 </code></pre>
 
-<p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
+<p>Of course, if you&#8217;re just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
 
 <p>The cookbook allows you to specify credentials and jobs to include or ignore with each server and allows you to set-up multiple Green Screens on the same node. At CustomInk, we use different Green Screen applications for different teams.</p>
 
-<p>Here's an excerpt from one of our Chef environment files:</p>
+<p>Here&#8217;s an excerpt from one of our Chef environment files:</p>
 
 <pre><code class="ruby">"greenscreens" =&gt; [
   {
@@ -109,72 +109,72 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://nathenharvey.com/blog/2011/12/30/octopress/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2011/12/30/octopress</id>
-    <content type="html"><![CDATA[<p>I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I&#8217;ve found that the Octopress works best for my personal blog.</p>
 
 <p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
 
-<p>The rake- and git-based workflow feels very natural.  After all, this is a "blogging framework for hackers."</p>
+<p>The rake- and git-based workflow feels very natural.  After all, this is a &#8220;blogging framework for hackers.&#8221;</p>
 
 <p>The standard layout and plugins are working well for me with little customization.</p>
 
-<p>Deploying is a snap. I'm currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
+<p>Deploying is a snap. I&#8217;m currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
 
 <p>The simplicity and familiar workflow really make for an excellent blogging platform! Thanks <a href="http://twitter.com/imathis">@imathis</a> for giving us <a href="http://octopress.org">Octopress</a>!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Why we chose Chef over Puppet at CustomInk]]></title>
-    <link href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
+    <title type="html"><![CDATA[Why We Chose Chef Over Puppet at CustomInk]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/"/>
     <updated>2011-11-21T03:29:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink</id>
     <content type="html"><![CDATA[<p>Not unlike most technology choices, the choice of which configuration management tool to use for managing your infrastructure as code is sure to spark debate among opinionated technologists. There are certainly a number of choices available all of which have their own strengths and weaknesses. There are a number of things to consider as you select a tool.</p>
 
-<p>Before we get into any of the specifics, I want to make it clear that the "right" answer to this question is a simple, but emphatic "yes!" Yes, you should be using a tool that allows you to manage your infrastructure as code. That tool should NOT be a server.txt file that you keep on the machine that documents the installation, set-up, and configuration changes you've made. Moving that text to somewhere other than the local server is a step in the right direction but isn't really the answer. Moving the server.txt file to your corporate wiki is going to suck just as bad.</p>
+<p>Before we get into any of the specifics, I want to make it clear that the &#8220;right&#8221; answer to this question is a simple, but emphatic &#8220;yes!&#8221; Yes, you should be using a tool that allows you to manage your infrastructure as code. That tool should NOT be a server.txt file that you keep on the machine that documents the installation, set-up, and configuration changes you&#8217;ve made. Moving that text to somewhere other than the local server is a step in the right direction but isn&#8217;t really the answer. Moving the server.txt file to your corporate wiki is going to suck just as bad.</p>
 
 <p>I think Mark Imbriaco summed it up quite nicely in 140 characters or less:</p>
 
-<p>"Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou"</p>
+<p>&#8220;Pro-tip: Nobody gives a shit about your opinion of Chef vs. Puppet. Seriously. Just fucking stop it already. #usewhatworksforyou&#8221;</p>
 
-<p>As you consider which tool is right for you, you'll need to consider a number of questions. I think of these as the WIIFs, or "what's in it for..." questions:</p>
+<p>As you consider which tool is right for you, you&#8217;ll need to consider a number of questions. I think of these as the WIIFs, or &#8220;what&#8217;s in it for&#8230;&#8221; questions:</p>
 
 <!--more-->
 
 
-<h3>WIIFM - What's in it for me</h3>
+<h3>WIIFM - What&#8217;s in it for me</h3>
 
-<p>You're going to want a tool that you're happy working with. You're going to make an investment in this tool. You'll need to learn to be proficient with the tool, master it, and use it in your everyday workflow. Pick something that you'll be happy working with for some time.</p>
+<p>You&#8217;re going to want a tool that you&#8217;re happy working with. You&#8217;re going to make an investment in this tool. You&#8217;ll need to learn to be proficient with the tool, master it, and use it in your everyday workflow. Pick something that you&#8217;ll be happy working with for some time.</p>
 
-<h3>WIIFC - What's in it for my customers</h3>
+<h3>WIIFC - What&#8217;s in it for my customers</h3>
 
-<p>It's highly unlikely that your customers know or care anything about how your infrastructure was built, provisioned, and managed. Why should they have any say about which tool you pick? Your customers are keenly interested in the services or products you offer. They also care about things like performance, availability, and how quickly you recover from an issue or outage. If they don't care about these things, they'll likely not be your customers for long. As you grow your business, you'll want to have more time for delivering value to customers. Spend less time building, provisioning, upgrading, and repairing your infrastructure.</p>
+<p>It&#8217;s highly unlikely that your customers know or care anything about how your infrastructure was built, provisioned, and managed. Why should they have any say about which tool you pick? Your customers are keenly interested in the services or products you offer. They also care about things like performance, availability, and how quickly you recover from an issue or outage. If they don&#8217;t care about these things, they&#8217;ll likely not be your customers for long. As you grow your business, you&#8217;ll want to have more time for delivering value to customers. Spend less time building, provisioning, upgrading, and repairing your infrastructure.</p>
 
-<h3>WIIFB - What's in it for my business</h3>
+<h3>WIIFB - What&#8217;s in it for my business</h3>
 
-<p>You may be the only one who has to build and manage the infrastructure in your company but it's likely you'll eventually move beyond a technology team of one. As your technology team grows, you'll want to include everyone in the process of managing your infrastructure. This includes the people you might not think of as typically having a say in the infrastructure: developers, quality assurance engineers, etc. You do not want to be the only person in your company who knows how to manage the infrastructure and use the tools you've selected. Sure, it gives you a false sense of job security and feeds into your hero-complex but you need to be able to pass the on-call baton to someone else. Cost may also be a factor to consider when selecting a solution although it's likely it's more of a data-point than selection criteria, given the solutions that are on the market.</p>
+<p>You may be the only one who has to build and manage the infrastructure in your company but it&#8217;s likely you&#8217;ll eventually move beyond a technology team of one. As your technology team grows, you&#8217;ll want to include everyone in the process of managing your infrastructure. This includes the people you might not think of as typically having a say in the infrastructure: developers, quality assurance engineers, etc. You do not want to be the only person in your company who knows how to manage the infrastructure and use the tools you&#8217;ve selected. Sure, it gives you a false sense of job security and feeds into your hero-complex but you need to be able to pass the on-call baton to someone else. Cost may also be a factor to consider when selecting a solution although it&#8217;s likely it&#8217;s more of a data-point than selection criteria, given the solutions that are on the market.</p>
 
-<p>I cannot tell you which tool is right for you. There are many factors including the ones I've listed above. I have some experience with both Puppet and Chef. At <a href="http://www.customink.com">CustomInk</a>, we decided to switch to Chef after using Puppet for about two years.</p>
+<p>I cannot tell you which tool is right for you. There are many factors including the ones I&#8217;ve listed above. I have some experience with both Puppet and Chef. At <a href="http://www.customink.com">CustomInk</a>, we decided to switch to Chef after using Puppet for about two years.</p>
 
 <h2>Why did we switch?</h2>
 
-<h3>We're a Rails shop</h3>
+<h3>We&#8217;re a Rails shop</h3>
 
-<p>CustomInk is a Ruby on Rails shop and has been for many years. Being a Rails shop helped push us towards Chef in two ways. As a Rails shop, we suffer a bit from from the stereotypical "newer and shinier is better" syndrome that many people feel ails the Rails community. As a Rails shop, the domain-specific language (DSL) of Chef is a more comfortable way for us to work. Everyone on the technology team can easily understand the code.</p>
+<p>CustomInk is a Ruby on Rails shop and has been for many years. Being a Rails shop helped push us towards Chef in two ways. As a Rails shop, we suffer a bit from from the stereotypical &#8220;newer and shinier is better&#8221; syndrome that many people feel ails the Rails community. As a Rails shop, the domain-specific language (DSL) of Chef is a more comfortable way for us to work. Everyone on the technology team can easily understand the code.</p>
 
 <h3>We started with Puppet</h3>
 
-<p>We started with Puppet so, naturally, that's the one we switched from. Puppet was, and actually still is, working well for us. However, we found that working in Puppet was going a bit slower than we'd like. Also, as we started learning more about Chef we started to see how we'd be able to quickly benefit from some of the features it offers. To be fair, we were comparing the Puppet we were using (0.24.x) to the latest (at the time) version of Chef (0.9.x). There may well have been ways to do the things we wanted with Puppet but we weren't. Chef was intriguing and it looked like we'd be able to get more from it. Instead of working to refactor our Puppet and get smarter with how to use it, we went with Chef.</p>
+<p>We started with Puppet so, naturally, that&#8217;s the one we switched from. Puppet was, and actually still is, working well for us. However, we found that working in Puppet was going a bit slower than we&#8217;d like. Also, as we started learning more about Chef we started to see how we&#8217;d be able to quickly benefit from some of the features it offers. To be fair, we were comparing the Puppet we were using (0.24.x) to the latest (at the time) version of Chef (0.9.x). There may well have been ways to do the things we wanted with Puppet but we weren&#8217;t. Chef was intriguing and it looked like we&#8217;d be able to get more from it. Instead of working to refactor our Puppet and get smarter with how to use it, we went with Chef.</p>
 
 <h3>Search</h3>
 
-<p>Chef's ability to search our environment and use that information at run time is very appealing. The ability for us to define a database.yml template that can have the "host" value populated at runtime based on which host is currently the primary database server is great. Using search in our capistrano recipes to determine where the code should be deployed is a huge win.</p>
+<p>Chef&#8217;s ability to search our environment and use that information at run time is very appealing. The ability for us to define a database.yml template that can have the &#8220;host&#8221; value populated at runtime based on which host is currently the primary database server is great. Using search in our capistrano recipes to determine where the code should be deployed is a huge win.</p>
 
 <h3>Knife</h3>
 
-<p>Knife is Chef's powerful command line interface. There are many things you can do with knife, most of which fall outside of the scope of this article. Knife allows you to interact with your entire infrastructure and Chef code base. Use knife to bootstrap a server, build the scaffolding for a new cookbook, or apply a role to a set of nodes in your environment. You can use knife ssh to execute commands on any number of nodes in your environment. knife ssh + search is a very powerful combination. "Run this command on all nodes with role X."</p>
+<p>Knife is Chef&#8217;s powerful command line interface. There are many things you can do with knife, most of which fall outside of the scope of this article. Knife allows you to interact with your entire infrastructure and Chef code base. Use knife to bootstrap a server, build the scaffolding for a new cookbook, or apply a role to a set of nodes in your environment. You can use knife ssh to execute commands on any number of nodes in your environment. knife ssh + search is a very powerful combination. &#8220;Run this command on all nodes with role X.&#8221;</p>
 
 <h3>Dependency Management</h3>
 
@@ -182,25 +182,25 @@
 
 <h3>Strong Community</h3>
 
-<p>OpsCode has done a great job of keeping up a strong community. The community.opscode.com site, where hundreds of cookbooks are shared, is a great way to get started. OpsCode has also hosted numerous webinars, publishes all of their training material, and makes it very easy to contribute patches. Frankly, I don't have any experience with this in the Puppet world. However, my lack of experience with this in the Puppet world is likely attributed simply to the way my development habits have changed over time. At CustomInk, we've been able to submit patches to chef, a number of cookbooks, and have also published some of our own cookbooks.</p>
+<p>OpsCode has done a great job of keeping up a strong community. The community.opscode.com site, where hundreds of cookbooks are shared, is a great way to get started. OpsCode has also hosted numerous webinars, publishes all of their training material, and makes it very easy to contribute patches. Frankly, I don&#8217;t have any experience with this in the Puppet world. However, my lack of experience with this in the Puppet world is likely attributed simply to the way my development habits have changed over time. At CustomInk, we&#8217;ve been able to submit patches to chef, a number of cookbooks, and have also published some of our own cookbooks.</p>
 
 <h3>Developer Happiness</h3>
 
 <p>As I mentioned previously, the DSL with Chef is much more comfortable than that of Puppet. The mental model and workflow suit us. I find that the time I spend working in Chef is when I feel most productive and happy.</p>
 
-<p>I often wonder if the reason Chef is the right tool is because it's the second one we've used. Coming to infrastructure as code includes a learning curve. I feel that we're better Chef developers because we learned from our experience with Puppet. Some may even agree that Chef's a better tool because the developers of Chef learned from their experience with Puppet.</p>
+<p>I often wonder if the reason Chef is the right tool is because it&#8217;s the second one we&#8217;ve used. Coming to infrastructure as code includes a learning curve. I feel that we&#8217;re better Chef developers because we learned from our experience with Puppet. Some may even agree that Chef&#8217;s a better tool because the developers of Chef learned from their experience with Puppet.</p>
 
 <h3>A note for projects that are just getting started</h3>
 
-<p>If your project is just getting started, the best choice for you is probably not to use any of the configuration management tools that allow you to manage your infrastructure as code. You should stay focused exclusively on delivering value to your customers. It's likely that the best solution for you is <a href="http://www.heroku.com/">Heroku</a>. Sure, Heroku puts some constraints on how you build your app, but they're a good way for you to think creatively. You can, and should, delay your choice of tools until you're ready to spin up your first server.</p>
+<p>If your project is just getting started, the best choice for you is probably not to use any of the configuration management tools that allow you to manage your infrastructure as code. You should stay focused exclusively on delivering value to your customers. It&#8217;s likely that the best solution for you is <a href="http://www.heroku.com/">Heroku</a>. Sure, Heroku puts some constraints on how you build your app, but they&#8217;re a good way for you to think creatively. You can, and should, delay your choice of tools until you&#8217;re ready to spin up your first server.</p>
 
 <h2>TL;DR</h2>
 
 <ul>
-<li>If the question is "Chef or Puppet?", the answer is "Yes." You need to manage you infrastructure as code</li>
+<li>If the question is &#8220;Chef or Puppet?&#8221;, the answer is &#8220;Yes.&#8221; You need to manage you infrastructure as code</li>
 <li>Search, knife, dependency management, community, and developer happiness were the key reasons we switched</li>
 <li>Chef is the right tool for us and it might be the right one for you</li>
-<li>If you're new to the idea of "Infrastructure as Code", understand that there's a learning curve but your efforts will be rewarded</li>
+<li>If you&#8217;re new to the idea of &#8220;Infrastructure as Code&#8221;, understand that there&#8217;s a learning curve but your efforts will be rewarded</li>
 </ul>
 
 
