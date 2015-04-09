@@ -6,6 +6,7 @@ comments: true
 categories: 
   - devopsdays
   - dctech
+  - uspto
 ---
 
 <a href="http://www.devopsdays.org/events/2015-washington-dc/" target="_doddc"><img src="/images/doddc.png" align="right" border="none"/></a>
