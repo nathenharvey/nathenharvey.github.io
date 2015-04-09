@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hudson | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/hudson/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/hudson/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
+    <link href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
     <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
+    <id>http://nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
@@ -109,9 +109,9 @@
   
   <entry>
     <title type="html"><![CDATA[Green Screen]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen/"/>
+    <link href="http://nathenharvey.com/blog/2012/01/02/green-screen/"/>
     <updated>2012-01-02T14:17:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen</id>
+    <id>http://nathenharvey.com/blog/2012/01/02/green-screen</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/greenscreen.jpg" width="300" height="225" alt="Green Screen Monitor" />

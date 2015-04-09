@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: mongomasters | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/mongomasters/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/mongomasters/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MongoDB Masters]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/"/>
     <updated>2011-12-29T13:46:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters</id>
+    <id>http://nathenharvey.com/blog/2011/12/29/mongodb-masters</id>
     <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
 
 <p>"The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community."</p>

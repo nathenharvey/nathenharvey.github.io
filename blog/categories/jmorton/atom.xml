@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: jmorton | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/jmorton/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/jmorton/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Collaborating with Chef]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/"/>
+    <link href="http://nathenharvey.com/blog/2012/01/13/collaborating-with-chef/"/>
     <updated>2012-01-13T16:25:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef</id>
+    <id>http://nathenharvey.com/blog/2012/01/13/collaborating-with-chef</id>
     <content type="html"><![CDATA[<p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
 
 <p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren't important but let's look at how we worked together to implement the changes.</p>

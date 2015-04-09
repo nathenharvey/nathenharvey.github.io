@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: sxsw | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/sxsw/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/sxsw/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/"/>
     <updated>2011-12-29T23:54:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
+    <id>http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards</id>
     <content type="html"><![CDATA[<p>During this year's <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
 
 <p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>

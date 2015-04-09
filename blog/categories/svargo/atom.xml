@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: svargo | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/svargo/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/svargo/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[MVT: knife test and Travis CI]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
+    <link href="http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci/"/>
     <updated>2012-07-06T21:26:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/07/06/mvt-knife-test-and-travisci</id>
+    <id>http://nathenharvey.com/blog/2012/07/06/mvt-knife-test-and-travisci</id>
     <content type="html"><![CDATA[<p>In my last post, <a href="http://nathenharvey.com/blog/2012/05/29/mvt-foodcritic-and-travis-ci/">MVT: Foodcritic and Travis CI</a> I described the process for having Travis CI look after your cookbooks and run Foodcritic, the cookbook lint tool, on your cookbook after each <code>git push</code>.  In this post, we'll iterate on the "Minimum Viable Test" idea by adding in support for knife's cookbook testing.</p>
 
 <p>Wait, I'm already running foodcritic, do I really need to run <code>knife cookbook test</code>, too?</p>

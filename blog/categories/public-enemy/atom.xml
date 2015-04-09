@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: public_enemy | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/public-enemy/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/public-enemy/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[DevOp with Me]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me/"/>
+    <link href="http://nathenharvey.com/blog/2013/12/19/devop-with-me/"/>
     <updated>2013-12-19T12:47:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/12/19/devop-with-me</id>
-    <content type="html"><![CDATA[<iframe width="560" height="315" src="http://nathenharvey.github.com/nathenharvey//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
+    <id>http://nathenharvey.com/blog/2013/12/19/devop-with-me</id>
+    <content type="html"><![CDATA[<iframe width="560" height="315" src="http://nathenharvey.com//www.youtube.com/embed/cguZKkDY_WQ" frameborder="0" allowfullscreen></iframe>
 
 
 <p>Come DevOp with me! We'll explore what DevOps is and what it is not.</p>

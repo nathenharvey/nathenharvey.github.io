@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blogging | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2015-04-08T20:59:42-04:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <link href="http://nathenharvey.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-08T21:11:23-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
+    <id>http://nathenharvey.com/blog/2011/12/30/octopress</id>
     <content type="html"><![CDATA[<p>I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
 
 <p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
