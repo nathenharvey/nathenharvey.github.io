@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: hudson | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.com/blog/categories/hudson/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.com/"/>
-  <updated>2015-04-09T13:42:55-04:00</updated>
-  <id>http://nathenharvey.com/</id>
+  <title><![CDATA[Category: Hudson | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/hudson/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T18:07:35-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Deploying Green Screen]]></title>
-    <link href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen/"/>
     <updated>2012-01-02T16:59:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2012/01/02/deploying-green-screen</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/deploying-green-screen</id>
     <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2012/01/02/green-screen/">previous post</a>, I introduced <a href="https://github.com/customink/greenscreen">Green Screen</a>, a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area.  It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
-<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project's <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you'll need for doing so. In this post, I'll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
+<p>It is easy enough to get <a href="https://github.com/customink/greenscreen">Green Screen</a> up and running on your own server or VM. The project&#8217;s <a href="https://github.com/customink/greenscreen/blob/master/README.md">README</a> includes all the information you&#8217;ll need for doing so. In this post, I&#8217;ll describe the steps necessary to run Green Screen on Heroku or on your own server using Chef.</p>
 
 <h2>Deploying to Heroku</h2>
 
-<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You'll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don't yet have an account.</p>
+<p>Deploying to <a href="http://www.heroku.com/">Heroku</a> is probably the easiest way to get up and running with Green Screen. You&#8217;ll need a Heroku account but a free one should be sufficient. Check the <a href="http://devcenter.heroku.com/articles/quickstart">quick start guide</a> if you don&#8217;t yet have an account.</p>
 
-<p>Once you've got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
+<p>Once you&#8217;ve got your Heroku account set-up, simply follow these steps to get your Green Screen app deployed:</p>
 
 <ol>
 <li><code>git clone git@github.com:customink/greenscreen.git</code></li>
@@ -40,7 +40,7 @@
 
 <p>If your build servers are running on the Internet, Heroku may be all that you need.</p>
 
-<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
+<p><strong>Warning</strong> this default Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
 
 <p>You can see a sample of this app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a></p>
 
@@ -49,18 +49,18 @@
 
 <h2>Deploying with Chef</h2>
 
-<p>If your build servers are not publicly accessible, Heroku won't be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
+<p>If your build servers are not publicly accessible, Heroku won&#8217;t be a great option. <a href="http://www.customink.com">CustomInk</a> has published a <a href="http://community.opscode.com/cookbooks/greenscreen">Chef cookbook</a> for setting up Green Screen on one of your nodes.</p>
 
-<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node's recipes.</p>
+<p>You simply need to include the greenscreen recipe to install, configure, and run one or more GreenScreen applications.  Or add it to your role, or directly to a node&#8217;s recipes.</p>
 
 <pre><code class="ruby ">include_recipe "greenscreen"
 </code></pre>
 
-<p>Of course, if you're just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
+<p>Of course, if you&#8217;re just getting started with Chef, you should look at <a href="http://vagrantup.com/">Vagrant</a> which is a tool for building and distributing virtualized development environments. With Vagrant, you can quickly spin-up a VM in <a href="http://www.virtualbox.org/">VirtualBox</a> and have it use the greenscreen cookbook.</p>
 
 <p>The cookbook allows you to specify credentials and jobs to include or ignore with each server and allows you to set-up multiple Green Screens on the same node. At CustomInk, we use different Green Screen applications for different teams.</p>
 
-<p>Here's an excerpt from one of our Chef environment files:</p>
+<p>Here&#8217;s an excerpt from one of our Chef environment files:</p>
 
 <pre><code class="ruby">"greenscreens" =&gt; [
   {
@@ -109,9 +109,9 @@
   
   <entry>
     <title type="html"><![CDATA[Green Screen]]></title>
-    <link href="http://nathenharvey.com/blog/2012/01/02/green-screen/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen/"/>
     <updated>2012-01-02T14:17:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2012/01/02/green-screen</id>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/01/02/green-screen</id>
     <content type="html"><![CDATA[<p><a href="https://github.com/customink/greenscreen">Green Screen</a> is a build monitoring tool that is designed to be used as a dynamic Big Visible Chart (BVC) in your work area. It lets you add links to your build servers and displays the largest possible information on a monitor so that the team can see the build status from anywhere in the room.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/greenscreen.jpg" width="300" height="225" alt="Green Screen Monitor" />
@@ -119,7 +119,7 @@ We use Green Screen at <a href="http://www.customink.com">CustomInk</a> to look 
 
 <p>Green Screen is a simple Sinatra application that is <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">easy to configure and deploy</a>.  It works well with any continuous integration server that conforms to the <a href="http://confluence.public.thoughtworks.org/display/CI/Multiple+Project+Summary+Reporting+Standard">multiple project summary reporting standard</a>.</p>
 
-<p>You can see a sample Green Screen app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a>.  Be forewarned, this sample Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it's <strong>over 300 builds</strong> at the time of this writing.</p>
+<p>You can see a sample Green Screen app running at <a href="http://greenscreenapp.com">http://greenscreenapp.com</a>.  Be forewarned, this sample Green Screen looks at all of the builds currently running on <a href="http://ci.jenkins-ci.org">http://ci.jenkins-ci.org</a>.  This is fine for demo purposes but you may find it to be a bit overwhelming since it&#8217;s <strong>over 300 builds</strong> at the time of this writing.</p>
 
 <!--more-->
 
@@ -132,24 +132,24 @@ We use Green Screen at <a href="http://www.customink.com">CustomInk</a> to look 
 <p><a href="https://github.com/rsutphin">Rhett Sutphin</a> improved the layout of green screen and introduced a new color, yellow, for builds that are in progress.
 <img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4566-building.jpg" /></p>
 
-<p>After using these versions for a while at CustomInk, we decided that the most important thing to know was which builds were failing. Once you get past a handful of builds, it's no longer very interesting to see every build. We forked Rhett's version and created a <a href="https://github.com/customink/greenscreen">new layout for Green Screen</a>.</p>
+<p>After using these versions for a while at CustomInk, we decided that the most important thing to know was which builds were failing. Once you get past a handful of builds, it&#8217;s no longer very interesting to see every build. We forked Rhett&#8217;s version and created a <a href="https://github.com/customink/greenscreen">new layout for Green Screen</a>.</p>
 
 <p>If everything is passing, the screen is basically one giant checkmark.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/green.jpg" /></p>
 
-<p>If there are any failing builds, they're shown in the main area while all others are displayed on the right.</p>
+<p>If there are any failing builds, they&#8217;re shown in the main area while all others are displayed on the right.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567.jpg" /></p>
 
-<p>Finally, a build that previously failed will be shown in yellow while it's rebuilding.</p>
+<p>Finally, a build that previously failed will be shown in yellow while it&#8217;s rebuilding.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg" alt="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/greenscreen/4567_building.jpg" />
-We've also added support for controlling which builds are displayed from each CI server. So that you can explicitly include or exclude builds or just go with the default behavior of showing all builds on the server.</p>
+We&#8217;ve also added support for controlling which builds are displayed from each CI server. So that you can explicitly include or exclude builds or just go with the default behavior of showing all builds on the server.</p>
 
 <h2>Deploying</h2>
 
-<p>I'll cover a couple of deployment options for Green Screen in my <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">next post</a>.</p>
+<p>I&#8217;ll cover a couple of deployment options for Green Screen in my <a href="http://nathenharvey.com/blog/2012/01/02/deploying-green-screen">next post</a>.</p>
 ]]></content>
   </entry>
   

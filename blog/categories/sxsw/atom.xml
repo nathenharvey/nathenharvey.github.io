@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: sxsw | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.com/blog/categories/sxsw/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.com/"/>
-  <updated>2015-04-09T13:42:55-04:00</updated>
-  <id>http://nathenharvey.com/</id>
+  <title><![CDATA[Category: Sxsw | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/sxsw/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2014-11-25T18:07:35-05:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
-    <link href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/"/>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
     <updated>2011-12-29T23:54:00-05:00</updated>
-    <id>http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards</id>
-    <content type="html"><![CDATA[<p>During this year's <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
+    <content type="html"><![CDATA[<p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
 
 <p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
 
@@ -29,30 +29,30 @@
 </ol>
 
 
-<p>This is the first year that 10gen has organized these awards. I think they're a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+<p>This is the first year that 10gen has organized these awards. I think they&#8217;re a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
 
 <!--more-->
 
 
 <h2>Community Champion Award</h2>
 
-<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We've grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
+<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We&#8217;ve grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
 
-<h2>I'm going to SXSW Interactive!</h2>
+<h2>I&#8217;m going to SXSW Interactive!</h2>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" /></p>
 
-<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
+<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I&#8217;ve always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
 
-<p>As I reviewed the finalists, I was pretty certain I wouldn't be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
+<p>As I reviewed the finalists, I was pretty certain I wouldn&#8217;t be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
 
-<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I'd been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
+<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I&#8217;d been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
 
 <h2>Thanks!</h2>
 
-<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who 'rocked the vote'!</p>
+<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who &#8216;rocked the vote&#8217;!</p>
 
-<p>I'm looking forward to meeting up with the other Community Award winners in Austin!</p>
+<p>I&#8217;m looking forward to meeting up with the other Community Award winners in Austin!</p>
 ]]></content>
   </entry>
   
