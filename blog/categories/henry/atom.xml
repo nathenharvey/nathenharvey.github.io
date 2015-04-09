@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Henry | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/henry/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T18:07:35-05:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <title><![CDATA[Category: henry | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.com/blog/categories/henry/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-09T11:57:56-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,14 +15,14 @@
   
   <entry>
     <title type="html"><![CDATA[DevOps Explained]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2014/05/01/devops-explained/"/>
+    <link href="http://nathenharvey.com/blog/2014/05/01/devops-explained/"/>
     <updated>2014-05-01T21:31:00-04:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2014/05/01/devops-explained</id>
+    <id>http://nathenharvey.com/blog/2014/05/01/devops-explained</id>
     <content type="html"><![CDATA[<p>We created a little video to help explain DevOps.  This video was initially released during <a href="http://chefconf.com">#ChefConf 2014</a>.</p>
 
-<p>Please note, this video does include some explicit language.  However, there is a <a href="https://www.youtube.com/watch?v=g-BF0z7eFoU">version that&#8217;s safe for all audiences</a>.</p>
+<p>Please note, this video does include some explicit language.  However, there is a <a href="https://www.youtube.com/watch?v=g-BF0z7eFoU">version that's safe for all audiences</a>.</p>
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/0P0HD5pE-zU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://nathenharvey.com//www.youtube.com/embed/0P0HD5pE-zU" frameborder="0" allowfullscreen></iframe>
 
 
 <p>This and all of the other <a href="http://www.youtube.com/watch?v=g-BF0z7eFoU&amp;list=PL11cZfNdwNyMmx0msapJfuGsLV43C7XsA">videos from #ChefConf are available on YouTube</a>.</p>

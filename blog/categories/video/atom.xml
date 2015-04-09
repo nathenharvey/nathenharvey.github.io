@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: video | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.com/blog/categories/video/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-09T11:57:56-04:00</updated>
+  <id>http://nathenharvey.com/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Continuous Delivery]]></title>
+    <link href="http://nathenharvey.com/blog/2015/04/01/continuous-delivery/"/>
+    <updated>2015-04-01T12:00:00-04:00</updated>
+    <id>http://nathenharvey.com/blog/2015/04/01/continuous-delivery</id>
+    <content type="html"><![CDATA[<p>Check-out this fun video to follow my journey towards mastery of Continuous Delivery!</p>
+
+<iframe width="560" height="315" src="http://nathenharvey.com//www.youtube.com/embed/XD0vRW4G82U" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This video was initially released during <a href="http://chefconf.com">ChefConf 2015</a>.  This and all of the other <a href="https://www.youtube.com/watch?v=_DEToXsgrPc&amp;list=PL11cZfNdwNyO9CpTWH2qjYfzysEtpfOCd">videos from ChefConf 2015 are available on YouTube</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
