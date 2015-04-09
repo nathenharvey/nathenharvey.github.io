@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Blogging | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T18:07:35-05:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <title><![CDATA[Category: blogging | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-09T13:42:55-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/30/octopress/"/>
     <updated>2011-12-30T00:42:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/30/octopress</id>
-    <content type="html"><![CDATA[<p>I&#8217;ve recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I&#8217;ve found that the Octopress works best for my personal blog.</p>
+    <id>http://nathenharvey.com/blog/2011/12/30/octopress</id>
+    <content type="html"><![CDATA[<p>I've recently switched my blog from <a href="http://www.blogger.com">Blogger</a> to <a href="http://octopress.org">Octopress</a>. After working with Blogger, WordPress, and TypePad I've found that the Octopress works best for my personal blog.</p>
 
 <p>Creating and editing posts in a text editor instead of a browser is a step-saver for me.  Previously I always worked with a local copy of each article and would cut-n-paste between my text editor and the browser.</p>
 
-<p>The rake- and git-based workflow feels very natural.  After all, this is a &#8220;blogging framework for hackers.&#8221;</p>
+<p>The rake- and git-based workflow feels very natural.  After all, this is a "blogging framework for hackers."</p>
 
 <p>The standard layout and plugins are working well for me with little customization.</p>
 
-<p>Deploying is a snap. I&#8217;m currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
+<p>Deploying is a snap. I'm currently using <a href="http://heroku.com">Heroku</a> to host the blog but could just as easily be using <a href="http://pages.github.com/">github:pages</a>.</p>
 
 <p>The simplicity and familiar workflow really make for an excellent blogging platform! Thanks <a href="http://twitter.com/imathis">@imathis</a> for giving us <a href="http://octopress.org">Octopress</a>!</p>
 ]]></content>

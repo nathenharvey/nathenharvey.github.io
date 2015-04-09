@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Github | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/github/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T18:07:35-05:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <title><![CDATA[Category: github | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.com/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-09T13:42:55-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 6]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6/"/>
+    <link href="http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6/"/>
     <updated>2013-01-16T12:52:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2013/01/16/learning-chef-part-6</id>
+    <id>http://nathenharvey.com/blog/2013/01/16/learning-chef-part-6</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -30,16 +30,16 @@
 </ul>
 
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://nathenharvey.com//www.youtube.com/embed/wCG7mlLX-zc" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 5]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5/"/>
+    <link href="http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5/"/>
     <updated>2012-12-28T12:52:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/28/learning-chef-part-5</id>
+    <id>http://nathenharvey.com/blog/2012/12/28/learning-chef-part-5</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -52,16 +52,16 @@
 </ul>
 
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="http://nathenharvey.com//www.youtube.com/embed/zHaGaCrqwUE" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 4]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4/"/>
+    <link href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/"/>
     <updated>2012-12-19T13:53:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/19/learning-chef-part-4</id>
+    <id>http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -78,7 +78,7 @@
 
 <p>In Part 4, we completed the application deploy and then looked at <a href="http://docs.opscode.com/essentials_roles.html">roles</a>.</p>
 
-<p>I&#8217;ll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
 
 <p>Also, you can grab the code from the following repositories on github:</p>
 
@@ -91,9 +91,9 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fb4DJJmhUt8" frameborder="0" allowfullscreen></iframe>
 
 
-<h2>What&#8217;s Next</h2>
+<h2>What's Next</h2>
 
-<p>In Learning Chef - Part 5 we will move the MongoDB to it&#8217;s own VM.</p>
+<p>In Learning Chef - Part 5 we will move the MongoDB to it's own VM.</p>
 
 <p>In the meantime, please let us know what you think of this post and these videos!  Drop a note in the comments or reach out to <a href="https://twitter.com/nathenharvey">@nathenharvey</a> or <a href="http://twitter.com/mulpat">@mulpat</a> on twitter.</p>
 ]]></content>
@@ -101,9 +101,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 3]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3/"/>
+    <link href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/"/>
     <updated>2012-12-14T12:14:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/14/learning-chef-part-3</id>
+    <id>http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -120,9 +120,9 @@
 
 <p>In Part 3, we added a bunch of cookbooks from the community site including <a href="http://ckbk.it/git">git</a>, <a href="http://ckbk.it/application">application</a>, and <a href="http://ckbk.it/application_ruby">application_ruby</a>.  After adding these cookbooks, we created a cookbook of our own to deploy a <a href="https://github.com/mulderp/chef-demo">sample Rails application</a>.</p>
 
-<p>The application wasn&#8217;t fully deployed by the end of the tutorial but we&#8217;ll pick-up from there next time.</p>
+<p>The application wasn't fully deployed by the end of the tutorial but we'll pick-up from there next time.</p>
 
-<p>I&#8217;ll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
+<p>I'll update this post soon with a breakdown of each step we took during this session.  In the meantime, you can watch the entire video below.</p>
 
 <p>Also, you can grab the code from the following repositories on github:</p>
 
@@ -135,7 +135,7 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/3cA1IL8DV8I" frameborder="0" allowfullscreen></iframe>
 
 
-<h2>What&#8217;s Next</h2>
+<h2>What's Next</h2>
 
 <p>In <a href="http://nathenharvey.com/blog/2012/12/19/learning-chef-part-4/">Learning Chef - Part 4</a> we finish the deployment of the sample application and then explore roles.</p>
 
@@ -145,9 +145,9 @@
   
   <entry>
     <title type="html"><![CDATA[Learning Chef - Part 2]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2/"/>
+    <link href="http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2/"/>
     <updated>2012-12-07T13:18:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2012/12/07/learning-chef-part-2</id>
+    <id>http://nathenharvey.com/blog/2012/12/07/learning-chef-part-2</id>
     <content type="html"><![CDATA[<h2>Learning Chef Series</h2>
 
 <ul>
@@ -174,7 +174,7 @@
 
 <h2>Discuss Chef Solo vs. Chef Server</h2>
 
-<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don&#8217;t get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
+<p>Chef Solo allows you to run Chef Cookbooks without a Chef Server.  There are a number of things that you don't get when using Chef Solo.  Check the <a href="http://wiki.opscode.com/display/chef/Chef+Solo">Chef Solo page on the wiki</a> for more information.</p>
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/QwiPbEXhe24" frameborder="0" allowfullscreen></iframe>
 
@@ -188,7 +188,7 @@
 
 <h2>Download a number of cookbooks from the community site</h2>
 
-<p>Now that we&#8217;ve got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We&#8217;ll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
+<p>Now that we've got our Vagrant instance connected to Chef Server we can start managing the configuration of the VM with Chef.  We'll download a number of cookbooks from the <a href="http://community.opscode.com">Community Site</a> and extract them into our Chef repository.</p>
 
 <p>Here are the commands we ran to download each cookbook:</p>
 
@@ -222,7 +222,7 @@
 <iframe width="560" height="315" src="http://www.youtube.com/embed/d1npGSBgyrs" frameborder="0" allowfullscreen></iframe>
 
 
-<p>This video shows the process for grabbing the <code>mongodb</code> cookbook, and it&#8217;s dependency, the <code>apt</code> cookbook, off of the community site.</p>
+<p>This video shows the process for grabbing the <code>mongodb</code> cookbook, and it's dependency, the <code>apt</code> cookbook, off of the community site.</p>
 
 <ol>
 <li><code>knife cookbook site download mongodb</code></li>
@@ -239,14 +239,14 @@
 
 <h2>Update the run list for our node</h2>
 
-<p>There are a number of ways to update a node&#8217;s run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
+<p>There are a number of ways to update a node's run list.  You can do so in a web browser while logged in to Hosted Chef or you can do so using knife.</p>
 
 <p>In our session, we first used the Opscode Chef management interface.</p>
 
 <iframe width="420" height="315" src="http://www.youtube.com/embed/Q0BgCLSqJJU" frameborder="0" allowfullscreen></iframe>
 
 
-<p>You can also update your node&#8217;s run list using knife.  In this video, we&#8217;ll use knife to add mongodb to the node&#8217;s run list.</p>
+<p>You can also update your node's run list using knife.  In this video, we'll use knife to add mongodb to the node's run list.</p>
 
 <ol>
 <li><code>export EDITOR=vim</code> - knife uses the <code>EDITOR</code> environment variable to determine which application to launch when you edit the node.</li>
@@ -258,7 +258,7 @@
 <iframe width="420" height="315" src="http://www.youtube.com/embed/5xU3A-SvdJc" frameborder="0" allowfullscreen></iframe>
 
 
-<p>We&#8217;ll follow the same steps to add <code>passenger_apache2</code> to our run list.</p>
+<p>We'll follow the same steps to add <code>passenger_apache2</code> to our run list.</p>
 
 <ol>
 <li><code>knife cookbook site download passenger_apache2</code></li>
@@ -273,7 +273,7 @@
 </ol>
 
 
-<p>We will then add <code>passenger_apache2</code> to the run list using <code>knife node edit patrick_vm</code>.  When we run <code>vagrant provision</code>, we&#8217;ll hit an error that requires us to add <code>apt</code> to the run list prior to <code>passenger_apache2</code>.</p>
+<p>We will then add <code>passenger_apache2</code> to the run list using <code>knife node edit patrick_vm</code>.  When we run <code>vagrant provision</code>, we'll hit an error that requires us to add <code>apt</code> to the run list prior to <code>passenger_apache2</code>.</p>
 
 <p>By the end of this video, the run list should look like:</p>
 
@@ -290,7 +290,7 @@
 
 <h2>Add port forwarding to the Vagrant instance</h2>
 
-<p>Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here&#8217;s the full Vagrantfile:</p>
+<p>Finally, we updated the Vagrant configuration so that port 80 on the VM is forwarded to port 8080.  This was done by adding <code>config.vm.forward_port 80, 8080</code> to our Vagrantfile.  Here's the full Vagrantfile:</p>
 
 <pre><code class="ruby Vagrantfile">Vagrant::Config.run do |config|
   config.vm.box = "opscode-ubuntu-12.04"
@@ -328,7 +328,7 @@ end
 <iframe width="420" height="315" src="http://www.youtube.com/embed/7Cxfv40w7wQ" frameborder="0" allowfullscreen></iframe>
 
 
-<h2>What&#8217;s Next</h2>
+<h2>What's Next</h2>
 
 <p>In <a href="http://nathenharvey.com/blog/2012/12/14/learning-chef-part-3/">Learning Chef - Part 3</a> we install some more cookbooks and start writing our own cookbook to deploy a sample Rails application.</p>
 

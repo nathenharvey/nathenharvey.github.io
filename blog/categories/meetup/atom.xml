@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Meetup | Nathen Harvey]]></title>
-  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/meetup/atom.xml" rel="self"/>
-  <link href="http://nathenharvey.github.com/nathenharvey/"/>
-  <updated>2014-11-25T18:07:35-05:00</updated>
-  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <title><![CDATA[Category: meetup | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.com/blog/categories/meetup/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.com/"/>
+  <updated>2015-04-09T13:42:55-04:00</updated>
+  <id>http://nathenharvey.com/</id>
   <author>
     <name><![CDATA[Nathen Harvey]]></name>
     <email><![CDATA[nathen@nathenharvey.com]]></email>
@@ -15,10 +15,10 @@
   
   <entry>
     <title type="html"><![CDATA[MongoDB Community Awards]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/"/>
     <updated>2011-12-29T23:54:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
-    <content type="html"><![CDATA[<p>During this year&#8217;s <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+    <id>http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards</id>
+    <content type="html"><![CDATA[<p>During this year's <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
 
 <p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
 
@@ -29,61 +29,61 @@
 </ol>
 
 
-<p>This is the first year that 10gen has organized these awards. I think they&#8217;re a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+<p>This is the first year that 10gen has organized these awards. I think they're a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
 
 <!--more-->
 
 
 <h2>Community Champion Award</h2>
 
-<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We&#8217;ve grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
+<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We've grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
 
-<h2>I&#8217;m going to SXSW Interactive!</h2>
+<h2>I'm going to SXSW Interactive!</h2>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" /></p>
 
-<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I&#8217;ve always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
+<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
 
-<p>As I reviewed the finalists, I was pretty certain I wouldn&#8217;t be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
+<p>As I reviewed the finalists, I was pretty certain I wouldn't be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
 
-<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I&#8217;d been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
+<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I'd been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
 
 <h2>Thanks!</h2>
 
-<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who &#8216;rocked the vote&#8217;!</p>
+<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who 'rocked the vote'!</p>
 
-<p>I&#8217;m looking forward to meeting up with the other Community Award winners in Austin!</p>
+<p>I'm looking forward to meeting up with the other Community Award winners in Austin!</p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[MongoSV]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/29/mongosv/"/>
     <updated>2011-12-29T15:45:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
+    <id>http://nathenharvey.com/blog/2011/12/29/mongosv</id>
     <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
 
-<p>&#8220;MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.&#8221;</p>
+<p>"MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users."</p>
 
 <h2>Impressions and Observations</h2>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
-I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
+I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
 
 <h3>Schema free != Design free</h3>
 
-<p>As freeing as a document store is, there&#8217;s still work to be done in designing how you&#8217;ll store and retrieve your data. It&#8217;s super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
+<p>As freeing as a document store is, there's still work to be done in designing how you'll store and retrieve your data. It's super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
 
 <h3>Aggregation Framework</h3>
 
-<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day&#8217;s events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>&#8217;s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB&#8217;s New Aggregation Framework</a>.</p>
+<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day's events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>'s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB's New Aggregation Framework</a>.</p>
 
 <!--more-->
 
 
 <h2>MongoDB at CustomInk - Adoption, Operations, and Community</h2>
 
-<p>My presentation, &#8221;<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>&#8221;, detailed some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we&#8217;re using it in production today, lessons learned, and some of our future plans. I also covered some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. I also described <a href="http://www.customink.com">CustomInk</a>&#8217;s involvement in the MongoDB community.</p>
+<p>My presentation, "<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>", detailed some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we're using it in production today, lessons learned, and some of our future plans. I also covered some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. I also described <a href="http://www.customink.com">CustomInk</a>'s involvement in the MongoDB community.</p>
 
 <p>You can catch a <a href="http://www.10gen.com/presentations/mongosv-2011/mongodb-at-customink-adoption-operations-and-community">video of my presentation on the 10gen site</a> or just checkout the slides below.</p>
 
@@ -96,7 +96,7 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
 <ul>
 <li>Products are designed by the customer</li>
-<li>Products are tangible, manufactured, and shipped to the customer. Capacity planning is about more than just &#8220;how many servers do we need?&#8221;</li>
+<li>Products are tangible, manufactured, and shipped to the customer. Capacity planning is about more than just "how many servers do we need?"</li>
 <li>Both sell a variety of products</li>
 <li>The companies were both started in 1999</li>
 <li>Both use MongoDB, Oracle, and MySQL</li>
@@ -106,23 +106,23 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
 <p>Of course, there are plenty of differences, too. shutterfly is publicly traded and larger than CustomInk.</p>
 
-<p>It was interesting to see how shutterfly&#8217;s approach to adopting MongoDB is very similar to CustomInk&#8217;s. Both store product data in MongoDB but order data lives in relational databases.</p>
+<p>It was interesting to see how shutterfly's approach to adopting MongoDB is very similar to CustomInk's. Both store product data in MongoDB but order data lives in relational databases.</p>
 
-<p>Check out Kenny&#8217;s <a href="http://www.10gen.com/presentations/mongosv-2011/performance-tuning-and-scalability">Performance Tuning and Scalability presentation</a>.</p>
+<p>Check out Kenny's <a href="http://www.10gen.com/presentations/mongosv-2011/performance-tuning-and-scalability">Performance Tuning and Scalability presentation</a>.</p>
 
 <h2>AWS and MongoDB</h2>
 
-<p>Using MongoDB on Amazon&#8217;s AWS was, not surprisingly, another hot topic. I think that if either shutterfly or CustomInk were to launch their business today, they&#8217;d likely look to AWS, or something similar, to house their infrastructure. The truth of the matter is that in 1999 that simply wasn&#8217;t an option so neither company stared there. At CustomInk, we have started moving some of our production services out of the data center and into alternate hosting environments (managed hosting or &#8220;the cloud&#8221;). However, the real sweet spot for us with AWS, at the moment, is staging and test servers. With AWS, we have the ability to quickly, easily, and inexpensively spin up a separate environment for each development branch.</p>
+<p>Using MongoDB on Amazon's AWS was, not surprisingly, another hot topic. I think that if either shutterfly or CustomInk were to launch their business today, they'd likely look to AWS, or something similar, to house their infrastructure. The truth of the matter is that in 1999 that simply wasn't an option so neither company stared there. At CustomInk, we have started moving some of our production services out of the data center and into alternate hosting environments (managed hosting or "the cloud"). However, the real sweet spot for us with AWS, at the moment, is staging and test servers. With AWS, we have the ability to quickly, easily, and inexpensively spin up a separate environment for each development branch.</p>
 
-<p>The &#8220;developer happiness&#8221; that MongoDB affords does not make it immune to the &#8220;operational considerations&#8221; that every platform must take into account. These considerations vary from one environment to the next (bare metal, vm in a data center, managed hosting, &#8220;the cloud&#8221;, etc.)  Application that are not built to take advantages of the strengths of each environment will eventually suffer the consequences of running there.  Those consequences may include downtime, poor performance, and/or lots of operational complexity.</p>
+<p>The "developer happiness" that MongoDB affords does not make it immune to the "operational considerations" that every platform must take into account. These considerations vary from one environment to the next (bare metal, vm in a data center, managed hosting, "the cloud", etc.)  Application that are not built to take advantages of the strengths of each environment will eventually suffer the consequences of running there.  Those consequences may include downtime, poor performance, and/or lots of operational complexity.</p>
 
 <h2>Other videos and presentations</h2>
 
 <p>Check-out <a href="http://www.10gen.com/presentations#event__mongosv-2011">all of the presentations from the conference</a> on the 10gen site.</p>
 
-<p>The conference also included the announcement of the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">MongoDB Community Award winners</a>. But that&#8217;s a story for my <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/">next post</a>.</p>
+<p>The conference also included the announcement of the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">MongoDB Community Award winners</a>. But that's a story for my <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/">next post</a>.</p>
 
-<h2>Quick thanks to&#8230;</h2>
+<h2>Quick thanks to...</h2>
 
 <ul>
 <li><a href="http://10gen.com">10gen</a> for continually providing such great conferences. The single-day, multi-track at a low cost format works very well .</li>
@@ -136,16 +136,16 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
   
   <entry>
     <title type="html"><![CDATA[MongoDB Masters]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/"/>
     <updated>2011-12-29T13:46:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters</id>
+    <id>http://nathenharvey.com/blog/2011/12/29/mongodb-masters</id>
     <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
 
-<p>&#8220;The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community.&#8221;</p>
+<p>"The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community."</p>
 
-<p>I am honored to be counted among such a <a href="http://wiki.mongodb.org/display/DOCS/MongoDB+Masters">great group of MongoDB enthusiasts</a>. I was selected to join the Masters primarily because of my work with the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> which I&#8217;ve been helping to organize for almost a year. The group has monthly meetings at <a href="http://www.customink.com">CustomInk</a>&#8217;s headquarters in Tysons, VA.</p>
+<p>I am honored to be counted among such a <a href="http://wiki.mongodb.org/display/DOCS/MongoDB+Masters">great group of MongoDB enthusiasts</a>. I was selected to join the Masters primarily because of my work with the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> which I've been helping to organize for almost a year. The group has monthly meetings at <a href="http://www.customink.com">CustomInk</a>'s headquarters in Tysons, VA.</p>
 
-<p>The day before MongoSV, most of the MongoDB Masters met for the inaugural Masters Summit. The Masters Summit was run like an &#8220;un-conference&#8221;; the members decided on topics and broke into discussion groups to cover each topic. There were also a number of lightning talks.</p>
+<p>The day before MongoSV, most of the MongoDB Masters met for the inaugural Masters Summit. The Masters Summit was run like an "un-conference"; the members decided on topics and broke into discussion groups to cover each topic. There were also a number of lightning talks.</p>
 
 <p>We had break-out groups on 16 different topics including</p>
 
@@ -175,38 +175,38 @@ I&#8217;ve been to a few other similar MongoDB events in NYC and DC but this was
 
 <p><a href="http://twitter.com/ameliamango">Amelia</a>, <a href="http://twitter.com/francescaPasha">Francesca</a>, <a href="http://twitter.com/meghanpgill">Meghan</a>, and <a href="http://twitter.com/sam_10gen">Sam</a> who help organize community events for 10gen and <a href="http://twitter.com/cwestin63">Chris Westin</a>, also from 10gen, joined the discussion, too.</p>
 
-<p>I was amazed to hear how large the Tokyo User Group is - over 600 members. They meet monthly on Saturdays, have multiple corporate sponsors, and great attendance at their meetings. I&#8217;m not sure how a Saturday user group meeting would go over in the US but suspect we&#8217;d see a very light turnout.</p>
+<p>I was amazed to hear how large the Tokyo User Group is - over 600 members. They meet monthly on Saturdays, have multiple corporate sponsors, and great attendance at their meetings. I'm not sure how a Saturday user group meeting would go over in the US but suspect we'd see a very light turnout.</p>
 
-<p>It was also great to hear some of the things that Chris Westin has done to organize the <a href="http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/">Bay Area Large-Scale Production Engineering meetup</a>. I read his blog post, <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>, prior to the meeting so I had an idea about what some of his ideas were.  It was great to hear him echoing some of the things we&#8217;ve put into practice with the DC group.</p>
+<p>It was also great to hear some of the things that Chris Westin has done to organize the <a href="http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/">Bay Area Large-Scale Production Engineering meetup</a>. I read his blog post, <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>, prior to the meeting so I had an idea about what some of his ideas were.  It was great to hear him echoing some of the things we've put into practice with the DC group.</p>
 
 <p>After the discussion, I published a couple of blog posts on <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a> and <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
 
 <h3>Reporting with MongoDB</h3>
 
-<p>It seems there are still many questions around the best way to approach reporting on the data stored in a MongoDB. Sure, you can build custom reports easily enough with the data and that&#8217;ll be even easier when the new aggregation framework is released. However, the real challenge comes when you need to expose data in MongoDB AND data housed in your RDBMS to the same reporting tools. This is certainly a challenge we face at CustomInk. I still don&#8217;t feel that there is an easy answer in this area.  A couple of options were discussed including building custom ETL logic to load your MongoDB data into a RDBMS that can be used for reporting. I was particularly interested in the approach <a href="http://twitter.com/jwage">Jonathan Wage</a> and his colleagues at <a href="https://opensky.com/">OpenSky</a> are using. They&#8217;ve got a daemon that tails the MongoDB Oplog and updates a RDBMS as appropriate. This seems like a good approach and one I&#8217;d like to explore further.</p>
+<p>It seems there are still many questions around the best way to approach reporting on the data stored in a MongoDB. Sure, you can build custom reports easily enough with the data and that'll be even easier when the new aggregation framework is released. However, the real challenge comes when you need to expose data in MongoDB AND data housed in your RDBMS to the same reporting tools. This is certainly a challenge we face at CustomInk. I still don't feel that there is an easy answer in this area.  A couple of options were discussed including building custom ETL logic to load your MongoDB data into a RDBMS that can be used for reporting. I was particularly interested in the approach <a href="http://twitter.com/jwage">Jonathan Wage</a> and his colleagues at <a href="https://opensky.com/">OpenSky</a> are using. They've got a daemon that tails the MongoDB Oplog and updates a RDBMS as appropriate. This seems like a good approach and one I'd like to explore further.</p>
 
 <h3>Side conversations</h3>
 
 <h4>Configuration Management with Chef and Puppet</h4>
 
-<p><a href="http://twitter.com/rick446">Rick Copeland</a>, <a href="http://twitter.com/mdirolf">Mike Dirolf</a>, <a href="http://twitter.com/m_smalley">Mark Smalley</a>, and I had a couple of conversations about Chef and Puppet. Of course the conversation included questions of which to use and why. At CustomInk, we&#8217;ve got experience with both so I shared some information on <a href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Why We Chose Chef Over Puppet at CustomInk</a>.</p>
+<p><a href="http://twitter.com/rick446">Rick Copeland</a>, <a href="http://twitter.com/mdirolf">Mike Dirolf</a>, <a href="http://twitter.com/m_smalley">Mark Smalley</a>, and I had a couple of conversations about Chef and Puppet. Of course the conversation included questions of which to use and why. At CustomInk, we've got experience with both so I shared some information on <a href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Why We Chose Chef Over Puppet at CustomInk</a>.</p>
 
 <h4>Full-text search in MongoDB</h4>
 
-<p>During an open discussion, the question of full-text search within MongoDB came up. This topic seems to be a regular in any MongoDB roadmap discussions and the functionality always seems to be &#8220;very close, maybe in the n+1 release.&#8221; I think it was <a href="http://twitter.com/mdirolf">Mike Dirolf</a> who first voiced an opinion that I happen to share: &#8220;Stop working on it and focus on other features.&#8221;</p>
+<p>During an open discussion, the question of full-text search within MongoDB came up. This topic seems to be a regular in any MongoDB roadmap discussions and the functionality always seems to be "very close, maybe in the n+1 release." I think it was <a href="http://twitter.com/mdirolf">Mike Dirolf</a> who first voiced an opinion that I happen to share: "Stop working on it and focus on other features."</p>
 
-<p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I&#8217;ve used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
+<p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I've used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
 
 <p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" alt="MongoDB Masters" />
-I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8217;s box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
+I also agree with some of 10gen's concern that search is like a pandora's box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
 
 <h3>Swag</h3>
 
-<p>It wouldn&#8217;t be a 10gen event without a little swag, right?! MongoDB Masters were treated to custom coffee mugs, MongoDB Masters t-shirts, and great MongoDB Masters jackets.</p>
+<p>It wouldn't be a 10gen event without a little swag, right?! MongoDB Masters were treated to custom coffee mugs, MongoDB Masters t-shirts, and great MongoDB Masters jackets.</p>
 
 <h2>Next steps</h2>
 
-<p>The MongoDB Masters program is still pretty new. We&#8217;re looking for ways to get the most out of the group. Google hangouts and IRC are where we&#8217;re headed next but who knows where we&#8217;ll go from there. I&#8217;d love to hear any ideas you have for how to make a group like this successful and productive.</p>
+<p>The MongoDB Masters program is still pretty new. We're looking for ways to get the most out of the group. Google hangouts and IRC are where we're headed next but who knows where we'll go from there. I'd love to hear any ideas you have for how to make a group like this successful and productive.</p>
 
 <p>If you want to keep-up with the MongoDB Masters on Twitter, you can follow the <a href="https://twitter.com/#!/nathenharvey/mongo-masters/members">Twitter list that I maintain</a>.</p>
 ]]></content>
@@ -214,59 +214,59 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   
   <entry>
     <title type="html"><![CDATA[Agenda Tips for a Tech User Group]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/agenda-tips-for-a-tech-user-group/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/"/>
     <updated>2011-12-13T19:53:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/agenda-tips-for-a-tech-user-group</id>
-    <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">previous post</a>, I gave some <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a>. In this post, I&#8217;ll focus on the actual meeting format we typically use for our <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a>. You may find that this format works well for any technical user group.</p>
+    <id>http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group</id>
+    <content type="html"><![CDATA[<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">previous post</a>, I gave some <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a>. In this post, I'll focus on the actual meeting format we typically use for our <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB Users Group</a>. You may find that this format works well for any technical user group.</p>
 
-<p>We&#8217;ve experimented with a couple of different formats but I think we&#8217;ve settled into something that generally works for us. Some of these don&#8217;t work with a meeting that&#8217;s larger than 20 people; adjust accordingly.</p>
+<p>We've experimented with a couple of different formats but I think we've settled into something that generally works for us. Some of these don't work with a meeting that's larger than 20 people; adjust accordingly.</p>
 
 <!--more-->
 
 
 <h3>Sign-in sheets</h3>
 
-<p>I usually include a sign-in sheet for our meetings. The sheets usually include space for name, email address, twitter handle, and a space for the attendee to write in a question or topic they&#8217;d like to discuss when we have some an open discussion. Usually attendees are already on members on <a href="http://www.meetup.com/">Meetup.com</a> so it&#8217;s easy enough to reach out to them but this provides another way to capture their contact info.</p>
+<p>I usually include a sign-in sheet for our meetings. The sheets usually include space for name, email address, twitter handle, and a space for the attendee to write in a question or topic they'd like to discuss when we have some an open discussion. Usually attendees are already on members on <a href="http://www.meetup.com/">Meetup.com</a> so it's easy enough to reach out to them but this provides another way to capture their contact info.</p>
 
 <h3>Introductions and Announcements</h3>
 
-<p>We start the meeting by going around the room and asking everyone to introduce themselves and share any announcements they may have. The announcements might be that they&#8217;re hiring, looking for work, or something about an application or open source contribution they&#8217;ve made.</p>
+<p>We start the meeting by going around the room and asking everyone to introduce themselves and share any announcements they may have. The announcements might be that they're hiring, looking for work, or something about an application or open source contribution they've made.</p>
 
 <h3>Meeting content</h3>
 
-<p>After the introductions, you get into the meat of the meeting. This can take on many different formats here are some that we&#8217;ve used successfully:</p>
+<p>After the introductions, you get into the meat of the meeting. This can take on many different formats here are some that we've used successfully:</p>
 
 <h4>Demos &amp; Tutorials</h4>
 
-<p>Having someone demo a product or application that they&#8217;ve built always goes over well. In some instances, we&#8217;ve had people build applications on-the-fly to give attendees an idea of how easy it can be to work with <a href="http://www.mongodb.org/">MongoDB</a>.</p>
+<p>Having someone demo a product or application that they've built always goes over well. In some instances, we've had people build applications on-the-fly to give attendees an idea of how easy it can be to work with <a href="http://www.mongodb.org/">MongoDB</a>.</p>
 
 <h4>Lightning Talks</h4>
 
-<p>4-6 attendees give 5-10 minute talks on a given subject related to MongoDB. This is a great way for the attendees to share something they&#8217;re passionate about and practice their presentation skills.</p>
+<p>4-6 attendees give 5-10 minute talks on a given subject related to MongoDB. This is a great way for the attendees to share something they're passionate about and practice their presentation skills.</p>
 
-<h4>&#8220;Un-meeting&#8221;</h4>
+<h4>"Un-meeting"</h4>
 
 <p>During an un-meeting, participants propose talks or discussion items and that drives the agenda for the meeting. I try to leave time for this sort of attendee-driven agenda in every meeting, even when we have scheduled presenters.</p>
 
 <h4>Presentations</h4>
 
-<p>It&#8217;s great to line-up one or two speakers for the meeting. I think the best combination of speakers for a MongoDB meeting is to have one &#8220;intro&#8221; talk and one that is more advanced. We always seem to have a number of attendees who have done very little, if anything, with MongoDB prior to the meeting. Having an introductory presentation is great for them. The more advanced talk may get into replication, sharding, or production operations.</p>
+<p>It's great to line-up one or two speakers for the meeting. I think the best combination of speakers for a MongoDB meeting is to have one "intro" talk and one that is more advanced. We always seem to have a number of attendees who have done very little, if anything, with MongoDB prior to the meeting. Having an introductory presentation is great for them. The more advanced talk may get into replication, sharding, or production operations.</p>
 
 <h3>Picks, tips, and #protips</h3>
 
-<p>I stole this idea from the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>. At the end of each meeting we go around the room and ask each attendee to share a pick, tip, or #protip. These can be related to MongoDB but don&#8217;t have to be. Heck, they don&#8217;t need to be related to tech at all. Just something that the attendee has been using, doing, or has learned recently that he&#8217;d like to share with the group. Tips have included emacs and vi tips, command line tips, books, games, and even <a href="http://www.wikihow.com/Suppress-the-Gag-Reflex">tips on how to suppress the gag reflex</a>.</p>
+<p>I stole this idea from the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>. At the end of each meeting we go around the room and ask each attendee to share a pick, tip, or #protip. These can be related to MongoDB but don't have to be. Heck, they don't need to be related to tech at all. Just something that the attendee has been using, doing, or has learned recently that he'd like to share with the group. Tips have included emacs and vi tips, command line tips, books, games, and even <a href="http://www.wikihow.com/Suppress-the-Gag-Reflex">tips on how to suppress the gag reflex</a>.</p>
 
 <h3>Announce the next meetup</h3>
 
-<p>It&#8217;s key to announce the next meetup at the end of the current one. Minimally, you&#8217;ll want to announce the date, time, and location. Preferably, you&#8217;ll also be able to announce the theme of the night or the actual speakers.</p>
+<p>It's key to announce the next meetup at the end of the current one. Minimally, you'll want to announce the date, time, and location. Preferably, you'll also be able to announce the theme of the night or the actual speakers.</p>
 
 <h3>Other ideas</h3>
 
-<p>Lately, I&#8217;ve been kicking around the idea of a book club meeting. The idea is that we&#8217;d pick a book, maybe <a href="http://www.manning.com/banker/">MongoDB in Action</a> and build a couple of the meeting agendas around chapters from the book. For example, perhaps we&#8217;d look at Part 1 Getting started in February, Part 2 - Application development in March, and Part 3 - MongoDB mastery in April. We may even be able to spend an entire meeting on the content and theme of a single chapter. The group could publish reviews of each section as they go. Have you had any experience with a user group that&#8217;s done this?</p>
+<p>Lately, I've been kicking around the idea of a book club meeting. The idea is that we'd pick a book, maybe <a href="http://www.manning.com/banker/">MongoDB in Action</a> and build a couple of the meeting agendas around chapters from the book. For example, perhaps we'd look at Part 1 Getting started in February, Part 2 - Application development in March, and Part 3 - MongoDB mastery in April. We may even be able to spend an entire meeting on the content and theme of a single chapter. The group could publish reviews of each section as they go. Have you had any experience with a user group that's done this?</p>
 
-<p>We&#8217;ve also used Skype to bring experts in to present virtually. I&#8217;ve found that this works best when the presenter has a brief (15 minute) presentation and then is available for Q &amp; A.</p>
+<p>We've also used Skype to bring experts in to present virtually. I've found that this works best when the presenter has a brief (15 minute) presentation and then is available for Q &amp; A.</p>
 
-<p>For some more great suggestions, including suggestions on how to get great presenters, check out <a href="https://twitter.com/cwestin63">Chris Westin&#8217;s</a> blog post - <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>.</p>
+<p>For some more great suggestions, including suggestions on how to get great presenters, check out <a href="https://twitter.com/cwestin63">Chris Westin's</a> blog post - <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>.</p>
 
 <p>What suggestions do you have? Please leave a comment or get in touch with me.</p>
 
@@ -276,14 +276,14 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
   
   <entry>
     <title type="html"><![CDATA[Tips for Hosting a Tech User Group]]></title>
-    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
+    <link href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/"/>
     <updated>2011-12-13T19:24:00-05:00</updated>
-    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
+    <id>http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group</id>
     <content type="html"><![CDATA[<p>In January of 2011, I started hosting a <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">monthly MongoDB meetup</a>. My employer, <a href="http://www.customink.com/">CustomInk</a>, was looking for ways to become better known in the local DC technology market. We were also just getting started with our initial production deployment of MonogoDB. Having engineers from the area come to our office, get to know CustomInk, and share their experiences with using MongoDB was a great opportunity!</p>
 
-<p>Before I get much further, I&#8217;d like to give a hat tip to those user groups and podcasts that I learned from and stole ideas from. Namely, <a href="http://www.meetup.com/dcruby/">DC RUG</a>, <a href="http://www.meetup.com/bmore-on-rails/">B&#8217;more on Rails group</a>, and the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>.</p>
+<p>Before I get much further, I'd like to give a hat tip to those user groups and podcasts that I learned from and stole ideas from. Namely, <a href="http://www.meetup.com/dcruby/">DC RUG</a>, <a href="http://www.meetup.com/bmore-on-rails/">B'more on Rails group</a>, and the <a href="http://rubyrogues.com/">Ruby Rogues podcast</a>.</p>
 
-<p>Having a good space for hosting these types of meetings is important. CustomInk has two different spaces that we can utilize. The Parlour is a very cozy sitting room that includes a fireplace. It&#8217;s suitable for a groups of up to 30 people. The Cafe is quite a bit larger, we can host up to 80 people there. We also have a very nice outdoor patio which could hold 80 people but planning weather-dependent meetings doesn&#8217;t feel like the right way to go. The patio is connected to both the Parlour and the Cafe so networking at the beginning of the meeting sometimes happens there.</p>
+<p>Having a good space for hosting these types of meetings is important. CustomInk has two different spaces that we can utilize. The Parlour is a very cozy sitting room that includes a fireplace. It's suitable for a groups of up to 30 people. The Cafe is quite a bit larger, we can host up to 80 people there. We also have a very nice outdoor patio which could hold 80 people but planning weather-dependent meetings doesn't feel like the right way to go. The patio is connected to both the Parlour and the Cafe so networking at the beginning of the meeting sometimes happens there.</p>
 
 <p>Our success hosting the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">MongoDB User Group</a> has led to us hosting a number of other meetups. We are the regular host for the <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a> meetup and have hosted events for <a href="http://www.meetup.com/ncagtug/events/17035395/">Android application development</a>, <a href="http://www.meetup.com/R-users-DC/events/37862562/">R user group</a>, <a href="http://www.meetup.com/NoVa-Javascript-Ext-JS-Users-Group/events/36841452/">JavaScript user group</a>, and a <a href="http://www.meetup.com/TwitterTeaTimeDC/events/38265862/">Twitter API meetup</a>.</p>
 
@@ -294,47 +294,47 @@ I also agree with some of 10gen&#8217;s concern that search is like a pandora&#8
 
 <h3>Consistent date, time, location</h3>
 
-<p>Having a consistent date, time, and location may be one of the most important things you can do. This allows members to plan their schedule and their commute. Finding the location of any meetup can be an anxiety-filled experience for some people. Is this the right building? Which floor is this meeting on? There&#8217;s comfort in knowing that next month&#8217;s meeting will happen in the same space as this month&#8217;s. You may feel it would be better to alternate locations. We&#8217;ve certainly had some requests for this in the groups we regularly host. Based on feedback from other groups and some of our own experience, this is a bad idea. We&#8217;ve seen or heard of too many members missing meetings because they went to the &#8220;other&#8221; location. For the MongoDB group, we meet on the third Wednesday of the month at 6:30. Pick a day and time that works best for you and stick with it.</p>
+<p>Having a consistent date, time, and location may be one of the most important things you can do. This allows members to plan their schedule and their commute. Finding the location of any meetup can be an anxiety-filled experience for some people. Is this the right building? Which floor is this meeting on? There's comfort in knowing that next month's meeting will happen in the same space as this month's. You may feel it would be better to alternate locations. We've certainly had some requests for this in the groups we regularly host. Based on feedback from other groups and some of our own experience, this is a bad idea. We've seen or heard of too many members missing meetings because they went to the "other" location. For the MongoDB group, we meet on the third Wednesday of the month at 6:30. Pick a day and time that works best for you and stick with it.</p>
 
 <p>A location that is easily accessible via public transportation is certainly desirable but may not always be feasible.</p>
 
 <h3>Encourage member participation</h3>
 
-<p>Once you&#8217;ve got everyone at your meetup it&#8217;s important that you make this a warm, welcoming place where members feel comfortable and are encouraged to participate. We ask attendees to introduce themselves, share a pick, and contribute during open discussions.</p>
+<p>Once you've got everyone at your meetup it's important that you make this a warm, welcoming place where members feel comfortable and are encouraged to participate. We ask attendees to introduce themselves, share a pick, and contribute during open discussions.</p>
 
 <h3>Register a twitter account</h3>
 
-<p>A twitter handle that matches your group is a great way to help promote your meetings and encourage attendance. I use <a href="http://twitter.com/mongodc">@MongoDC</a> and will frequently tweet about topics that our members are interested in. Of course, the primary use of the account is to announce upcoming meetings and speakers. However, I also use it for sharing MongoDB related news such as <a href="https://twitter.com/#!/MongoDC/status/113307839249907713">product releases</a> and <a href="https://twitter.com/#!/MongoDC/status/135041129455427584">upcoming conferences</a>. Additionally, we ask our members to share their twitter handle when they arrive. This allows me to put together a <a href="https://twitter.com/#!/MongoDC/mongodc-16-nov-2011/members">Twitter list</a> of the people who attended (an idea I stole from the <a href="http://www.meetup.com/bmore-on-rails/">B&#8217;more on Rails group</a>).</p>
+<p>A twitter handle that matches your group is a great way to help promote your meetings and encourage attendance. I use <a href="http://twitter.com/mongodc">@MongoDC</a> and will frequently tweet about topics that our members are interested in. Of course, the primary use of the account is to announce upcoming meetings and speakers. However, I also use it for sharing MongoDB related news such as <a href="https://twitter.com/#!/MongoDC/status/113307839249907713">product releases</a> and <a href="https://twitter.com/#!/MongoDC/status/135041129455427584">upcoming conferences</a>. Additionally, we ask our members to share their twitter handle when they arrive. This allows me to put together a <a href="https://twitter.com/#!/MongoDC/mongodc-16-nov-2011/members">Twitter list</a> of the people who attended (an idea I stole from the <a href="http://www.meetup.com/bmore-on-rails/">B'more on Rails group</a>).</p>
 
 <h3>Feed the group</h3>
 
-<p>You&#8217;re probably scheduling your meetings right around the same time that most people would otherwise be eating dinner. CustomInk provides pizza, sodas, and beer for each meetup. Personally, I&#8217;m a bit of a beer lover so try to provide a unique offering at each meeting. This a good sponsorship opportunity for companies interested in reaching your group, too.</p>
+<p>You're probably scheduling your meetings right around the same time that most people would otherwise be eating dinner. CustomInk provides pizza, sodas, and beer for each meetup. Personally, I'm a bit of a beer lover so try to provide a unique offering at each meeting. This a good sponsorship opportunity for companies interested in reaching your group, too.</p>
 
 <h3>Give away FREE stuff</h3>
 
-<p>What&#8217;s a user group meeting without some sort of free swag? <a href="http://www.10gen.com/">10gen</a>, the company behind MongoDB, is great about making sure I always have something to give away at the meetings. Quick reference cards, stickers, and coffee mugs are usually in ample supply. Occasionally, we&#8217;ll have a books, conference tickets or discounts, or other special swag that we can giveaway, too.</p>
+<p>What's a user group meeting without some sort of free swag? <a href="http://www.10gen.com/">10gen</a>, the company behind MongoDB, is great about making sure I always have something to give away at the meetings. Quick reference cards, stickers, and coffee mugs are usually in ample supply. Occasionally, we'll have a books, conference tickets or discounts, or other special swag that we can giveaway, too.</p>
 
 <h3>Wifi</h3>
 
-<p>Provide free wifi to your attendees. It&#8217;s frustrating to go to a technical meeting without wifi.</p>
+<p>Provide free wifi to your attendees. It's frustrating to go to a technical meeting without wifi.</p>
 
 <h3>Leverage Meetup.com</h3>
 
-<p><a href="http://www.meetup.com/">Meetup.com</a> has a lot of great tools to help you organize meetings, communicate with individual members or with the entire group, and more. Be sure to checkout the &#8220;Organizer Tips&#8221; available under the &#8220;Group Tools&#8221; menu. Create a presence on Facebook, LinkedIn, Twitter, or anywhere else your members or potential members are going to be but always link back to the group&#8217;s page on meetup.com. Use the meetup site to post any presentations from your meetings. I also find it&#8217;s very helpful to <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/pages/November_Meetup_Recap/">summarize your meetings on the site</a>. This gives attendees easy access to everything that happened and gives new members an idea about the content and quality of the meetings.</p>
+<p><a href="http://www.meetup.com/">Meetup.com</a> has a lot of great tools to help you organize meetings, communicate with individual members or with the entire group, and more. Be sure to checkout the "Organizer Tips" available under the "Group Tools" menu. Create a presence on Facebook, LinkedIn, Twitter, or anywhere else your members or potential members are going to be but always link back to the group's page on meetup.com. Use the meetup site to post any presentations from your meetings. I also find it's very helpful to <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/pages/November_Meetup_Recap/">summarize your meetings on the site</a>. This gives attendees easy access to everything that happened and gives new members an idea about the content and quality of the meetings.</p>
 
-<p>It might also be interesting to have a page on the Meetup site where your members can highlight their own open source contributions. Perhaps they&#8217;ve contributed to a MongoDB driver?</p>
+<p>It might also be interesting to have a page on the Meetup site where your members can highlight their own open source contributions. Perhaps they've contributed to a MongoDB driver?</p>
 
-<p>There are other sites that offer similar functionality to Meetup.com but I firmly believe Meetup.com is the best. It&#8217;s where many people go to look for interesting groups and the tools they provide are great.</p>
+<p>There are other sites that offer similar functionality to Meetup.com but I firmly believe Meetup.com is the best. It's where many people go to look for interesting groups and the tools they provide are great.</p>
 
 <h3>Other ideas</h3>
 
-<p>Lately, I&#8217;ve been kicking around the idea of having a group library. Members and publisher could contribute books that the group might be interested in. Each book could be &#8220;borrowed&#8221; for up to a month. Have you had any experience with a user group that&#8217;s done this?</p>
+<p>Lately, I've been kicking around the idea of having a group library. Members and publisher could contribute books that the group might be interested in. Each book could be "borrowed" for up to a month. Have you had any experience with a user group that's done this?</p>
 
-<p>For some more great suggestions, including suggestions on how to get great presenters, check out <a href="https://twitter.com/cwestin63">Chris Westin&#8217;s</a> blog post - <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>.</p>
+<p>For some more great suggestions, including suggestions on how to get great presenters, check out <a href="https://twitter.com/cwestin63">Chris Westin's</a> blog post - <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>.</p>
 
 <p>What suggestions do you have? Please leave a comment or get in touch with me.</p>
 
-<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">next post</a>, I&#8217;ll provide <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
+<p>In my <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">next post</a>, I'll provide <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
 ]]></content>
   </entry>
   
