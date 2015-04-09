@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mongosv | Nathen Harvey]]></title>
+  <link href="http://nathenharvey.github.com/nathenharvey/blog/categories/mongosv/atom.xml" rel="self"/>
+  <link href="http://nathenharvey.github.com/nathenharvey/"/>
+  <updated>2015-04-08T20:59:42-04:00</updated>
+  <id>http://nathenharvey.github.com/nathenharvey/</id>
+  <author>
+    <name><![CDATA[Nathen Harvey]]></name>
+    <email><![CDATA[nathen@nathenharvey.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MongoDB Community Awards]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards/"/>
+    <updated>2011-12-29T23:54:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-community-awards</id>
+    <content type="html"><![CDATA[<p>During this year's <a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a>, <a href="http://10gen.com">10gen</a> presented awards to peer-nominated community members for their contributions to the MongoDB project.</p>
+
+<p>There were <a href="http://blog.10gen.com/post/12290733213/mongodb-community-awards-to-be-presented-at-mongosv">3 different categories</a>:</p>
+
+<ol>
+<li><strong>Innovative Application Award</strong> - recognizes a company or individual who has built an innovative application using MongoDB.</li>
+<li><strong>Core Contributor Award</strong> - recognizes a community member for significant contribution to the codebase of the MongoDB core server, language drivers, or tools.</li>
+<li><strong>Community Champion Award</strong> - recognizes an individual for their efforts evangelizing and growing the MongoDB community.</li>
+</ol>
+
+
+<p>This is the first year that 10gen has organized these awards. I think they're a great way to recognize the contributions made by a few members of the community. I hope a significant portion of people in the community took the time to nominate or vote for another individual.  I suspect more community members will participate and 10gen will do a more to advertise the program in years to come.</p>
+
+<!--more-->
+
+
+<h2>Community Champion Award</h2>
+
+<p>I was honored to be selected as a <a href="http://blog.10gen.com/post/13835130448/voting-open-for-the-mongodb-community-awards-winners">finalist in the Community Champion category</a>. As a co-organizer for both the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> and <a href="http://www.meetup.com/DevOpsDC/">DevOps DC</a>, I work to bring together people who are interested in MongoDB and other great technologies. We've grown the MongoDB group to over 250 members through consistent meetings, detailed event summaries, and good beer.</p>
+
+<h2>I'm going to SXSW Interactive!</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/sxsw_interactive.png" width="352" height="169" alt="SXSW Interactive" /></p>
+
+<p>Shortly before the voting was opened to the public, 10gen announced the <a href="http://blog.10gen.com/post/12838656615/mongodb-community-awards-grand-prize-announcement">grand prize</a>:  a trip to <a href="http://sxsw.com/interactive">South By Southwest Interactive</a>. The nomination and being selected as a finalist were a great recognition of my effort and accomplishments. However, I've always wanted to got to SXSW.  Once I found out this was the prize, I was really excited at the possibility of winning the award!</p>
+
+<p>As I reviewed the finalists, I was pretty certain I wouldn't be selected as the winner. Everyone on the list has made some incredible contributions to the community.</p>
+
+<p>At the end of MongoSV the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">winners were announced</a>. It was quite a surprise to find out I'd been selected as the winner in the Community Champion category! This was the perfect end to a great two days for me which included the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and <a href="http://nathenharvey.com/blog/2011/12/29/mongosv/">presenting at the conference</a>.</p>
+
+<h2>Thanks!</h2>
+
+<p>A heartfelt <strong>THANK YOU</strong> is in order for all of the members of the <strong>MongoDC</strong> group who nominated and voted for me, for <strong>10gen</strong> for organizing the contest and awards, and my <strong>colleagues, friends, and family</strong> who 'rocked the vote'!</p>
+
+<p>I'm looking forward to meeting up with the other Community Award winners in Austin!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MongoSV]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv/"/>
+    <updated>2011-12-29T15:45:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongosv</id>
+    <content type="html"><![CDATA[<p>I was selected to share some of my experience with MongoDB at MongoSV.</p>
+
+<p>"MongoSV is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users."</p>
+
+<h2>Impressions and Observations</h2>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongosv.jpg" width="400" height="299" alt="MongoSV" />
+I've been to a few other similar MongoDB events in NYC and DC but this was the largest by far.  There were over 1,000 attendees and 5 tracks plus whiteboard and birds of a feather sessions.</p>
+
+<h3>Schema free != Design free</h3>
+
+<p>As freeing as a document store is, there's still work to be done in designing how you'll store and retrieve your data. It's super-easy to get up and running without giving this much thought but you <em>will</em> need to design your documents eventually. There were at least 3 sessions about schema design during MongoSV.</p>
+
+<h3>Aggregation Framework</h3>
+
+<p>The new aggregation framework is great, highly anticipated, and much needed. During the Keynote, <a href="http://twitter.com/eliothorowitz">Eliot Horowitz</a> demonstrated an application built on MonogDB that used the Twitter API to capture tweets related to the day's events. The demo site ran throughout the day and was used in a contest to see who tweeted the most about the conference and who was mentioned most. The source code for the app was subsequently made available on <a href="https://github.com/erh/mongosv-twitter-demo">github</a>. Check out <a href="http://twitter.com/cwestin63">Chris Westin</a>'s  presentation on <a href="http://www.10gen.com/presentations/mongosv-2011/mongodbs-new-aggregation-framework">MongoDB's New Aggregation Framework</a>.</p>
+
+<!--more-->
+
+
+<h2>MongoDB at CustomInk - Adoption, Operations, and Community</h2>
+
+<p>My presentation, "<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>", detailed some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we're using it in production today, lessons learned, and some of our future plans. I also covered some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. I also described <a href="http://www.customink.com">CustomInk</a>'s involvement in the MongoDB community.</p>
+
+<p>You can catch a <a href="http://www.10gen.com/presentations/mongosv-2011/mongodb-at-customink-adoption-operations-and-community">video of my presentation on the 10gen site</a> or just checkout the slides below.</p>
+
+<script src="http://speakerdeck.com/embed/4ee19eec04357e0050004017.js"></script>
+
+
+<h2>MongoDB at shutterfly</h2>
+
+<p>It was great to meet <a href="http://twitter.com/kennygorman">Kenny Gorman</a> from shutterfly and share some of our experiences with MongoDB. <a href="http://www.shutterfly.com/">shutterfly</a> and <a href="http://www.customink.com">CustomInk</a> have a lot in common. Of course, both are online retailers but some other things that we share include:</p>
+
+<ul>
+<li>Products are designed by the customer</li>
+<li>Products are tangible, manufactured, and shipped to the customer. Capacity planning is about more than just "how many servers do we need?"</li>
+<li>Both sell a variety of products</li>
+<li>The companies were both started in 1999</li>
+<li>Both use MongoDB, Oracle, and MySQL</li>
+<li>Most or all production servers run in a physical datacenter</li>
+</ul>
+
+
+<p>Of course, there are plenty of differences, too. shutterfly is publicly traded and larger than CustomInk.</p>
+
+<p>It was interesting to see how shutterfly's approach to adopting MongoDB is very similar to CustomInk's. Both store product data in MongoDB but order data lives in relational databases.</p>
+
+<p>Check out Kenny's <a href="http://www.10gen.com/presentations/mongosv-2011/performance-tuning-and-scalability">Performance Tuning and Scalability presentation</a>.</p>
+
+<h2>AWS and MongoDB</h2>
+
+<p>Using MongoDB on Amazon's AWS was, not surprisingly, another hot topic. I think that if either shutterfly or CustomInk were to launch their business today, they'd likely look to AWS, or something similar, to house their infrastructure. The truth of the matter is that in 1999 that simply wasn't an option so neither company stared there. At CustomInk, we have started moving some of our production services out of the data center and into alternate hosting environments (managed hosting or "the cloud"). However, the real sweet spot for us with AWS, at the moment, is staging and test servers. With AWS, we have the ability to quickly, easily, and inexpensively spin up a separate environment for each development branch.</p>
+
+<p>The "developer happiness" that MongoDB affords does not make it immune to the "operational considerations" that every platform must take into account. These considerations vary from one environment to the next (bare metal, vm in a data center, managed hosting, "the cloud", etc.)  Application that are not built to take advantages of the strengths of each environment will eventually suffer the consequences of running there.  Those consequences may include downtime, poor performance, and/or lots of operational complexity.</p>
+
+<h2>Other videos and presentations</h2>
+
+<p>Check-out <a href="http://www.10gen.com/presentations#event__mongosv-2011">all of the presentations from the conference</a> on the 10gen site.</p>
+
+<p>The conference also included the announcement of the <a href="http://blog.10gen.com/post/14278640986/announcing-the-2011-mongodb-community-award-winners">MongoDB Community Award winners</a>. But that's a story for my <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-community-awards/">next post</a>.</p>
+
+<h2>Quick thanks to...</h2>
+
+<ul>
+<li><a href="http://10gen.com">10gen</a> for continually providing such great conferences. The single-day, multi-track at a low cost format works very well .</li>
+<li><a href="http://busyconf.com/">Busyconf</a> for creating <strong>the best</strong> app for conference schedules and hosting the <a href="http://mongosv2011.busyconf.com/schedule/full">MongoSV schedule</a>.</li>
+<li>Adam, Amelia, Francesca, Meghan, Sam, and everyone else for 10gen for organizing the <a href="http://nathenharvey.com/blog/2011/12/29/mongodb-masters/">MongoDB Masters Summit</a> and MongoSV.</li>
+<li>everyone who came out to my presentation and to everyone I met at MongoSV</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MongoDB Masters]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters/"/>
+    <updated>2011-12-29T13:46:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/12/29/mongodb-masters</id>
+    <content type="html"><![CDATA[<p>Shortly before <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoSV 2011</a>, 10gen announced the <a href="http://blog.10gen.com/post/13885501875/announcing-the-mongodb-masters">MongoDB Masters</a> Program.</p>
+
+<p>"The MongoDB Masters program is designed to recognize the achievements of leaders in the community and enable the exchange of knowledge between and among 10gen and the community."</p>
+
+<p>I am honored to be counted among such a <a href="http://wiki.mongodb.org/display/DOCS/MongoDB+Masters">great group of MongoDB enthusiasts</a>. I was selected to join the Masters primarily because of my work with the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group/">Washington DC MongoDB User Group</a> which I've been helping to organize for almost a year. The group has monthly meetings at <a href="http://www.customink.com">CustomInk</a>'s headquarters in Tysons, VA.</p>
+
+<p>The day before MongoSV, most of the MongoDB Masters met for the inaugural Masters Summit. The Masters Summit was run like an "un-conference"; the members decided on topics and broke into discussion groups to cover each topic. There were also a number of lightning talks.</p>
+
+<p>We had break-out groups on 16 different topics including</p>
+
+<ul>
+<li>Operations, hosting, and production architecture</li>
+<li>Drivers</li>
+<li>MongoDB and Windows</li>
+<li>Reporting</li>
+</ul>
+
+
+<!--more-->
+
+
+<p>I participated in a couple of sessions about operations, one about hosting user groups, and one about reporting with MongoDB.</p>
+
+<h3>MongoDB User Groups</h3>
+
+<p>I was able to share some of my experience with hosting the DC MongoDB User group in this session. There were a few other user group organizers who participated including:</p>
+
+<ul>
+<li><a href="http://twitter.com/harrymarr">Harry Marr</a> and <a href="http://twitter.com/davidmytton">David Mytton</a> from the London User Group</li>
+<li><a href="http://twitter.com/m_smalley">Mark Smalley</a> from the Malaysia User Group</li>
+<li><a href="http://twitter.com/doryokujin">Takahiro Inoue</a> from the Tokyo User Group</li>
+</ul>
+
+
+<p><a href="http://twitter.com/ameliamango">Amelia</a>, <a href="http://twitter.com/francescaPasha">Francesca</a>, <a href="http://twitter.com/meghanpgill">Meghan</a>, and <a href="http://twitter.com/sam_10gen">Sam</a> who help organize community events for 10gen and <a href="http://twitter.com/cwestin63">Chris Westin</a>, also from 10gen, joined the discussion, too.</p>
+
+<p>I was amazed to hear how large the Tokyo User Group is - over 600 members. They meet monthly on Saturdays, have multiple corporate sponsors, and great attendance at their meetings. I'm not sure how a Saturday user group meeting would go over in the US but suspect we'd see a very light turnout.</p>
+
+<p>It was also great to hear some of the things that Chris Westin has done to organize the <a href="http://www.meetup.com/SF-Bay-Area-Large-Scale-Production-Engineering/">Bay Area Large-Scale Production Engineering meetup</a>. I read his blog post, <a href="https://www.bookofbrilliantthings.com/blog/how-to-run-a-successful-tech-meetup">How to Run a Successful Tech Meetup</a>, prior to the meeting so I had an idea about what some of his ideas were.  It was great to hear him echoing some of the things we've put into practice with the DC group.</p>
+
+<p>After the discussion, I published a couple of blog posts on <a href="http://nathenharvey.com/blog/2011/12/13/tips-for-hosting-a-tech-user-group/">ideas about how to run a successful user group meeting</a> and <a href="http://nathenharvey.com/blog/2011/12/13/agenda-tips-for-a-tech-user-group/">some suggestions on the agenda / format for each meeting</a>.</p>
+
+<h3>Reporting with MongoDB</h3>
+
+<p>It seems there are still many questions around the best way to approach reporting on the data stored in a MongoDB. Sure, you can build custom reports easily enough with the data and that'll be even easier when the new aggregation framework is released. However, the real challenge comes when you need to expose data in MongoDB AND data housed in your RDBMS to the same reporting tools. This is certainly a challenge we face at CustomInk. I still don't feel that there is an easy answer in this area.  A couple of options were discussed including building custom ETL logic to load your MongoDB data into a RDBMS that can be used for reporting. I was particularly interested in the approach <a href="http://twitter.com/jwage">Jonathan Wage</a> and his colleagues at <a href="https://opensky.com/">OpenSky</a> are using. They've got a daemon that tails the MongoDB Oplog and updates a RDBMS as appropriate. This seems like a good approach and one I'd like to explore further.</p>
+
+<h3>Side conversations</h3>
+
+<h4>Configuration Management with Chef and Puppet</h4>
+
+<p><a href="http://twitter.com/rick446">Rick Copeland</a>, <a href="http://twitter.com/mdirolf">Mike Dirolf</a>, <a href="http://twitter.com/m_smalley">Mark Smalley</a>, and I had a couple of conversations about Chef and Puppet. Of course the conversation included questions of which to use and why. At CustomInk, we've got experience with both so I shared some information on <a href="http://nathenharvey.com/blog/2011/11/21/why-we-chose-chef-over-puppet-at-customink/">Why We Chose Chef Over Puppet at CustomInk</a>.</p>
+
+<h4>Full-text search in MongoDB</h4>
+
+<p>During an open discussion, the question of full-text search within MongoDB came up. This topic seems to be a regular in any MongoDB roadmap discussions and the functionality always seems to be "very close, maybe in the n+1 release." I think it was <a href="http://twitter.com/mdirolf">Mike Dirolf</a> who first voiced an opinion that I happen to share: "Stop working on it and focus on other features."</p>
+
+<p>Search is no easy problem to solve and there are projects whose sole focus is on information indexing and retrieval. 10gen should stay focused on the core functionality of MongoDB and leave the search problems to Lucene, Solr, and other similar projects. I've used Solr with MongoDB successfully on one project and think this is the right way to go.</p>
+
+<p><img src="http://nathenharvey.s3-website-us-east-1.amazonaws.com/blog/images/mongodb_masters.jpg" width="320" height="250" alt="MongoDB Masters" />
+I also agree with some of 10gen's concern that search is like a pandora's box. Once released, there will be a flood of feature requests and bug reports for this component which could quickly be distracting for the engineering team.</p>
+
+<h3>Swag</h3>
+
+<p>It wouldn't be a 10gen event without a little swag, right?! MongoDB Masters were treated to custom coffee mugs, MongoDB Masters t-shirts, and great MongoDB Masters jackets.</p>
+
+<h2>Next steps</h2>
+
+<p>The MongoDB Masters program is still pretty new. We're looking for ways to get the most out of the group. Google hangouts and IRC are where we're headed next but who knows where we'll go from there. I'd love to hear any ideas you have for how to make a group like this successful and productive.</p>
+
+<p>If you want to keep-up with the MongoDB Masters on Twitter, you can follow the <a href="https://twitter.com/#!/nathenharvey/mongo-masters/members">Twitter list that I maintain</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[I'm Speaking at MongoSV]]></title>
+    <link href="http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/im-speaking-at-mongosv/"/>
+    <updated>2011-11-21T03:57:00-05:00</updated>
+    <id>http://nathenharvey.github.com/nathenharvey/blog/2011/11/21/im-speaking-at-mongosv</id>
+    <content type="html"><![CDATA[<p><a href="http://www.10gen.com/events/mongosv-2011">MongoSV</a> is an annual one-day conference in Silicon Valley dedicated to the open source, non-relational database MongoDB. The comprehensive agenda includes 50+ sessions covering topics for both the novice and experienced user, with presentations from 10gen engineers as well as MongoDB users.</p>
+
+<p>I'm one of the MongoDB users who will be speaking at the conference. The title of my talk is "<strong>MongoDB at CustomInk - Adoption, Operations, and Community</strong>"</p>
+
+<p>In this talk I'll detail some of the reasons we decided to go with MongoDB, the challenges we faced bringing it into the organization, how we're using it in production today, lessons learned, and some of our future plans. The talk will also describe some of the operational considerations for putting MongoDB into production: how do we deploy, operate, and monitor MongoDB. During this talk I'll also describe <a href="http://www.customink.com">CustomInk</a>'s involvement in the MongoDB community.</p>
+
+<p>Since January, CustomInk has been hosting the <a href="http://www.meetup.com/Washington-DC-MongoDB-Users-Group">Washington DC MongoDB Users Group</a>. I'll share some of my experience with, tips for, and lessons learned growing a monthly user group.</p>
+
+<p>The talk will be a refreshed and expanded version of the presentation I gave at <a href="http://www.10gen.com/events/mongodc-2011">MongoDC</a> back in June. You can find <a href="http://speakerrate.com/events/985-mongodc">slides and reviews from MongoDC on SpeakerRate</a>.</p>
+
+<p><a href="http://www.10gen.com/">10gen</a> does a great job with these conferences. They're always packed full of great information and you'll get to meets lots of people from the community. MongoSV is the largest of these one-day conferences that 10gen organizes. This year, the conference also includes the <a href="https://docs.google.com/spreadsheet/viewform?formkey=dGNvYzNpY3BTMHFrZWRVLVpuTktoSmc6MQ">MongoDB Community Awards</a> where you can nominate someone in three different categories:</p>
+
+<ul>
+<li>Innovative Application</li>
+<li>Community Champion</li>
+<li>Contributor</li>
+</ul>
+
+
+<p>If you're in Santa Clara on December 9th, or need a reason to be, be sure to stop by MongoSV. I have a discount code I can share with you to lower the cost of admission significantly, just let me know if you're interested.</p>
+]]></content>
+  </entry>
+  
+</feed>

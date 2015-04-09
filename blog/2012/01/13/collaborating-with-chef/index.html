@@ -1,0 +1,357 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Collaborating with Chef - Nathen Harvey</title>
+  <meta name="author" content="Nathen Harvey">
+
+  
+  <meta name="description" content="This week at CustomInk, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Nathen Harvey" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27983419-1']);
+    _gaq.push(['_setDomainName', 'nathenharvey.com']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Nathen Harvey</a></h1>
+  
+    <h2>a blog</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:nathenharvey.github.com/nathenharvey" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Collaborating With Chef</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-13T16:25:00-05:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This week at <a href="http://www.customink.com">CustomInk</a>, the Web Operations team was asked by the development teams to make some configuration changes on a couple of different servers.</p>
+
+<p>They were simple changes, adding a line or two to the services.yml file for each application. The details really aren&#8217;t important but let&#8217;s look at how we worked together to implement the changes.</p>
+
+<h2>Before Chef</h2>
+
+<p>In the past, here&#8217;s how the changes likely would have been implemented.</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer asks the ops team to make the change</li>
+<li>Ops makes the update using the appropriate tools</li>
+</ol>
+
+
+<p>OR</p>
+
+<ol>
+<li>Developer realizes a change is required.</li>
+<li>Developer considers asking the ops team to make the change but thinks better of it</li>
+<li>Developer makes the change manually, Ops doesn&#8217;t know, Ops can no longer provision a new server properly.</li>
+</ol>
+
+
+<h2>With Chef</h2>
+
+<p>We&#8217;ve been using Chef for some time and have just started asking our developers to help maintain their own apps. This week, two applications needed to know about some additional external services. This required a simple update to a YAML file in each application. In both cases, I asked the developers to clone our chef repo, make the changes they needed, and submit a pull request.</p>
+
+<p>In one instance, the simple services.yml turned into a pull request with updates to a number of nagios nrpe checks that we&#8217;re running. Something that the developer didn&#8217;t ask for originally but took the initiative to add while in the code.</p>
+
+<p>Thanks to <a href="http://twitter.com/chmurph2">@chmurph2</a> and <a href="http://twitter.com/jmorton">@jmorton</a> for taking their first steps into Chef.</p>
+
+<p>Is this a huge accomplishment? No.  But it is a great first step.</p>
+
+<p>&#8221;.@nathenharvey Working together == every engineer is on the same team and you stop celebrating (or thinking about) cross-team collaboration.&#8221;</p>
+
+<p>We&#8217;ve always worked as one team but continue to have some clear areas of responsibility. While I understand what Brian&#8217;s saying, I&#8217;m not sure everyone doing everything makes sense. We&#8217;re one team but we each have our strengths. Agree that we should stop celebrating about this a cross-team collaboration; it should be the norm.  But, we have to start somewhere and these were the first steps into the world of infrastructure as code for the developers. In my mind, that&#8217;s a WIN!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Nathen Harvey</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-01-13T16:25:00-05:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/btmerr/'>btmerr</a>, <a class='category' href='/blog/categories/chef/'>chef</a>, <a class='category' href='/blog/categories/chmurph2/'>chmurph2</a>, <a class='category' href='/blog/categories/customink/'>customink</a>, <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/jmorton/'>jmorton</a>, <a class='category' href='/blog/categories/opschef/'>opschef</a>, <a class='category' href='/blog/categories/opscode/'>opscode</a>, <a class='category' href='/blog/categories/web-operations/'>web operations</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/" data-via="nathenharvey" data-counturl="http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/01/02/deploying-green-screen/" title="Previous Post: Deploying Green Screen">&laquo; Deploying Green Screen</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/25/taming-the-kraken-how-operations-enables-developer-productivity/" title="next Post: Taming the Kraken - How Operations enables developer productivity">Taming the Kraken - How Operations enables developer productivity &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2015/04/08/devops-days-dc/">DevOps Days DC</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2015/04/01/continuous-delivery/">Continuous Delivery</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/05/01/devops-explained/">DevOps Explained</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/12/19/devop-with-me/">DevOp with Me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/learning-chef-part-6/">Learning Chef - Part 6</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("nathenharvey", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/nathenharvey" class="twitter-follow-button" data-show-count="false">Follow @nathenharvey</a>
+  
+</section>
+
+
+<section>
+  
+    <h1>Github</h1>
+  
+
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/nathenharvey">@nathenharvey</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'nathenharvey',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2015 - Nathen Harvey -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'nathenharvey';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/';
+        var disqus_url = 'http://nathenharvey.github.com/nathenharvey/blog/2012/01/13/collaborating-with-chef/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
